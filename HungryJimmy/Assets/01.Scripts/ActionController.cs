@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 // 아이템 강의 26분에 Rock 스크립트에 내용 추가 필요 + 프리팹 할당 필요
 public class ActionController : MonoBehaviour
@@ -12,7 +13,7 @@ public class ActionController : MonoBehaviour
     private bool pickupActivated = false;
 
     // 충돌체 정보 저장
-    private RaycastHit hitInfo;
+    private RaycastHit hitInfo;     // 충돌체 정보 저장
 
     // 불을 근접해서 바라볼 시 true
     private bool fireLookActivated = false;
@@ -21,9 +22,10 @@ public class ActionController : MonoBehaviour
     [SerializeField]
     private LayerMask layerMask;
 
+    // 필요한 컴포넌트
     // 행동을 보여 줄 텍스트
     [SerializeField]
-    private Text actionText;
+    private TextMeshProUGUI actionText;
 
     [SerializeField]
     private Inventory theInventory;
@@ -31,6 +33,10 @@ public class ActionController : MonoBehaviour
     [SerializeField]
     private QuickSlotController theQuickSlot;
 
+    private void Start()
+    {
+        actionText = GetComponent<TextMeshProUGUI>();
+    }
 
     // 매 프레임마다 키가 눌리고 있는지 확인
     private void Update()
@@ -44,7 +50,7 @@ public class ActionController : MonoBehaviour
     private void TryAction()
     {
         // E키가 눌렸을 떄 아이템이 있는지 없는지 확인하는 메서드
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetMouseButtonDown(2))
         {
             CheckAction();
             CanPickUp();
@@ -60,7 +66,7 @@ public class ActionController : MonoBehaviour
             if (hitInfo.transform != null)
             {
                 // 어떤 아이템을 획득했는지 확인
-                Debug.Log(hitInfo.transform.GetComponent<ItemPickUp>().item.itemName + "획득했습니다.");
+                // Debug.Log(hitInfo.transform.GetComponent<ItemPickUp>().item.itemName + "획득했습니다.");
                 // 인벤토리 스크립트 작성 후 추가
                 theInventory.AcquireItem(hitInfo.transform.GetComponent<ItemPickUp>().item);
                 // 획득한 아이템 파괴
@@ -144,7 +150,7 @@ public class ActionController : MonoBehaviour
 
     private void FireInfoAppear()
     {
-        Reset(); 
+        Reset();
         fireLookActivated = true;       // 켜진 상태의 불을 바라보면
 
         if (hitInfo.transform.GetComponent<Fire>().GetIsFire())

@@ -14,6 +14,9 @@ public class Inventory : MonoBehaviour
     [SerializeField]
     private GameObject go_QuickSlotsParent;
 
+    [SerializeField]
+    private RectTransform panelRect;      // 인벤토리 버튼 영역
+
     private Slot[] slots;       // 인벤토리 슬롯들
     private Slot[] quickslots;      // 퀵슬롯들
     private bool isNotPut;
@@ -46,21 +49,26 @@ public class Inventory : MonoBehaviour
         TryOpenInventory();
     }
 
-    private void TryOpenInventory()
+    public void TryOpenInventory()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        if (!(Input.mousePosition.x > panelRect.rect.xMin && Input.mousePosition.x < panelRect.rect.xMax
+        && Input.mousePosition.y > panelRect.rect.yMin && Input.mousePosition.y < panelRect.rect.yMax))
         {
-            inventoryActivated = !inventoryActivated;   // True <-> false로 바꿔줌
+            if (Input.GetMouseButtonDown(0))
+            {
+                inventoryActivated = !inventoryActivated;   // True <-> false로 바꿔줌
 
-            if (inventoryActivated)     // True일 때
-            {
-                OpenInventory();
-            }
-            else                        // False일 때
-            {
-                CloseInventory();
+                if (inventoryActivated)     // True일 때
+                {
+                    OpenInventory();
+                }
+                else                        // False일 때
+                {
+                    CloseInventory();
+                }
             }
         }
+
     }
 
     private void OpenInventory()

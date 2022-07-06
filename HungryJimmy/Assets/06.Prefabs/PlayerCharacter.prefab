@@ -137,7 +137,6 @@ GameObject:
   - component: {fileID: 600103221492594718}
   - component: {fileID: 7187173218071735689}
   - component: {fileID: 6350341872727995953}
-  - component: {fileID: 669461707965139877}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -211,26 +210,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &669461707965139877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399428598688134897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21982426cc198e9469d8295f06f3cf33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 6
-  runSpeed: 12
-  crouchSpeed: 3
-  jumpForce: 4
-  crouchPosY: 0
-  lookSensitivity: 2
-  cameraRotationLimit: 45
-  theCamera: {fileID: 669461707864245272}
 --- !u!1 &641431948433088847
 GameObject:
   m_ObjectHideFlags: 0

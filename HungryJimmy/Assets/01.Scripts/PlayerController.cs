@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour
     }
     private void TryJump() //점프 시도
     {//스페이스바를 한 번 눌렀을 경우 / 땅위에 있을 경우에...
-        if (Input.GetKeyDown(KeyCode.Space) && isGround && theStatusController.GetCurrentSP() > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && isGround/*  && theStatusController.GetCurrentSP() > 0 */)
         {
             Jump();
         }
@@ -140,7 +140,7 @@ public class PlayerController : MonoBehaviour
             Crouch(); //앉아있다 점프 했을 때...  플레이어를 일어난 상태로...
                       //벨로서티 (현재 어느방향, 속도로 움직이는지...)를 변경해
                       //jumpForce만큼 순간적으로 위로 향하게 만들기...
-        theStatusController.DecreaseStamina(100);       // 점프 시 특정 값만큼 스테미나를 깎아줌
+        // theStatusController.DecreaseStamina(100);       // 점프 시 특정 값만큼 스테미나를 깎아줌
         myRigid.velocity = transform.up * jumpForce;
     }
 
@@ -186,7 +186,7 @@ public class PlayerController : MonoBehaviour
         if (isCrouch)  //앉은 상태에서 달릴때 앉은 상태 해제
             Crouch();
         theGunController.CancelFineSight(); //정조준 모드 해제
-        theStatusController.DecreaseStamina(10);    // 달리는 중일때 지속적으로 값 깎음
+        // theStatusController.DecreaseStamina(10);    // 달리는 중일때 지속적으로 값 깎음
         isRun = true;
         applySpeed = runSpeed; //스피드가 RunSpeed로 바뀜
     }
@@ -240,5 +240,6 @@ public class PlayerController : MonoBehaviour
         //카메라의 위치(로테이션)정보 / 마우스가 좌우로 움직이지 않게
         theCamera.transform.localEulerAngles = new Vector3(currentCameraRotationX, 0f, 0f);
     }
+
 
 }

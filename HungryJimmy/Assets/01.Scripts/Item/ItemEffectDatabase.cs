@@ -6,7 +6,7 @@ using UnityEngine;
 public class ItemEffect
 {
     public string itemName;    // 아이템의 이름 (키값으로 사용) 
-    [Tooltip("HP, SP, DP, HUNGRY, THIRSTY, SATISFY만 가능합니다")]
+    [Tooltip("HP, HUNGRY, THIRSTY 만 가능합니다")]
     public string[] part;     // 효과가 적용될 부분
     public int[] num;     // 효과가 적용될 수치
 
@@ -20,14 +20,14 @@ public class ItemEffectDatabase : MonoBehaviour
     // 필요한 컴포넌트
     [SerializeField]
     private StatusController thePlayerStatus;
-    [SerializeField]
-    private WeaponManager theWeaponManager;
+    // [SerializeField]
+    // private WeaponManager theWeaponManager;
     [SerializeField]
     private SlotToolTip theSlotToolTip;
     [SerializeField]
     private QuickSlotController theQuickSlotController;
 
-    private const string HP = "HP", SP = "SP", DP = "DP", HUNGRY = "HUNGRY", THIRSTY = "THIRSTY", SATISFY = "SATISFY";
+    private const string HP = "HP", HUNGRY = "HUNGRY", THIRSTY = "THIRSTY";
 
     // QuickSlotController 징검다리
     public void isActivatedQuickSlot(int _num)
@@ -67,19 +67,11 @@ public class ItemEffectDatabase : MonoBehaviour
                             case HP:
                                 thePlayerStatus.IncreaseHP(itemEffects[x].num[y]);
                                 break;
-                            case SP:
-                                thePlayerStatus.IncreaseSP(itemEffects[x].num[y]);
-                                break;
-                            case DP:
-                                thePlayerStatus.IncreaseDP(itemEffects[x].num[y]);
-                                break;
                             case HUNGRY:
                                 thePlayerStatus.IncreaseHungry(itemEffects[x].num[y]);
                                 break;
                             case THIRSTY:
                                 thePlayerStatus.IncreaseThirsty(itemEffects[x].num[y]);
-                                break;
-                            case SATISFY:
                                 break;
                             default:
                                 Debug.Log("잘못된 Status 부위 HP, SP, DP, HUNGRY, THIRSTY, SATISFY만 가능합니다");
@@ -93,4 +85,5 @@ public class ItemEffectDatabase : MonoBehaviour
             Debug.Log("ItemEffectDatabase에 일치하는 itemNmae 없습니다");
         }
     }
+
 }
