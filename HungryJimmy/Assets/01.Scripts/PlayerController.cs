@@ -187,6 +187,10 @@ public class PlayerController : MonoBehaviour
         // theStatusController.DecreaseStamina(10);    // 달리는 중일때 지속적으로 값 깎음
         isRun = true;
         applySpeed = runSpeed; //스피드가 RunSpeed로 바뀜
+
+        Vector2 moveInput = new Vector2(moveJoystick.horizontal, moveJoystick.vertical);
+        bool isMove = moveInput.magnitude != 0;
+        animator.SetBool("isRun", isRun);       
     }
 
     private void RunningCancel() //달리기 취소
@@ -199,7 +203,20 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 moveInput = new Vector2(moveJoystick.horizontal, moveJoystick.vertical);
         bool isMove = moveInput.magnitude != 0;
-        animator.SetBool("isMove", isMove);
+
+        if(moveJoystick.horizontal > 1 || moveJoystick.vertical >1){
+            animator.SetBool("isRun", true);
+            animator.SetBool("isMove", true);
+        }
+        else if(moveJoystick.horizontal > 0.1f || moveJoystick.vertical > 0.1f){
+            animator.SetBool("isMove", true);
+            animator.SetBool("isRun",false);
+        }
+        else{
+            animator.SetBool("isMove", false);
+            animator.SetBool("isRun",false);
+        }
+        //animator.SetBool("isMove", true);
 
         if (isMove)
         {
