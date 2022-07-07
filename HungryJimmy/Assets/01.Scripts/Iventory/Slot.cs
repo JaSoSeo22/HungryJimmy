@@ -13,10 +13,10 @@ public class Slot: MonoBehaviour, IPointerClickHandler
 
     // 필요한 컴포넌트
     [SerializeField]
-    private Text text_Count; //
+    private Text text_Count; // 아이템 갯수
 
     [SerializeField]
-    private GameObject go_CountImage; //
+    private GameObject go_CountImage; // 획득한 아이템 갯수창 이미지
 
     private WeaponManager theWeaponManager;
     [SerializeField]
@@ -33,24 +33,24 @@ public class Slot: MonoBehaviour, IPointerClickHandler
     }
 
     // 이미지의 투명도 조절 
-    private void SetColor(float _alpha)
+    private void SetColor(float _alpha)    
     {
         Color color = itemImage.color;
-        color.a = _alpha;
+        color.a = _alpha;       // 이미지의 알파값 조절
         itemImage.color = color;
     }
 
     // 아이템 획득
-    public void AddItem(Item _item, int _count =1)
+    public void AddItem(Item _item, int _count =1)      // 보통 아이템 1개씩 획득하니까 _count = 1, AddItem(_item, 3); -> 아이템 3개 획득
     {
         //
         item = _item;
         itemCount = _count;
-        itemImage.sprite = item.itemImage;
-        if(item.itemType != Item.ItemType.Equipment)
+        itemImage.sprite = item.itemImage;      // sprite에 itemImage넣어줌
+        if(item.itemType != Item.ItemType.Equipment)        // 아이템 타입이 장비일때는 활성화 시키지 않을것
         {
-            go_CountImage.SetActive(true);
-            text_Count.text = itemCount.ToString();
+            go_CountImage.SetActive(true);      // 아이템 들어왔으므로 go_CountImage활성화
+            text_Count.text = itemCount.ToString();     // Integer 타입은 text와 호환이 안되므로 ToString으로 형변환
         }
         else
         {
@@ -58,7 +58,7 @@ public class Slot: MonoBehaviour, IPointerClickHandler
             go_CountImage.SetActive(false);
         }
     
-        SetColor(1);
+        SetColor(1);        // 아이템이 들어왔으므로
     }
 
     public int GetQuickSlotNumber()
@@ -69,12 +69,12 @@ public class Slot: MonoBehaviour, IPointerClickHandler
     // 아이템 갯수 조정
     public void SetSlotCount(int _count)
     {
-        itemCount += _count;
+        itemCount += _count;        // -3넣으면 3개가 깎이는것
         text_Count.text = itemCount.ToString();
 
-        if(itemCount <= 0)
+        if(itemCount <= 0)      // 아이템이 없으므로
         {
-            ClearSlot();
+            ClearSlot();        // 슬롯초기화
         }
     }
 
@@ -82,9 +82,9 @@ public class Slot: MonoBehaviour, IPointerClickHandler
     private void ClearSlot()
     {
         item = null;
-        itemCount =0;
+        itemCount = 0;
         itemImage.sprite = null;
-        SetColor(0);
+        SetColor(0);        // 슬롯 투명
 
         text_Count.text = "0";
         go_CountImage.SetActive(false);

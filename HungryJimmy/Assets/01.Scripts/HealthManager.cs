@@ -7,7 +7,7 @@ public class HealthManager : MonoBehaviour
     public static HealthManager instance;
 
     [SerializeField] private StatusController theStatus;
-    [SerializeField] private TPSCharacterController2 theTPS;
+    [SerializeField] private PlayerController thePlayer;
     public Animator animator;
     private bool isDead = false;
 
@@ -16,7 +16,7 @@ public class HealthManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animator = theTPS.GetComponent<Animator>();
+        animator = thePlayer.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -44,9 +44,9 @@ public class HealthManager : MonoBehaviour
     {
         if (theStatus.currentHungry <= 0)
         {
-            GameManager.isPause = true;
-            animator.SetTrigger("isDead");
             isDead = true;
+            animator.SetTrigger("isDead");
+            GameManager.isPause = true;
         }
     }
 }

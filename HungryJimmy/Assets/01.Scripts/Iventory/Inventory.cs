@@ -14,8 +14,6 @@ public class Inventory : MonoBehaviour
     [SerializeField]
     private GameObject go_QuickSlotsParent;
 
-    [SerializeField]
-    private RectTransform panelRect;      // 인벤토리 버튼 영역
 
     private Slot[] slots;       // 인벤토리 슬롯들
     private Slot[] quickslots;      // 퀵슬롯들
@@ -46,38 +44,38 @@ public class Inventory : MonoBehaviour
 
     private void Update()
     {
-        TryOpenInventory();
-    }
-
-    public void TryOpenInventory()
-    {
-        if (!(Input.mousePosition.x > panelRect.rect.xMin && Input.mousePosition.x < panelRect.rect.xMax
-        && Input.mousePosition.y > panelRect.rect.yMin && Input.mousePosition.y < panelRect.rect.yMax))
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                inventoryActivated = !inventoryActivated;   // True <-> false로 바꿔줌
-
-                if (inventoryActivated)     // True일 때
-                {
-                    OpenInventory();
-                }
-                else                        // False일 때
-                {
-                    CloseInventory();
-                }
-            }
-        }
 
     }
 
-    private void OpenInventory()
+    // private void TryOpenInventory()
+    // {
+    //     // if (!(Input.mousePosition.x > panelRect.rect.xMin && Input.mousePosition.x < panelRect.rect.xMax
+    //     // && Input.mousePosition.y > panelRect.rect.yMin && Input.mousePosition.y < panelRect.rect.yMax))
+    //     // {
+    //         if (Input.GetMouseButtonDown(0))
+    //         {
+    //             inventoryActivated = !inventoryActivated;   // True <-> false로 바꿔줌
+
+    //             if (inventoryActivated)     // True일 때
+    //             {
+    //                 OpenInventory();
+    //             }
+    //             else                        // False일 때
+    //             {
+    //                 CloseInventory();
+    //             }
+    //         }
+    //     // }
+
+    // }
+
+    public void OpenInventory()
     {
         GameManager.isOpenInventory = true;
         go_InventoryBase.SetActive(true);
     }
 
-    private void CloseInventory()
+    public void CloseInventory()
     {
         GameManager.isOpenInventory = false;
         go_InventoryBase.SetActive(false);

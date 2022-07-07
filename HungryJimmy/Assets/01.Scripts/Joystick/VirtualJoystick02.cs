@@ -6,7 +6,7 @@ public class VirtualJoystick02 : MonoBehaviour, IPointerDownHandler, IDragHandle
 {
     public enum JoystickType { Move, Rotate }
     public JoystickType joystickType;
-    public float sensitivity = 5f; // 조작 민감도
+    public float sensitivity = 1f; // 조작 민감도
 
     private Image imageBackground; // 조이스틱 UI 중 배경 이미지 변수
     private Image imageController; // 조이스틱 UI 중 컨트롤러(핸들) 이미지 변수

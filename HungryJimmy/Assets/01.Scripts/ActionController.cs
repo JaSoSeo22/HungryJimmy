@@ -35,7 +35,7 @@ public class ActionController : MonoBehaviour
 
     private void Start()
     {
-        actionText = GetComponent<TextMeshProUGUI>();
+        actionText = GetComponentInChildren<TextMeshProUGUI>();
     }
 
     // 매 프레임마다 키가 눌리고 있는지 확인
@@ -50,7 +50,7 @@ public class ActionController : MonoBehaviour
     private void TryAction()
     {
         // E키가 눌렸을 떄 아이템이 있는지 없는지 확인하는 메서드
-        if (Input.GetMouseButtonDown(2))
+        if (Input.GetMouseButtonDown(1))
         {
             CheckAction();
             CanPickUp();

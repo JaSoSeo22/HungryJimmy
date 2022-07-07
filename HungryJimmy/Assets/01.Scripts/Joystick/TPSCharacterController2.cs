@@ -20,7 +20,6 @@ public class TPSCharacterController2 : MonoBehaviour
     // private bool isCrouch = false; //앉아있는지 아닌지
     // private bool isGround = true; //땅인지 아닌지
     private bool isActivated = true;
-    private bool isDead = false;
     private bool isMove = false;
 
     public Animator animator;
@@ -93,26 +92,26 @@ public class TPSCharacterController2 : MonoBehaviour
 
         if (x < 180)
         {
-            x = Mathf.Clamp(x, -1f, 70f);
+            x = Mathf.Clamp(x, -1f, 25);
         }
         else
         {
-            x = Mathf.Clamp(x, 335f, 361f);
+            x = Mathf.Clamp(x, 360f, 361f);
         }
 
         cameraArm.rotation = Quaternion.Euler(x, camAngle.y + mouseDelta.x, camAngle.z);
     }
 
-    private void Dead()
-    {
-        if (theStatusController.currentHungry <= 0 && !isDead)
-        {
-            animator.SetTrigger("isDead");
-            isDead = true;
-            myRigid.velocity = Vector3.zero;
-            new WaitForSeconds(3f);
-            gameObject.SetActive(false);
-        }
+    // private void Dead()
+    // {
+    //     if (theStatusController.currentHungry <= 0 && !isDead)
+    //     {
+    //         animator.SetTrigger("isDead");
+    //         isDead = true;
+    //         myRigid.velocity = Vector3.zero;
+    //         new WaitForSeconds(3f);
+    //         gameObject.SetActive(false);
+    //     }
 
-    }
+    // }
 }
