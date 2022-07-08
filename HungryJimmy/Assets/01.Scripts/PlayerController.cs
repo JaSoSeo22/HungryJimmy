@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -36,8 +37,8 @@ public class PlayerController : MonoBehaviour
     private Camera theCamera; //camera component
     //플레이어의 실제 육체(몸) / 콜라이더로 충돌 영역 설정, 리지드바디로 콜라이더에 물리적 기능 추가
     private Rigidbody myRigid;
-    private GunController theGunController;
-    private Crosshair theCrosshair;
+    // private GunController theGunController;
+    // private Crosshair theCrosshair;
     private StatusController theStatusController;
 
     // 조이스틱 가져오기
@@ -45,6 +46,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private VirtualJoystick02 cameraJoystick;
 
     public Animator animator; // 애니메이션
+    public Button Runbtn; // 달리기 버튼
 
 
     void Start()
@@ -61,13 +63,13 @@ public class PlayerController : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
 
         theStatusController = FindObjectOfType<StatusController>();
-        theGunController = FindObjectOfType<GunController>();
+        // theGunController = FindObjectOfType<GunController>();
 
 
         //초기화
         originPosY = theCamera.transform.localPosition.y;
         applyCrouchPosY = originPosY; //기본 서있는 상태로 초기화
-        theCrosshair = FindObjectOfType<Crosshair>(); //(?)
+        // theCrosshair = FindObjectOfType<Crosshair>(); //(?)
 
 
     }
@@ -164,7 +166,7 @@ public class PlayerController : MonoBehaviour
      //-> 지면과 닿게 됨...isGround는 true를 반환해 점프할 수 있는 상태가 됨...
      //지면의 경사에 따라 오차가 생기는 것을 방지하기 위해 여유주기 /+0.1f/
         isGround = Physics.Raycast(transform.position, Vector3.down, capsuleCollider.bounds.extents.y + 0.1f);
-        theCrosshair.JumpingAnimation(!isGround); //(?)
+        // theCrosshair.JumpingAnimation(!isGround); //(?)
     }
 
     private void TryRun() //달리기 시도
@@ -183,40 +185,28 @@ public class PlayerController : MonoBehaviour
     {
         if (isCrouch)  //앉은 상태에서 달릴때 앉은 상태 해제
             Crouch();
-        theGunController.CancelFineSight(); //정조준 모드 해제
+        // theGunController.CancelFineSight(); //정조준 모드 해제
         // theStatusController.DecreaseStamina(10);    // 달리는 중일때 지속적으로 값 깎음
-        isRun = true;
+       
+        Vector2 moveInput = new Vector2(moveJoystick.horizontal, moveJoystick.vertical);
+        bool isRun = moveInput.magnitude != 0;
         applySpeed = runSpeed; //스피드가 RunSpeed로 바뀜
 
-        Vector2 moveInput = new Vector2(moveJoystick.horizontal, moveJoystick.vertical);
-        bool isMove = moveInput.magnitude != 0;
         animator.SetBool("isRun", isRun);       
     }
 
     private void RunningCancel() //달리기 취소
     {
-        isRun = true;
+        isRun = false;
         applySpeed = walkSpeed; //걷는 속도
+        animator.SetBool("isRun", isRun); 
     }
 
     private void Move() //움직임 실행
     {
         Vector2 moveInput = new Vector2(moveJoystick.horizontal, moveJoystick.vertical);
         bool isMove = moveInput.magnitude != 0;
-
-        if(moveJoystick.horizontal > 1 || moveJoystick.vertical >1){
-            animator.SetBool("isRun", true);
-            animator.SetBool("isMove", true);
-        }
-        else if(moveJoystick.horizontal > 0.1f || moveJoystick.vertical > 0.1f){
-            animator.SetBool("isMove", true);
-            animator.SetBool("isRun",false);
-        }
-        else{
-            animator.SetBool("isMove", false);
-            animator.SetBool("isRun",false);
-        }
-        //animator.SetBool("isMove", true);
+        animator.SetBool("isMove", isMove);
 
         if (isMove)
         {

@@ -66,16 +66,16 @@ public class VirtualJoystick02 : MonoBehaviour, IPointerDownHandler, IDragHandle
             // touchPosition 값의 정규화 [-1 ~ 1]
             // 가상 조이스틱 배경 이미지 밖으로 터치가 나가게 되면 -1 ~ 1보다 큰 값이 나올 수 있다.
             // 이 때 normailzed를 이용해 -1 ~ 1 사이의 값으로 정규화
-            //touchPosition = (touchPosition.magnitude > 1) ? touchPosition.normalized : touchPosition;
-            Vector2 joysticyPosition = (touchPosition.magnitude > 1)? touchPosition.normalized:touchPosition;
+            touchPosition = (touchPosition.magnitude > 1) ? touchPosition.normalized : touchPosition;
+            
             
 
             // 가상 조이스틱 컨트롤러 이미지 이동
             // touchPosition은 -1 ~ 1 사이의 데이터이기 때문에 그대로 사용하게되면, 컨트롤러의 움직임을 보기 힘들다.
             // 하여, 배경 크기를 곱해서 사용한다.(단, 중심을 기준으로 왼쪽 -1, 오른쪽 1 이기 때문에 배경 크기의 절반을 곱함.)
             // TIP. 컨트롤러가 배경 이미지 바깥으로 튀어나가게 하고 싶지 않다면, 나눠주는 값을 더 크게 설정해야 한다.
-            Vector2 controllerPosition = new Vector2(joysticyPosition.x * imageBackground.rectTransform.sizeDelta.x / 2,
-                                                     joysticyPosition.y * imageBackground.rectTransform.sizeDelta.y / 2);
+            Vector2 controllerPosition = new Vector2(touchPosition.x * imageBackground.rectTransform.sizeDelta.x / 2,
+                                                     touchPosition.y * imageBackground.rectTransform.sizeDelta.y / 2);
             imageController.rectTransform.anchoredPosition = controllerPosition;
 
             //Debug.Log("터치&드래그 : " + eventData);

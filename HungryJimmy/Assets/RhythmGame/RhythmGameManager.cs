@@ -36,6 +36,7 @@ public class RhythmGameManager : MonoBehaviour
     public GameObject resultsScreen; //점수 요소 가져다쓰려고 참조 쓰기 /점수 팝업으로 점수 보여주기
     public Text percentHitText, normalsText, goodsText, perfectsText, missesText, rankText, finalScoreText; //점수판에 나타날 각 점수들
 
+    
 
     void Start()
     {
