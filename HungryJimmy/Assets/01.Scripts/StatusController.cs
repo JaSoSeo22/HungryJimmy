@@ -22,13 +22,13 @@ public class StatusController : MonoBehaviour
 
     // 목마름
     [SerializeField]
-    private int thirsty;
-    public int currentThirsty;
+    private float thirsty;
+    public float currentThirsty;
 
     // 목마름이 줄어드는 속도
     [SerializeField]
-    private int thirstyDecreaseTime;
-    private int currentThirstyDecreaseTime;
+   private int thirstyDecreaseTime; //지정해둔 속도
+    private int currentThirstyDecreaseTime; //계속 변하는 양(시간)
 
     // 필요한 이미지
     [SerializeField]
@@ -37,9 +37,13 @@ public class StatusController : MonoBehaviour
     private bool isDead = false;
     private HealthManager theHealth;
 
+    public GameObject rainPrefab; // 비 내리는 파티클 이펙트 오브젝트 
+
+    public bool isRain = false; // 비가 오는지 확인
+
 
     private const int HUNGRY = 0, THIRSTY = 1, HP = 2;
-    // Start is called before the first frame update
+
     void Start()
     {
         currentHp = hp;
@@ -47,7 +51,7 @@ public class StatusController : MonoBehaviour
         currentThirsty = thirsty;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if (!isDead)
@@ -80,16 +84,29 @@ public class StatusController : MonoBehaviour
         if (currentThirsty > 0)
         {
             if (currentThirstyDecreaseTime <= thirstyDecreaseTime)
-                currentThirstyDecreaseTime++;
+                currentThirstyDecreaseTime++; //1씩 계속 증가
             else
             {
                 currentThirsty--;
                 currentThirstyDecreaseTime = 0;
             }
+             if(!isRain)
+            {
+                Raining();
+                isRain = false;
+            }
         }
         else
             theHealth.Dead();
             // Debug.Log("목마름 수치가 0이 되었습니다");
+    }
+
+    private void Raining() //비 내리기
+    {
+        if (rainPrefab.activeInHierarchy) //하이어라키 창에 비 프리팹이 활성화 되었다면
+        {
+            currentThirsty += 3f * Time.deltaTime; //총 30의 수분 주기(비가 10초동안 옴)
+        }
     }
 
     private void GaugeUpdate()      // 상태 수치 변화 시각화

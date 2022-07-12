@@ -19,15 +19,13 @@ public class Warning : MonoBehaviour
 
 
     public StatusController theStatus;
+    public GameObject rgstButton; //리듬게임(기우제) 버튼
 
-
-    // Start is called before the first frame update
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (theStatus.currentHungry < 50)
@@ -55,12 +53,17 @@ public class Warning : MonoBehaviour
                 t_yellowUI = true;
                 StartCoroutine(ShowTYellowPanel());
             }
-            if (theStatus.currentThirsty < 15)
+            if (theStatus.currentThirsty < 15) //목마름 지수가 15보다 낮을 때
             {
-                if (!t_redUI)
+                if(!rgstButton.activeInHierarchy)
                 {
-                    t_redUI = true;
-                    StartCoroutine(ShowTRedPanel());
+                    rgstButton.SetActive(true); //리듬게임 버튼 활성화
+
+                    if (!t_redUI)
+                    {
+                        t_redUI = true;
+                        StartCoroutine(ShowTRedPanel());
+                    }
                 }
             }
         }

@@ -8,37 +8,34 @@ public class HealthManager : MonoBehaviour
 
     [SerializeField] private StatusController theStatus;
     [SerializeField] private PlayerController thePlayer;
+
+    //애니메이션
     public Animator animator;
     private bool isDead = false;
+    private bool isDancing = false;
+    private bool isEnd = false;
+    private bool isRainPose = false;
 
+    public GameObject rainPrefab; //비 효과
 
-
-    // Start is called before the first frame update
     void Start()
     {
         animator = thePlayer.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!isDead)
         {
             Dead();
+            if(rainPrefab.activeInHierarchy) //살아있는 상태에서 비가 온다면...
+            {
+                Dancing();
+            }
         }
+
     }
 
-    // IEnumerator Dead()
-    // {
-    //     if (theStatus.currentHungry <= 0)
-    //     {
-    //         GameManager.isPause = true;
-    //         animator.SetTrigger("isDead");
-    //         isDead = true;
-    //         yield return new WaitForSecondsRealtime(6f);
-    //         Time.timeScale = 0f;
-    //     }
-    // }
 
     public void Dead()
     {
@@ -49,4 +46,28 @@ public class HealthManager : MonoBehaviour
             GameManager.isPause = true;
         }
     }
+
+    public void Dancing() //댄싱 애니메이션
+    {
+        
+        
+            StartCoroutine(Dance()); //댄싱 코루틴 실행
+        
+    }
+
+    IEnumerator Dance()
+    {
+        
+        isDancing = true; //파라미터 값이 isDancing이면....
+        animator.SetBool("isDancing", isDancing); //비맞는 애니메이션 실행
+        yield return new WaitForSeconds (1f); //1초 정도 대기 후
+        isRainPose = true; //파라미터 값 isRainPose
+        animator.SetBool("isDancing", false); //댄싱 애니메이션 중지
+        animator.SetBool("isRainPose",isRainPose); //비맞는 포즈 애니메이션 실행
+        yield return new WaitForSeconds (9f); //9초 정도 대기 후
+        isEnd = true; //비맞는 애니메이션도 중지
+        animator.SetBool("isEnd",isEnd);
+
+    }
+
 }
