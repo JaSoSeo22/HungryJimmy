@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7726412892728571812}
   - component: {fileID: 7726412892728571813}
   - component: {fileID: 7726412892728571810}
-  - component: {fileID: 7726412892728571815}
   - component: {fileID: 7726412892728571814}
   m_Layer: 0
   m_Name: Opening Camera
@@ -85,15 +84,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7726412892728571811}
   m_Enabled: 0
---- !u!45 &7726412892728571815
-Skybox:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7726412892728571811}
-  m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: 9aa8ed67591432941bb76f12eb23ff91, type: 2}
 --- !u!95 &7726412892728571814
 Animator:
   serializedVersion: 3
