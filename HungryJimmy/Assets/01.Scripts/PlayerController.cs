@@ -45,8 +45,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private VirtualJoystick02 moveJoystick;
     [SerializeField] private VirtualJoystick02 cameraJoystick;
 
+    //필요한 사운드 이름
+    [SerializeField]
+    private string walk_Sound; 
+
+
     public Animator animator; // 애니메이션
-    public Button Runbtn; // 달리기 버튼
+    public GameObject runningImage; //달리기 상태인지 알려주는 이미지
+    
 
 
     void Start()
@@ -169,17 +175,18 @@ public class PlayerController : MonoBehaviour
         // theCrosshair.JumpingAnimation(!isGround); //(?)
     }
 
-    private void TryRun() //달리기 시도
+    public void TryRun() //달리기 시도
     {//shitf키를 누르면 달릴 수 있도록...
-        if (Input.GetKey(KeyCode.LeftShift)) //LeftShift 를 누르게 되면
+        if (runningImage.activeInHierarchy) //LeftShift 를 누르게 되면
         {
             Running();
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift)) //LeftShift에서 손을 떼면
+        if (!runningImage.activeInHierarchy) //LeftShift에서 손을 떼면
         {
             RunningCancel();
         }
     }
+
 
     private void Running() //달리기 실행
     {
@@ -216,6 +223,8 @@ public class PlayerController : MonoBehaviour
 
             gameObject.transform.forward = moveDir; // 캐릭터가 바라보는 정면은 입력된 방향에 맞춰 바라본다. 
             transform.position += moveDir * Time.deltaTime * applySpeed;
+
+            SoundManager.instance.PlaySE(walk_Sound); //walk sound
         }
     }
 

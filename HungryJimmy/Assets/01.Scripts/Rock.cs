@@ -24,9 +24,9 @@ public class Rock : MonoBehaviour
     
     //필요한 사운드 이름
     [SerializeField]
-    private string strike_Sound;
+    private string strike_Sound; 
     [SerializeField]
-    private string destroy_Sound;
+    private string destroy_Sound; 
 
     //채굴
     public void Mining()

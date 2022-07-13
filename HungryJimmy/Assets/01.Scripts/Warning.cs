@@ -5,11 +5,17 @@ using UnityEngine.UI;
 
 public class Warning : MonoBehaviour
 {
-
+    //경고 패널
     [SerializeField] private GameObject hungry_yellow_Panel;
     [SerializeField] private GameObject hungry_red_Panel;
     [SerializeField] private GameObject thirsty_yellow_Panel;
     [SerializeField] private GameObject thirsty_red_Panel;
+
+    //필요한 사운드 이름
+    [SerializeField] 
+    private string weakWarning_Sound;
+    [SerializeField] 
+    private string halfEmergencyWarning_Sound;
 
 
     bool h_yellowUI = false;      //아이템으로 회복할때마다 이거 처리 해줘야 계속 경고창 나타남
@@ -40,7 +46,9 @@ public class Warning : MonoBehaviour
                 if (!h_redUI)
                 {
                     h_redUI = true;
+                    
                     StartCoroutine(ShowHRedPanel());
+
                 }
 
             }
@@ -74,6 +82,8 @@ public class Warning : MonoBehaviour
         hungry_yellow_Panel.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         hungry_yellow_Panel.SetActive(false);
+
+        SoundManager.instance.PlaySE(weakWarning_Sound); //warning sound play
         //yellowUI = false;
     }
 
@@ -82,6 +92,8 @@ public class Warning : MonoBehaviour
         hungry_red_Panel.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         hungry_red_Panel.SetActive(false);
+
+        SoundManager.instance.PlaySE(halfEmergencyWarning_Sound); //warning sound play
         //yellowUI = false;
     }
 
@@ -90,6 +102,8 @@ public class Warning : MonoBehaviour
         thirsty_yellow_Panel.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         thirsty_yellow_Panel.SetActive(false);
+
+        SoundManager.instance.PlaySE(weakWarning_Sound); //warning sound play
         //redUI = false;
     }
 
@@ -98,6 +112,8 @@ public class Warning : MonoBehaviour
         thirsty_red_Panel.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         thirsty_red_Panel.SetActive(false);
+
+        SoundManager.instance.PlaySE(halfEmergencyWarning_Sound); //warning sound play
         //redUI = false;
     }
 
