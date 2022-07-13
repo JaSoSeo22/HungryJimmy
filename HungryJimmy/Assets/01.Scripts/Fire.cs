@@ -64,7 +64,7 @@ public class Fire : MonoBehaviour
         {
             if (currentDamageTime <= 0)
             {
-                thePlayerStatus.DecreaseHP(damage);     // 데미지만큼 체력 감소
+                thePlayerStatus.DecreaseStamina(damage);     // 데미지만큼 체력 감소
                 currentDamageTime = damageTime;     // 데미지를 입었으니 damageTime으로 딜레이 걸어줌
             }
         }

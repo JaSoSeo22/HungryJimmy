@@ -65,7 +65,7 @@ public class ItemEffectDatabase : MonoBehaviour
                         switch (itemEffects[x].part[y])
                         {
                             case HP:
-                                thePlayerStatus.IncreaseHP(itemEffects[x].num[y]);
+                                thePlayerStatus.IncreaseStamina(itemEffects[x].num[y]);
                                 break;
                             case HUNGRY:
                                 thePlayerStatus.IncreaseHungry(itemEffects[x].num[y]);

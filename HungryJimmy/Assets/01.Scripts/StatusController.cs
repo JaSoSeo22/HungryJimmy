@@ -7,8 +7,13 @@ public class StatusController : MonoBehaviour
 {
     // 체력
     [SerializeField]
-    private int hp;
-    private int currentHp;
+    private int stamina;
+    public float currentStamina;
+
+    // 체력이 줄어드는 속도
+    [SerializeField]
+    private int staminaDecreaseTime;
+    private int currentStaminaDecreaseTime;
 
     // 배고픔
     [SerializeField]
@@ -27,7 +32,7 @@ public class StatusController : MonoBehaviour
 
     // 목마름이 줄어드는 속도
     [SerializeField]
-   private int thirstyDecreaseTime; //지정해둔 속도
+    private int thirstyDecreaseTime; //지정해둔 속도
     private int currentThirstyDecreaseTime; //계속 변하는 양(시간)
 
     // 필요한 이미지
@@ -41,12 +46,15 @@ public class StatusController : MonoBehaviour
 
     public bool isRain = false; // 비가 오는지 확인
 
+    public bool isRunning = false; //run 상태인지 확인
+    public GameObject runningImage; //run 상태일 때 활성화되는 이미지
 
-    private const int HUNGRY = 0, THIRSTY = 1, HP = 2;
+
+    private const int HUNGRY = 0, THIRSTY = 1, STAMINA = 2;
 
     void Start()
     {
-        currentHp = hp;
+        currentStamina = stamina;
         currentHungry = hungry;
         currentThirsty = thirsty;
     }
@@ -58,6 +66,7 @@ public class StatusController : MonoBehaviour
         {
             Hungry();
             Thirsty();
+            Stamina();
             GaugeUpdate();
         }
     }
@@ -101,6 +110,28 @@ public class StatusController : MonoBehaviour
             // Debug.Log("목마름 수치가 0이 되었습니다");
     }
 
+    private void Stamina()       // 체력 구현
+    {
+        if (currentStamina > 0)      // 현재 체력이 0보다 클 경우에만 깎음
+        {
+            if (currentStaminaDecreaseTime <= staminaDecreaseTime)
+                currentStaminaDecreaseTime++;
+            else
+            {
+                currentStamina--;
+                currentStaminaDecreaseTime = 0;
+            }
+            if(!isRunning)
+            {
+                Running();
+                isRunning = false;
+            }
+        }
+        else        // 0보다 작아졌을때
+            theHealth.Dead();
+            // Debug.Log("체력 수치가 0이 되었습니다");
+    }
+
     private void Raining() //비 내리기
     {
         if (rainPrefab.activeInHierarchy) //하이어라키 창에 비 프리팹이 활성화 되었다면
@@ -109,31 +140,39 @@ public class StatusController : MonoBehaviour
         }
     }
 
+    private void Running() //run 상태
+    {
+        if (runningImage.activeInHierarchy)
+        {
+            currentStamina -= 2f * Time.deltaTime; 
+        }
+    }
+
     private void GaugeUpdate()      // 상태 수치 변화 시각화
     {
-        images_Gauge[HP].fillAmount = (float)currentHp / hp;
+        images_Gauge[STAMINA].fillAmount = (float)currentStamina / stamina;
         images_Gauge[HUNGRY].fillAmount = (float)currentHungry / hungry;
         images_Gauge[THIRSTY].fillAmount = (float)currentThirsty / thirsty;
     }
 
-    // HP 회복 (아이템 사용시)
-    public void IncreaseHP(int _count)
+    // stamina 회복 (아이템 사용시)
+    public void IncreaseStamina(int _count)
     {
-        if (currentHp + _count < hp)        // currentHp와 회복될 수치를 더했을때 hp가 넘는가?
+        if (currentStamina + _count < stamina)        // currentStamina와 회복될 수치를 더했을때 stamina가 넘는가?
         {
-            currentHp += _count;
+            currentStamina += _count;
         }
         else
-            currentHp = hp;
+            currentStamina = stamina;
     }
 
-    // HP 감소
-    public void DecreaseHP(int _count)
+    // Stamina 감소
+    public void DecreaseStamina(int _count)
     {
-        currentHp -= _count;
+        currentStamina -= _count;
 
-        if (currentHp <= 0)     // currentHp가 0 이하가 되면 죽음
-            Debug.Log("캐릭터의 hp가 0이 되었습니다!!");
+        if (currentStamina <= 0)     // currentStamina 0 이하가 되면 움직임이 매우 느려짐
+            Debug.Log("캐릭터의 stamina가 0이 되었습니다!!");
     }
 
     public void IncreaseThirsty(int _count)
