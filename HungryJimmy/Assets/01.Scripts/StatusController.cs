@@ -46,8 +46,8 @@ public class StatusController : MonoBehaviour
 
     public bool isRain = false; // 비가 오는지 확인
 
-    public bool isRunning = false; //run 상태인지 확인
-    public GameObject runningImage; //run 상태일 때 활성화되는 이미지
+    // public bool isRunning = false; //run 상태인지 확인
+    // public GameObject runningImage; //run 상태일 때 활성화되는 이미지
 
 
     private const int HUNGRY = 0, THIRSTY = 1, STAMINA = 2;
@@ -121,11 +121,11 @@ public class StatusController : MonoBehaviour
                 currentStamina--;
                 currentStaminaDecreaseTime = 0;
             }
-            if(!isRunning)
-            {
-                Running();
-                isRunning = false;
-            }
+            // if(!isRunning)
+            // {
+            //     Running();
+            //     isRunning = false;
+            // }
         }
         else        // 0보다 작아졌을때
             theHealth.Dead();
@@ -140,13 +140,13 @@ public class StatusController : MonoBehaviour
         }
     }
 
-    private void Running() //run 상태
-    {
-        if (runningImage.activeInHierarchy)
-        {
-            currentStamina -= 2f * Time.deltaTime; 
-        }
-    }
+    // private void Running() //run 상태
+    // {
+    //     if (runningImage.activeInHierarchy)
+    //     {
+    //         currentStamina -= 2f * Time.deltaTime; 
+    //     }
+    // }
 
     private void GaugeUpdate()      // 상태 수치 변화 시각화
     {

@@ -59,7 +59,7 @@ public class SoundManager : MonoBehaviour
                         return;
                     }
                 }
-                Debug.Log("모든 가용 AudioSource가 사용중임");
+                //Debug.Log("모든 가용 AudioSource가 사용중임");
                 return;
             }
         }                                 
