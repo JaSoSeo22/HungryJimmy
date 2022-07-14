@@ -6,7 +6,7 @@ using UnityEngine;
 public class ItemEffect
 {
     public string itemName;    // 아이템의 이름 (키값으로 사용) 
-    [Tooltip("HP, HUNGRY, THIRSTY 만 가능합니다")]
+    [Tooltip("STAMINA, HUNGRY, THIRSTY 만 가능합니다")]
     public string[] part;     // 효과가 적용될 부분
     public int[] num;     // 효과가 적용될 수치
 
@@ -27,7 +27,7 @@ public class ItemEffectDatabase : MonoBehaviour
     [SerializeField]
     private QuickSlotController theQuickSlotController;
 
-    private const string HP = "HP", HUNGRY = "HUNGRY", THIRSTY = "THIRSTY";
+    private const string STAMINA = "STAMINA", HUNGRY = "HUNGRY", THIRSTY = "THIRSTY";
 
     // QuickSlotController 징검다리
     public void isActivatedQuickSlot(int _num)
@@ -64,7 +64,7 @@ public class ItemEffectDatabase : MonoBehaviour
                     {
                         switch (itemEffects[x].part[y])
                         {
-                            case HP:
+                            case STAMINA:
                                 thePlayerStatus.IncreaseStamina(itemEffects[x].num[y]);
                                 break;
                             case HUNGRY:
