@@ -12,7 +12,7 @@ public class StatusController : MonoBehaviour
 
     // 체력이 줄어드는 속도
     [SerializeField]
-    private int staminaDecreaseTime;
+    private float staminaDecreaseTime;
     private int currentStaminaDecreaseTime;
 
     // 배고픔
@@ -45,9 +45,6 @@ public class StatusController : MonoBehaviour
     public GameObject rainPrefab; // 비 내리는 파티클 이펙트 오브젝트 
 
     public bool isRain = false; // 비가 오는지 확인
-
-    public bool isRunning = false; //run 상태인지 확인
-    public GameObject runningImage; //run 상태일 때 활성화되는 이미지
 
 
     private const int HUNGRY = 0, THIRSTY = 1, STAMINA = 2;
@@ -121,11 +118,7 @@ public class StatusController : MonoBehaviour
                 currentStamina--;
                 currentStaminaDecreaseTime = 0;
             }
-            if(!isRunning)
-            {
-                Running();
-                isRunning = false;
-            }
+
         }
         else        // 0보다 작아졌을때
             theHealth.Dead();
@@ -137,14 +130,6 @@ public class StatusController : MonoBehaviour
         if (rainPrefab.activeInHierarchy) //하이어라키 창에 비 프리팹이 활성화 되었다면
         {
             currentThirsty += 3f * Time.deltaTime; //총 30의 수분 주기(비가 10초동안 옴)
-        }
-    }
-
-    private void Running() //run 상태
-    {
-        if (runningImage.activeInHierarchy)
-        {
-            currentStamina -= 2f * Time.deltaTime; 
         }
     }
 
@@ -167,7 +152,7 @@ public class StatusController : MonoBehaviour
     }
 
     // Stamina 감소
-    public void DecreaseStamina(int _count)
+    public void DecreaseStamina(float _count)
     {
         currentStamina -= _count;
 

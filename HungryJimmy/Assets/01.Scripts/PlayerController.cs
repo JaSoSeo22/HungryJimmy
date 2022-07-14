@@ -37,8 +37,7 @@ public class PlayerController : MonoBehaviour
     private Camera theCamera; //camera component
     //플레이어의 실제 육체(몸) / 콜라이더로 충돌 영역 설정, 리지드바디로 콜라이더에 물리적 기능 추가
     private Rigidbody myRigid;
-    // private GunController theGunController;
-    // private Crosshair theCrosshair;
+
     private StatusController theStatusController;
 
     // 조이스틱 가져오기
@@ -107,13 +106,6 @@ public class PlayerController : MonoBehaviour
     private void Crouch() //앉기 동작
     {//isCrouch가 실행될때마다 반전시키기
         isCrouch = !isCrouch;
-        // 상태전환
-
-        //if (isCrouch) //isCrouch가 true면 false로 바꿔주기
-        //     isCrouch = false;
-        // else
-        //     isCrouch = true; //그렇지 않으면 true 
-        //이렇게도 쓸 수 있다!
 
         if (isCrouch) //isCrouch가 트루면 앉는 모션으로...
         {
@@ -140,7 +132,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Jump() //점프
+    private void Jump() //점프                                  //필요없음 지워도 될 듯
     {
         if (isCrouch)  //앉은 상태에서 점프시 앉은 상태 해제
             Crouch(); //앉아있다 점프 했을 때...  플레이어를 일어난 상태로...
@@ -150,7 +142,7 @@ public class PlayerController : MonoBehaviour
         myRigid.velocity = transform.up * jumpForce;
     }
 
-    IEnumerator CrouchCoroutine() //부드러운 앉기 동작(카메라 이동 처리...)
+    IEnumerator CrouchCoroutine() //부드러운 앉기 동작(카메라 이동 처리...)                                  //필요없음 지워도 될 듯
     {
         float _posY = theCamera.transform.localPosition.y;
         int count = 0;
@@ -176,24 +168,21 @@ public class PlayerController : MonoBehaviour
     }
 
     public void TryRun() //달리기 시도
-    {//shitf키를 누르면 달릴 수 있도록...
-        if (runningImage.activeInHierarchy) //LeftShift 를 누르게 되면
+    {//run 버튼을 누르면 달릴 수 있도록...
+        if (runningImage.activeInHierarchy) //run 버튼 클릭(run 이미지 활성화 시)
         {
-            Running();
+            Running(); //달리기
         }
-        if (!runningImage.activeInHierarchy) //LeftShift에서 손을 떼면
+        if (!runningImage.activeInHierarchy) //run 버튼 클릭에서 손을 떼면(run 이미지 비활성화 시)
         {
-            RunningCancel();
+            RunningCancel(); //달리기 취소
         }
     }
 
 
     private void Running() //달리기 실행
     {
-        if (isCrouch)  //앉은 상태에서 달릴때 앉은 상태 해제
-            Crouch();
-        // theGunController.CancelFineSight(); //정조준 모드 해제
-        // theStatusController.DecreaseStamina(10);    // 달리는 중일때 지속적으로 값 깎음
+        theStatusController.DecreaseStamina(1f * Time.deltaTime);    // 달리는 중일때 지속적으로 값 깎음
        
         Vector2 moveInput = new Vector2(moveJoystick.horizontal, moveJoystick.vertical);
         bool isRun = moveInput.magnitude != 0;
