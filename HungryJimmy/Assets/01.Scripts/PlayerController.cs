@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private bool isCrouch = false; //앉아있는지 아닌지
     private bool isGround = true; //땅인지 아닌지
     private bool isActivated = true;
+    private bool isAxeSwing = false; //도끼로 공격중인지 
 
     //앉았을 때 얼마나 앉을지 결정하는 변수
     [SerializeField]
@@ -176,12 +177,12 @@ public class PlayerController : MonoBehaviour
     }
 
     public void TryRun() //달리기 시도
-    {//shitf키를 누르면 달릴 수 있도록...
-        if (runningImage.activeInHierarchy) //LeftShift 를 누르게 되면
+    {//달리기 버튼을 누르면 달릴 수 있도록...
+        if (runningImage.activeInHierarchy) //달리기 버튼을 누르게 되면
         {
             Running();
         }
-        if (!runningImage.activeInHierarchy) //LeftShift에서 손을 떼면
+        if (!runningImage.activeInHierarchy) //달리기 버튼에서 손을 떼면
         {
             RunningCancel();
         }
@@ -190,10 +191,7 @@ public class PlayerController : MonoBehaviour
 
     private void Running() //달리기 실행
     {
-        if (isCrouch)  //앉은 상태에서 달릴때 앉은 상태 해제
-            Crouch();
-        // theGunController.CancelFineSight(); //정조준 모드 해제
-        // theStatusController.DecreaseStamina(10);    // 달리는 중일때 지속적으로 값 깎음
+        theStatusController.DecreaseStamina(1f * Time.deltaTime);    // 달리는 중일때 (1초에 1씩) 스태미너 값 깎음
        
         Vector2 moveInput = new Vector2(moveJoystick.horizontal, moveJoystick.vertical);
         bool isRun = moveInput.magnitude != 0;

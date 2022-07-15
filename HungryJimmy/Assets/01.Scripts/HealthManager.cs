@@ -12,7 +12,7 @@ public class HealthManager : MonoBehaviour
     //애니메이션
     public Animator animator;
     private bool isDead = false;
-    private bool isDancing = false;
+    private bool isDancing = false; 
     private bool isEnd = false;
     private bool isRainPose = false;
 
@@ -48,11 +48,8 @@ public class HealthManager : MonoBehaviour
     }
 
     public void Dancing() //댄싱 애니메이션
-    {
-        
-        
-            StartCoroutine(Dance()); //댄싱 코루틴 실행
-        
+    {       
+        StartCoroutine(Dance()); //댄싱 코루틴 실행       
     }
 
     IEnumerator Dance()

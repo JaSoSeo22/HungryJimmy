@@ -12,7 +12,6 @@ public class RainController : MonoBehaviour
     private bool isEnded; //타이머 종료 확인
     private PlayerController thePlayerController;
 
-    // private bool isDancing= false;
 
     private void Check_Timer() //타이머 시간 검사
     {
@@ -37,8 +36,6 @@ public class RainController : MonoBehaviour
         isEnded = false;
         gameObject.SetActive(true);
         Debug.Log("Start");
-
-        //thePlayerController.animator.SetBool("isDancing", isDancing);
     }    
     
     void Start()

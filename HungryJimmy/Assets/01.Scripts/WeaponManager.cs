@@ -15,7 +15,7 @@ public class WeaponManager : MonoBehaviour
     [SerializeField]
     private string currentWeaponType;
 
-    //무기 교체 딜레이(총을 꺼내려고 손을 집어넣는 시간)
+    //무기 교체 딜레이(무기를 꺼내려고 손을 집어넣는 시간)
     [SerializeField]
     private float changeWeaponDelayTime;
     //무기 교체가 완전히 끝난 시점
@@ -24,8 +24,6 @@ public class WeaponManager : MonoBehaviour
 
     //무기 종류들 전부 관리
     [SerializeField]
-    private Gun[] guns;
-    [SerializeField]
     private CloseWeapon[] hands;
     [SerializeField]
     private CloseWeapon[] axes;
@@ -33,17 +31,11 @@ public class WeaponManager : MonoBehaviour
     private CloseWeapon[] pickaxes;
 
     //관리 차원에서 쉽게 무기 접근이 가능하도록 만들기
-    private Dictionary<string, Gun> gunDictionary = new Dictionary<string, Gun>();
-    private Dictionary<string, CloseWeapon> handDictionary = new Dictionary<string, CloseWeapon>();
-    
     private Dictionary<string, CloseWeapon> axeDictionary = new Dictionary<string, CloseWeapon>();
     private Dictionary<string, CloseWeapon> pickaxeDictionary = new Dictionary<string, CloseWeapon>();
 
     //필요한 컴퍼넌트
-    [SerializeField]
-    private GunController theGunController; //건이나 핸드 등.. 하나를 비활성화하고 다른 하나를 실행할 수 있도록...
-    [SerializeField]
-    private HandController theHandController;
+    //Axe나 Pickaxe등.. 하나를 비활성화하고 다른 하나를 실행할 수 있도록...
     [SerializeField]
     private AxeController theAxeController;
     [SerializeField]
@@ -51,17 +43,9 @@ public class WeaponManager : MonoBehaviour
 
 
     void Start()
-    {
-        for (int i = 0; i < guns.Length; i ++)
-        { //gunDictionary에 gunName이 key값으로 들어가고, value로 guns[i]가(자신이) 들어간다.
-            gunDictionary.Add(guns[i].gunName, guns[i]);
-        }
-        for (int i = 0; i < hands.Length; i++)
-        {
-            handDictionary.Add(hands[i].closeWeaponName, hands[i]);
-        }  
+    { 
         for (int i = 0; i < axes.Length; i++)
-        {
+        {   //axeDictionary에 closeWeaponName이 key값으로 들어가고, value로 axes[i]가(자신이) 들어간다.
             axeDictionary.Add(axes[i].closeWeaponName, axes[i]);
         }  
         for (int i = 0; i < pickaxes.Length; i++)
@@ -73,17 +57,12 @@ public class WeaponManager : MonoBehaviour
     void Update()
     {
         if (! isChangeWeapon)
-        {//숫자 1이 눌렸을 경우 / 무기 교체 실행(서브머신건)
+        {
+        //숫자 1이 눌렸을 경우 / 무기 교체 실행(도끼) 
             if (Input.GetKeyDown(KeyCode.Alpha1))
-                StartCoroutine(ChangeWeaponCoroutine("HAND", "BareHand"));
-        //숫자 2가 눌렸을 경우 / 무기 교체 실행(맨손) 
-            else if (Input.GetKeyDown(KeyCode.Alpha2))
-                StartCoroutine(ChangeWeaponCoroutine("GUN", "SubMachineGun1"));
-        //숫자 3이 눌렸을 경우 / 무기 교체 실행(도끼) 
-            else if (Input.GetKeyDown(KeyCode.Alpha3))
                 StartCoroutine(ChangeWeaponCoroutine("AXE", "Axe"));
-        //숫자 4가 눌렸을 경우 / 무기 교체 실행(곡괭이) 
-            else if (Input.GetKeyDown(KeyCode.Alpha4))
+        //숫자 2가 눌렸을 경우 / 무기 교체 실행(곡괭이) 
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
                 StartCoroutine(ChangeWeaponCoroutine("PICKAXE", "Pickaxe"));
         }
     }
@@ -110,14 +89,6 @@ public class WeaponManager : MonoBehaviour
     {//현재 타입에 따라서...
         switch(currentWeaponType)
         {
-            case "GUN":
-                theGunController.CancelFineSight();
-                theGunController.CancelReload();
-                GunController.isActivate = false; //이전의 것을 적용이 안되게 취소시키는 처리
-                break;
-            case "HAND":
-                HandController.isActivate = false; //맨손상태일때 우클릭해도 정조준이 안될 것
-                break;
             case "AXE":
                 AxeController.isActivate = false; //Axe상태일때 우클릭해도 정조준이 안될 것
                 break;
@@ -130,11 +101,7 @@ public class WeaponManager : MonoBehaviour
     //무기 교체 함수
     private void WeaponChange(string _type, string _name)
     {
-        if (_type == "GUN")   
-            theGunController.GunChange(gunDictionary[_name]);
-        else if (_type == "HAND")
-            theHandController.CloseWeaponChange(handDictionary[_name]);
-        else if (_type == "AXE")
+        if (_type == "AXE")
             theAxeController.CloseWeaponChange(axeDictionary[_name]);
         else if (_type == "PICKAXE")
             thePickaxeController.CloseWeaponChange(pickaxeDictionary[_name]);

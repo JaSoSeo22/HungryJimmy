@@ -7,7 +7,6 @@ public class CloseWeapon : MonoBehaviour
     public string closeWeaponName; //근접 무기 이름
 
     //Weapon Type
-    public bool isHand; //맨손인지
     public bool isAxe; //도끼인지
     public bool isPickaxe; //곡괭이인지...
 
