@@ -65,7 +65,28 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.06403942
+        functionName: SwingPossible
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 7ca749229bc825a4f91534f7bc07735a, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.41379312
+        functionName: Swing
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 7ca749229bc825a4f91534f7bc07735a, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 1
+        functionName: SwingReset
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 7ca749229bc825a4f91534f7bc07735a, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
