@@ -20,16 +20,16 @@ public class SwingAxe : MonoBehaviour
             playerAnim.Play("SwingAxe"); //(첫번째) 도끼 휘두르는 애니메이션
             //swingStep = 1; 
             TryAttack(); //
-            return;
+            //return;
         //} 
         //press the Button while attacking 공격 중일때 버튼 누르기
         //if(swingStep != 0) 
         //{
-            if(swingPossible)
-            {
-                swingPossible = false;
-                //swingStep += 1;
-            }
+            // if(swingPossible)
+            // {
+            //     swingPossible = false;
+            //     //swingStep += 1;
+            // }
        // }
     }
 
@@ -51,11 +51,11 @@ public class SwingAxe : MonoBehaviour
     }
 
     //Swing Axe (스윙)공격
-    // public void Swing() 
-    // {   //second swing animation
+     public void Swing() 
+     {   //second swing animation
     //     //if(swingStep == 2) //더블클릭 할 경우 2번째 액션 플레이
-    //         playerAnim.Play("SecondName"); //두버째 공격 애니메이션의 이름
-    // }
+    //         //playerAnim.Play("SecondName"); //두버째 공격 애니메이션의 이름
+     }
 
     //Reset the swing/attack function
     //공격(스윙)의 리셋 기능
@@ -70,7 +70,7 @@ public class SwingAxe : MonoBehaviour
     {
         if (CheckObject())
         {
-            if(hitInfo.transform.tag == "Rock") //바위와 부딪혔을 경우
+            if(hitInfo.transform.tag == "Rock" && pickAxe.activeInHierarchy) //pickAxe른 든 상태로 바위와 부딪혔을 경우
             {//Rock 클래스 안의 Mining을 호출
                 hitInfo.transform.GetComponent<Rock>().Mining();
             } 

@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour
     private bool isCrouch = false; //앉아있는지 아닌지
     private bool isGround = true; //땅인지 아닌지
     private bool isActivated = true;
-    private bool isAxeSwing = false; //도끼로 공격중인지 
 
     //앉았을 때 얼마나 앉을지 결정하는 변수
     [SerializeField]
