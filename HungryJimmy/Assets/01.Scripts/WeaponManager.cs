@@ -36,10 +36,10 @@ public class WeaponManager : MonoBehaviour
 
     //필요한 컴퍼넌트
     //Axe나 Pickaxe등.. 하나를 비활성화하고 다른 하나를 실행할 수 있도록...
-    [SerializeField]
-    private AxeController theAxeController;
-    [SerializeField]
-    private PickaxeController thePickaxeController;
+    // [SerializeField]
+    // private AxeController theAxeController;
+    // [SerializeField]
+    // private PickaxeController thePickaxeController;
 
 
     void Start()
@@ -54,18 +54,18 @@ public class WeaponManager : MonoBehaviour
         }  
     }
 
-    void Update()
-    {
-        if (! isChangeWeapon)
-        {
-        //숫자 1이 눌렸을 경우 / 무기 교체 실행(도끼) 
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-                StartCoroutine(ChangeWeaponCoroutine("AXE", "Axe"));
-        //숫자 2가 눌렸을 경우 / 무기 교체 실행(곡괭이) 
-            else if (Input.GetKeyDown(KeyCode.Alpha2))
-                StartCoroutine(ChangeWeaponCoroutine("PICKAXE", "Pickaxe"));
-        }
-    }
+    // void Update()
+    // {
+    //     if (! isChangeWeapon)
+    //     {
+    //     숫자 1이 눌렸을 경우 / 무기 교체 실행(도끼) 
+    //         if (Input.GetKeyDown(KeyCode.Alpha1))
+    //             StartCoroutine(ChangeWeaponCoroutine("AXE", "Axe"));
+    //     숫자 2가 눌렸을 경우 / 무기 교체 실행(곡괭이) 
+    //         else if (Input.GetKeyDown(KeyCode.Alpha2))
+    //             StartCoroutine(ChangeWeaponCoroutine("PICKAXE", "Pickaxe"));
+    //     }
+    // }
 
     public IEnumerator ChangeWeaponCoroutine(string _type, string _name)
     {
@@ -75,7 +75,7 @@ public class WeaponManager : MonoBehaviour
         yield return new WaitForSeconds(changeWeaponDelayTime); //무기를 넣을때까지 대기
 
         //바뀐 무기를 새로 꺼내야함 정조준 상태를 하고 있다면 먼저 해제해야함
-        CancelPreWeaponAction(); //이전의 무기 취소
+        //CancelPreWeaponAction(); //이전의 무기 취소
         WeaponChange(_type, _name);
 
         yield return new WaitForSeconds(changeWeaponEndDelayTime); //무기를 꺼내는 애니메이션이 끝날때까지 대기
@@ -84,26 +84,26 @@ public class WeaponManager : MonoBehaviour
         isChangeWeapon = false; //무기 교체가 가능하도록...
     }
 
-    //무기 취소 함수
-    private void CancelPreWeaponAction()
-    {//현재 타입에 따라서...
-        switch(currentWeaponType)
-        {
-            case "AXE":
-                AxeController.isActivate = false; //Axe상태일때 우클릭해도 정조준이 안될 것
-                break;
-            case "PICKAXE":
-                PickaxeController.isActivate = false; //Axe상태일때 우클릭해도 정조준이 안될 것
-                break;
-        }
-    }
+    // //무기 취소 함수
+    // private void CancelPreWeaponAction()
+    // {//현재 타입에 따라서...
+    //     switch(currentWeaponType)
+    //     {
+    //         case "AXE":
+    //             AxeController.isActivate = false; //Axe상태일때 우클릭해도 정조준이 안될 것
+    //             break;
+    //         // case "PICKAXE":
+    //         //     PickaxeController.isActivate = false; //Axe상태일때 우클릭해도 정조준이 안될 것
+    //         //     break;
+    //     }
+    // }
 
     //무기 교체 함수
     private void WeaponChange(string _type, string _name)
     {
-        if (_type == "AXE")
-            theAxeController.CloseWeaponChange(axeDictionary[_name]);
-        else if (_type == "PICKAXE")
-            thePickaxeController.CloseWeaponChange(pickaxeDictionary[_name]);
+        //if (_type == "AXE")
+            //theAxeController.CloseWeaponChange(axeDictionary[_name]);
+        // else if (_type == "PICKAXE")
+        //     thePickaxeController.CloseWeaponChange(pickaxeDictionary[_name]);
     }
 }

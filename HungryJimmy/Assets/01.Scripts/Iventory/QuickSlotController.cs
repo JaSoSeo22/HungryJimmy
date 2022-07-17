@@ -196,24 +196,24 @@ public class QuickSlotController : MonoBehaviour
     }
     private void ChangeHand(Item _item = null)
     {
-        StartCoroutine(theWeaponManager.ChangeWeaponCoroutine("HAND", "맨손"));
+        //StartCoroutine(theWeaponManager.ChangeWeaponCoroutine("HAND", "맨손"));
         if (_item != null)
         {
-            StartCoroutine(HandItemCoroutine());
+            //StartCoroutine(HandItemCoroutine());
         }
     }
 
-    IEnumerator HandItemCoroutine()
-    {
-        HandController.isActivate = false;
-        yield return new WaitUntil(() => HandController.isActivate);     // 무기 교체의 마지막이 이뤄지면 람다식이 true가 됨
-        go_HandItem = Instantiate(quickSlots[selectedSlot].item.itemPrefab, tf_ItemPos.position, tf_ItemPos.rotation);
-        go_HandItem.GetComponent<Rigidbody>().isKinematic = true;       // 아이템이 중력의 영향 받지않게
-        go_HandItem.GetComponent<BoxCollider>().enabled = false;        // 아이템 콜라이더 해제해서 플레이어와 부딪히지않음
-        go_HandItem.tag = "Untagged";       // 태그되지 않은 상태로 바꿔줌
-        go_HandItem.layer = 9;      //Weapon 레이어
-        go_HandItem.transform.SetParent(tf_ItemPos);
-    }
+    // IEnumerator HandItemCoroutine()
+    // {
+    //     //HandController.isActivate = false;
+    //     //yield return new WaitUntil(() => HandController.isActivate);     // 무기 교체의 마지막이 이뤄지면 람다식이 true가 됨
+    //     go_HandItem = Instantiate(quickSlots[selectedSlot].item.itemPrefab, tf_ItemPos.position, tf_ItemPos.rotation);
+    //     go_HandItem.GetComponent<Rigidbody>().isKinematic = true;       // 아이템이 중력의 영향 받지않게
+    //     go_HandItem.GetComponent<BoxCollider>().enabled = false;        // 아이템 콜라이더 해제해서 플레이어와 부딪히지않음
+    //     go_HandItem.tag = "Untagged";       // 태그되지 않은 상태로 바꿔줌
+    //     go_HandItem.layer = 9;      //Weapon 레이어
+    //     go_HandItem.transform.SetParent(tf_ItemPos);
+    // }
 
     public void DecreaseSelectedItem()
     {

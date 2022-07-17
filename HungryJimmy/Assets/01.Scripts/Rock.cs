@@ -33,6 +33,7 @@ public class Rock : MonoBehaviour
     {
         SoundManager.instance.PlaySE(strike_Sound);
 
+
         //바위 콜라이더의 가운데에 파편 클론 생성
         var clone = Instantiate(go_effect_prefabs, col.bounds.center, Quaternion.identity);
         Destroy(clone, destroyTime); //일정 시간(destroyTime) 후 파편 클론 파괴

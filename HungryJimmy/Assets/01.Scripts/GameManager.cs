@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     public static bool isPause = false;     // 메뉴가 호출되면 True
 
-    public Text dateText; //날짜를 출력할 UI텍스트
+    public TextMeshProUGUI dateText; //날짜를 출력할 UI텍스트
 
     private int date = 1; //day
 

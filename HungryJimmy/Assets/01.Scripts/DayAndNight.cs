@@ -28,7 +28,7 @@ public class DayAndNight : MonoBehaviour
         
         if (transform.eulerAngles.x >= 170 && !isNight)
             isNight = true;
-        else if (transform.eulerAngles.x >= 10 && isNight)
+        else if (transform.eulerAngles.x >= 10 && transform.eulerAngles.x < 170 && isNight)
         {
             isNight = false;
             GameManager.instance.AddDate(1);

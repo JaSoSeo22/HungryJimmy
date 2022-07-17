@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7726412892728571813}
   - component: {fileID: 7726412892728571810}
   - component: {fileID: 7726412892728571814}
+  - component: {fileID: 974779361}
   m_Layer: 0
   m_Name: Opening Camera
   m_TagString: MainCamera
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7726412892728571811}
-  m_LocalRotation: {x: 0.05862713, y: -0.9879513, z: 0.097091176, w: 0.105301194}
+  m_LocalRotation: {x: 0.058625236, y: -0.9879519, z: 0.09709094, w: 0.10529768}
   m_LocalPosition: {x: 46.7, y: 43.19, z: 184.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -83,7 +84,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7726412892728571811}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!95 &7726412892728571814
 Animator:
   serializedVersion: 3
@@ -103,3 +104,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!320 &974779361
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7726412892728571811}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: bcd434e91e6e57945b7b0e54378f8255, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -2232974275769508814, guid: bcd434e91e6e57945b7b0e54378f8255, type: 2}
+    value: {fileID: 7726412892728571814}
+  - key: {fileID: -8765712954324050847, guid: bcd434e91e6e57945b7b0e54378f8255, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 0}
+  - key: {fileID: -8008957049271825303, guid: bcd434e91e6e57945b7b0e54378f8255, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 8156905343775442847, guid: bcd434e91e6e57945b7b0e54378f8255, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -435044511104764167, guid: bcd434e91e6e57945b7b0e54378f8255, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
