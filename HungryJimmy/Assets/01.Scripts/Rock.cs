@@ -55,5 +55,4 @@ public class Rock : MonoBehaviour
         Destroy(go_debris, destroyTime); //일정 시간(destroyTime) 후 debris도 삭제
     }
 
-   
 }

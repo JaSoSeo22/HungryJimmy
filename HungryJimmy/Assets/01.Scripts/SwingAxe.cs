@@ -8,7 +8,8 @@ public class SwingAxe : MonoBehaviour
     bool swingPossible; //swing controller 스윙(어택) 제어
     //int swingStep; //버튼 클릭 횟수
     protected RaycastHit hitInfo;  //Raycast에 닿은 정보를 hitInfo에 저장
-    public GameObject pickAxe; //도끼
+    public GameObject pickAxe; //바위용 도끼
+    public GameObject treeAxe; //나무용 도끼
     
 
     //(swing)attack function of swing button
@@ -74,10 +75,11 @@ public class SwingAxe : MonoBehaviour
             {//Rock 클래스 안의 Mining을 호출
                 hitInfo.transform.GetComponent<Rock>().Mining();
             } 
-                // else if(hitInfo.transform.tag == "Twig") //나뭇가지와 부딪혔을 경우
-                // {//Twig 클래스 안의 Damage 호출 / 플레이어 transform도 함께 가져오기 / FineObjectOfType을 통해 얻어와도 된다
-                //     hitInfo.transform.GetComponent<Twig>().Damage(this.transform); //도끼의 위치임
-                // }
+
+            else if(hitInfo.transform.tag == "Tree" && treeAxe.activeInHierarchy) //treeAxe른 든 상태로 나무와 부딪혔을 경우
+            {//Tree 클래스 안의 Hit 호출  / FineObjectOfType을 통해 얻어와도 된다
+                hitInfo.transform.GetComponent<Tree>().Hit(); //
+            }
                 //isSwing = false;
             Debug.Log(hitInfo.transform.name);
         }
