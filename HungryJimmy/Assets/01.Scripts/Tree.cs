@@ -16,6 +16,8 @@ public class Tree : MonoBehaviour
 
     [SerializeField]
     private CapsuleCollider capCol; //capsule 콜라이더 -> 파괴후에 비활성화시켜서 없애버릴거임...
+    [SerializeField]
+    private CapsuleCollider chiCol;
 
     // //자식 트리
     // [SerializeField]
@@ -75,6 +77,7 @@ public class Tree : MonoBehaviour
 
         //바위가 파괴 되었기에 비활성화하고 사라지게 하기 -> 잔해만 남도록
         capCol.enabled = false;
+        chiCol.enabled = false;
         Destroy(go_tree);
 
         go_treedebris.SetActive(true); //바위 잔해 활성화시켜 나타나게 하기...
