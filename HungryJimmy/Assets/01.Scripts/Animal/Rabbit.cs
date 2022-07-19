@@ -6,6 +6,7 @@ public class Rabbit : MonoBehaviour
 {
     [SerializeField] private string animalName;     // 동물의 이름
     [SerializeField] private int hp;        // 동물의 체력
+    public GameObject itemPrefab;
 
     [SerializeField] private float walkSpeed;       // 걷기 스피드
     [SerializeField] private float runSpeed;        // 뛰기 스피드
@@ -17,8 +18,6 @@ public class Rabbit : MonoBehaviour
     private bool isRunning;      // 뛰는지 판별
     private bool isDead;        // 죽었는지 판별
 
-    // 상태변수
-    // private bool isGround = true;       // 땅인지 아닌지
 
     [SerializeField] private float walkTime;    // 걷기 시간
     [SerializeField] private float runTime;     // 뛰기 시간
@@ -29,6 +28,7 @@ public class Rabbit : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private Rigidbody rigid;
     [SerializeField] private BoxCollider boxCol;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,28 +63,58 @@ public class Rabbit : MonoBehaviour
         anim.SetBool("Running", isRunning);
     }
 
-    public void Damage(int _dmg, Vector3 _targetPos)
-    {
-        if (!isDead)
-        {
-            hp -= _dmg;
+    // public void Damage(int _dmg, Vector3 _targetPos)
+    // {
+    //     if (!isDead)
+    //     {
+    //         hp -= _dmg;
 
+    //         if (hp <= 0)
+    //         {
+    //             StartCoroutine(Dead());
+    //         }
+    //         Run(_targetPos);        // _targetPos 방향으로 Run() 실행
+
+    //     }
+    // }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            hp -= 1;
             if (hp <= 0)
             {
-                Dead();
-            }
-            Run(_targetPos);        // _targetPos 방향으로 Run() 실행
+                StartCoroutine(Dead());
 
+            }
         }
     }
 
-    private void Dead()
+    // private void Dead()
+    // {
+    //     isWalking = false;
+    //     isDead = true;
+    //     anim.SetTrigger("isDead");
+    //     new WaitForSeconds(10f);
+    //     gameObject.SetActive(false);
+    // }
+
+    IEnumerator Dead()
     {
         isWalking = false;
         isDead = true;
         anim.SetTrigger("isDead");
-        new WaitForSeconds(6f);
+        yield return new WaitForSeconds(4f);
         gameObject.SetActive(false);
+        DropItem();
+    }
+
+    public void DropItem()
+    {
+        var itemGo = Instantiate<GameObject>(this.itemPrefab);
+        itemGo.transform.position = this.gameObject.transform.position + Vector3.up * 0.1f;
+        itemGo.SetActive(true);
     }
 
 }
