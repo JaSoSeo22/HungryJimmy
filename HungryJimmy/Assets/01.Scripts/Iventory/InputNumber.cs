@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class InputNumber : MonoBehaviour
 {
-    private bool activated = false;
+    private bool activated = false;     // 항상 실행되면 안되니 조건 줌
     [SerializeField]
-    private Text text_Preview;      // 인벤토리에 있는 아이템의 갯수를 띄워줌
+    private TextMeshProUGUI text_Preview;      // 인벤토리에 있는 아이템의 갯수를 띄워줌
     [SerializeField]
-    private Text text_Input;        // 버리고 싶은 갯수만큼 입력함
+    private TextMeshProUGUI text_Input;        // 버리고 싶은 갯수만큼 입력함
     [SerializeField]
-    private InputField if_text;     // InputField의 텍스트
+    private TMP_InputField if_text;     // InputField의 텍스트
 
     [SerializeField]
     private GameObject go_Base;     // 필요할때만 활성화 시켜줄것
@@ -37,7 +38,7 @@ public class InputNumber : MonoBehaviour
     public void Call()
     {
         go_Base.SetActive(true);
-        activated = true;
+        activated = true;       // 호출되면 true로 바꿔줌
         if_text.text = "";       // 호출할때마다 if_text 초기화
         text_Preview.text = DragSlot.instance.dragSlot.itemCount.ToString();    // 호출하자마자 text_Preview에 아이템의 소지갯수가 들어감 (즉 소지중인 모든아이템 갯수)
     }
@@ -53,14 +54,14 @@ public class InputNumber : MonoBehaviour
     // 입력받았을 때 숫자인지 문자인지 먼저 확인
     public void OK()
     {
-        DragSlot.instance.SetColor(0);      // 색 없애줌
+        DragSlot.instance.SetColor(0);      // 색도 바꿔줌
 
         int num;
-        if (text_Input.text != "")
+        if (text_Input.text != "")      // 여백이 아니고
         {
-            if (CheckNumber(text_Input.text))
+            if (CheckNumber(text_Input.text))       // 입력된 값이 숫자라면
             {
-                num = int.Parse(text_Input.text);       // int.Parse -> 문자열을 강제로 int로 형변환해줌
+                num = int.Parse(text_Input.text);       // int.Parse -> 문자열을 강제로 Integer로 형변환해줌
                 if (num > DragSlot.instance.dragSlot.itemCount)     // 입력한 숫자가 아이템의 갯수보다 많을때 
                 {
                     num = DragSlot.instance.dragSlot.itemCount;     // 입력한 숫자를 아이템 갯수로 맞춰줌
@@ -78,33 +79,34 @@ public class InputNumber : MonoBehaviour
         StartCoroutine(DropItemCoroutine(num));
     }
 
-    IEnumerator DropItemCoroutine(int _num)
+    IEnumerator DropItemCoroutine(int _num)     // 아이템 버리는 코루틴
     {
         for (int i = 0; i < _num; i++)
         {
+            // 아이템을 버리면 어느 위치에서 생성될 것인가? 
             Instantiate(DragSlot.instance.dragSlot.item.itemPrefab, thePlayer.transform.position + thePlayer.transform.forward, Quaternion.identity);
             DragSlot.instance.dragSlot.SetSlotCount(-1);        // 하나씩 줄어들게 함
             yield return new WaitForSeconds(0.05f);
         }
 
-        // 현재 아이템을 들고 있고, 그 아이템의 모든 갯수를 버릴 때 아이템 파괴
-        if (int.Parse(text_Preview.text) == _num)       // 모두 버릴때
-        {
-            if (QuickSlotController.go_HandItem != null)        // 현재 들고있는 아이템이 있을경우
-            {
-                Destroy(QuickSlotController.go_HandItem);       // 아이템 파괴
-            }
-        }
+        // // 현재 아이템을 들고 있고, 그 아이템의 모든 갯수를 버릴 때 아이템 파괴
+        // if (int.Parse(text_Preview.text) == _num)       // 모두 버릴때
+        // {
+        //     if (QuickSlotController.go_HandItem != null)        // 현재 들고있는 아이템이 있을경우
+        //     {
+        //         Destroy(QuickSlotController.go_HandItem);       // 아이템 파괴
+        //     }
+        // }
 
         DragSlot.instance.dragSlot = null;      // 초기화해서 없애줌
-        go_Base.SetActive(false);
+        go_Base.SetActive(false);       // 모든 과정이 끝나면 안보이게 함
         activated = false;
     }
 
     // 문자인지 숫자인지 구분
     private bool CheckNumber(string _argString)
     {
-        char[] _tempCharArray = _argString.ToCharArray();
+        char[] _tempCharArray = _argString.ToCharArray();       // 문자열이 자동으로 char로 대입
         // argString = "안녕하세요", _tempCharArray[0] = "안", [1] = "녕"...
         bool isNumber = true;
         for (int i = 0; i < _tempCharArray.Length; i++)

@@ -23,19 +23,15 @@ public class ActionController : MonoBehaviour
     private LayerMask layerMask;
 
     // 필요한 컴포넌트
-    // 행동을 보여 줄 텍스트
     [SerializeField]
-    private TextMeshProUGUI actionText;
+    private TextMeshProUGUI actionText;     // 행동을 보여 줄 텍스트
 
     [SerializeField]
     private Inventory theInventory;
 
-    [SerializeField]
-    private QuickSlotController theQuickSlot;
-
     private void Start()
     {
-        actionText = GetComponentInChildren<TextMeshProUGUI>();
+
     }
 
     // 매 프레임마다 키가 눌리고 있는지 확인
@@ -50,7 +46,7 @@ public class ActionController : MonoBehaviour
     private void TryAction()
     {
         // E키가 눌렸을 떄 아이템이 있는지 없는지 확인하는 메서드
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
             CheckAction();
             CanPickUp();
@@ -63,12 +59,12 @@ public class ActionController : MonoBehaviour
     {
         if (pickupActivated)
         {
-            if (hitInfo.transform != null)
+            if (hitInfo.transform != null)      // transform이 null이 아닌경우에
             {
                 // 어떤 아이템을 획득했는지 확인
-                // Debug.Log(hitInfo.transform.GetComponent<ItemPickUp>().item.itemName + "획득했습니다.");
-                // 인벤토리 스크립트 작성 후 추가
-                theInventory.AcquireItem(hitInfo.transform.GetComponent<ItemPickUp>().item);
+                Debug.Log(hitInfo.transform.GetComponent<ItemPickUp>().item.itemName + "획득했습니다.");
+                // 부딪힌 충돌체 안에 있는 ItemPickUp안의 item을 넣기
+                theInventory.AcquireItem(hitInfo.transform.GetComponent<ItemPickUp>().item);    
                 // 획득한 아이템 파괴
                 Destroy(hitInfo.transform.gameObject);
                 InfoDisappear();
@@ -84,11 +80,11 @@ public class ActionController : MonoBehaviour
             {
                 // 손에 들고있는 아이템을 불에 넣음 == 선택된 퀵슬롯의 아이템을 넣는다 (Null).ItemName을 참조하면 오류나니까 이거부터 확인함
 
-                Slot _selectedSlot = theQuickSlot.GetSelectedSlot();     // 이렇게 하면 null 일지라도 _selectedSlot에 값은 들어감
-                if (_selectedSlot.item != null)      // 슬롯안에 아이템이 있는지 없는지 비교해야하니까 .item 넣어줌
-                {
-                    DropAnItem(_selectedSlot);
-                }
+                // Slot _selectedSlot = theQuickSlot.GetSelectedSlot();     // 이렇게 하면 null 일지라도 _selectedSlot에 값은 들어감
+                // if (_selectedSlot.item != null)      // 슬롯안에 아이템이 있는지 없는지 비교해야하니까 .item 넣어줌
+                // {
+                //     DropAnItem(_selectedSlot);
+                // }
             }
         }
     }
@@ -102,7 +98,7 @@ public class ActionController : MonoBehaviour
                 {
                     // // 조건을 만족하면 _selectedSlot에 아이템을 생성해줌 (불보다 조금 위의 위치에)
                     Instantiate(_selectedSlot.item.itemPrefab, hitInfo.transform.position + Vector3.up, Quaternion.identity);
-                    theQuickSlot.DecreaseSelectedItem(); // 0개가 되면 슬롯에서 파괴됨
+                    // theQuickSlot.DecreaseSelectedItem(); // 0개가 되면 슬롯에서 파괴됨
                 }
                 break;
             case Item.ItemType.Ingredient:
@@ -117,7 +113,9 @@ public class ActionController : MonoBehaviour
         {
             if (hitInfo.transform.tag == "Item")
             {
+                Debug.Log("뿡빵");
                 ItemInfoAppear();
+                Debug.DrawRay(gameObject.transform.position, gameObject.transform.forward *hitInfo.distance , Color.red);
             }
             //else if (hitInfo.transform.tag == "WeakAnimal" || hitInfo.transform.tag == "StrongAnimail")
             //    MeatInfoAppear();

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class SlotToolTip : MonoBehaviour
 {
@@ -10,11 +11,11 @@ public class SlotToolTip : MonoBehaviour
     private GameObject go_Base;     // 필요할때만 호출할 것
 
     [SerializeField]
-    private Text txt_ItemName;
+    private TextMeshProUGUI txt_ItemName;
     [SerializeField]
-    private Text txt_ItemDesc;
+    private TextMeshProUGUI txt_ItemDesc;
     [SerializeField]
-    private Text txt_HowToUsed;
+    private TextMeshProUGUI txt_HowToUsed;
 
 
     public void ShowToolTip(Item _item, Vector3 _pos)

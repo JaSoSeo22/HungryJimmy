@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Inventory : MonoBehaviour
 {
@@ -6,18 +8,18 @@ public class Inventory : MonoBehaviour
 
     // 필요한 컴포넌트 
     [SerializeField]
-    private GameObject go_InventoryBase;
+    private GameObject go_InventoryBase;        // 활성화될 인벤토리창
 
     [SerializeField]
-    private GameObject go_SlotsParent;
+    private GameObject go_SlotsParent;      // 슬롯들의 부모객체 여기서는 Grid Setting을 의미
 
-    [SerializeField]
-    private GameObject go_QuickSlotsParent;
+    // [SerializeField]
+    // private GameObject go_QuickSlotsParent;     // 퀵슬롯의 부모객체
 
 
     private Slot[] slots;       // 인벤토리 슬롯들
     private Slot[] quickslots;      // 퀵슬롯들
-    private bool isNotPut;
+    private bool isNotPut;      // 
     private int slotNumber;
 
     public Slot[] GetSlots() { return slots; }        // 슬롯에 있는 값 전부 반환
@@ -35,10 +37,11 @@ public class Inventory : MonoBehaviour
         }
     }
 
+
     private void Start()
     {
-        slots = go_SlotsParent.GetComponentsInChildren<Slot>();
-        quickslots = go_QuickSlotsParent.GetComponentsInChildren<Slot>();
+        slots = go_SlotsParent.GetComponentsInChildren<Slot>();     // 배열안에 슬롯들이 들어감
+        // quickslots = go_QuickSlotsParent.GetComponentsInChildren<Slot>();
 
     }
 
@@ -71,49 +74,66 @@ public class Inventory : MonoBehaviour
 
     public void OpenInventory()
     {
+        inventoryActivated = true;
         GameManager.isOpenInventory = true;
         go_InventoryBase.SetActive(true);
     }
 
     public void CloseInventory()
     {
+        inventoryActivated = false;
         GameManager.isOpenInventory = false;
         go_InventoryBase.SetActive(false);
     }
 
     // 아이템을 먹으면 바로 퀵슬롯에 반영됨
-    public void AcquireItem(Item _item, int _count = 1)
+    // public void AcquireItem(Item _item, int _count = 1)     // 어떤 아이템인지, 갯수는 몇개인지
+    // {
+
+    //     PutSlot(quickslots, _item, _count);     // 퀵슬롯이 가득찼다
+    //     if (isNotPut)
+    //     {
+    //         PutSlot(slots, _item, _count);      // 인벤토리도 가득찼다
+    //     }
+    //     PutSlot(quickslots, _item, _count);              //##### 없는 내용있어서 일단 주석처리
+    //     if (!isNotPut)
+    //         theQuickSlot.isActivatedQuickSlot(slotNumber);
+
+    //     if (isNotPut)
+    //         PutSlot(slots, _item, _count);
+
+    //     if (isNotPut)
+    //         Debug.Log("퀵슬롯과 인벤토리가 꽉찼습니다");
+    // }
+
+    public void AcquireItem(Item _item, int _count = 1)     // 아이템 기본값이 1로 지정
     {
-        PutSlot(quickslots, _item, _count);     // 퀵슬롯이 가득찼다
+        PutSlot(slots, _item, _count);     // 퀵슬롯부터 채우고 싶으면 quickslots, 슬롯은 slots
+        if (isNotPut)       // 퀵슬롯 슬롯 채우기
+        {
+            PutSlot(quickslots, _item, _count);
+        }
+
         if (isNotPut)
         {
-            PutSlot(slots, _item, _count);      // 인벤토리도 가득찼다
-        }
-        // PutSlot(quickslots, _item, _count);              ##### 없는 내용있어서 일단 주석처리
-        // if (!isNotPut)
-        //     theQuickSlot.isActivateQuickSlot(slotNumber);
-
-        // if (isNotPut)
-        //     PutSlot(slots, _item, _count);
-
-        if (isNotPut)
             Debug.Log("퀵슬롯과 인벤토리가 꽉찼습니다");
+        }
     }
 
-    // ##### 원래 AcquireItem 였는데 PutSlot으로 변경한듯.
-    public void PutSlot(Slot[] _slots, Item _item, int _count = 1)
+    // 슬롯에 아이템 채우기
+    public void PutSlot(Slot[] _slots, Item _item, int _count)      // 뭘획득했고 몇개인지 기본값은 1로
     {
 
-        if (Item.ItemType.Equipment != _item.itemType)
+        if (Item.ItemType.Equipment != _item.itemType)      // 획득한 아이템이 장비가 아니라면
         {
-            for (int i = 0; i < _slots.Length; i++)
+            for (int i = 0; i < _slots.Length; i++)     // 반복문 돌려서 이미 획득한 아이템이면 갯수만 증가
             {
-                if (_slots[i] != null)
+                if (_slots[i].item != null)      // 슬롯이 null이 아니면
                 {
-                    if (_slots[i].item.itemName == _item.itemName)
+                    if (_slots[i].item.itemName == _item.itemName)      // 슬롯안에 이미 아이템이 들어가 있는것
                     {
                         slotNumber = i;
-                        _slots[i].SetSlotCount(_count);
+                        _slots[i].SetSlotCount(_count);     // 슬롯의 i번째 _count만큼 갯수 증가
                         isNotPut = false;
                         return;
                     }
@@ -121,15 +141,32 @@ public class Inventory : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < _slots.Length; i++)
+        for (int i = 0; i < slots.Length; i++)
         {
-            if (_slots[i].item == null)
+            if (slots[i].item == null)
             {
-                _slots[i].AddItem(_item, _count);
+                slots[i].AddItem(_item, _count);
+                isNotPut = false;
                 return;
             }
         }
 
-        isNotPut = true;
+        isNotPut = true;        // 실행되면 
     }
+
+    // public bool Contains(Slot[] _slots, Item _item, int quantity)
+    // {
+    //     for (int i = 0; i < items.Length; i++)     // 반복문 돌려서 이미 획득한 아이템이면 갯수만 증가
+    //     {
+    //         if (_slots[i].item != null)      // 슬롯이 null이 아니면
+    //         {
+    //             if (_slots[i].item.itemName == _item.itemName && _slots.Length >= quantity)      // 슬롯안에 이미 아이템이 들어가 있는것
+    //             {
+    //                 return true;
+    //             }
+    //         }
+    //     }
+    //     return false;
+    // }
+
 }
