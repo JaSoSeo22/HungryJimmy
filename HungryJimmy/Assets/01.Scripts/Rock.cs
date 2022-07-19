@@ -21,6 +21,8 @@ public class Rock : MonoBehaviour
     private GameObject go_debris; //깨진 바위
     [SerializeField]
     private GameObject go_effect_prefabs; //채굴 이펙트
+    [SerializeField]
+    public GameObject rockItemPrefab; //바위 prefab
     
     //필요한 사운드 이름
     [SerializeField]
@@ -53,6 +55,15 @@ public class Rock : MonoBehaviour
 
         go_debris.SetActive(true); //바위 잔해 활성화시켜 나타나게 하기...
         Destroy(go_debris, destroyTime); //일정 시간(destroyTime) 후 debris도 삭제
+
+        RockDropItem();
+    }
+
+    public void RockDropItem()
+    {
+        var itemGo = Instantiate<GameObject>(this.rockItemPrefab);
+        itemGo.transform.position = this.gameObject.transform.position + Vector3.up * 0.1f;
+        itemGo.SetActive(true);
     }
 
 }
