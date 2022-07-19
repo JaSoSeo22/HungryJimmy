@@ -76,6 +76,11 @@ public class SwingAxe : MonoBehaviour
                 hitInfo.transform.GetComponent<Rock>().Mining();
             } 
 
+            else if(hitInfo.transform.tag == "FruitTree" && treeAxe.activeInHierarchy) //treeAxe른 든 상태로 나무와 부딪혔을 경우
+            {//FruitTree 클래스 안의 HitFruit 호출  / FineObjectOfType을 통해 얻어와도 된다
+                hitInfo.transform.GetComponent<FruitTree>().HitFruit(); //
+            }
+
             else if(hitInfo.transform.tag == "Tree" && treeAxe.activeInHierarchy) //treeAxe른 든 상태로 나무와 부딪혔을 경우
             {//Tree 클래스 안의 Hit 호출  / FineObjectOfType을 통해 얻어와도 된다
                 hitInfo.transform.GetComponent<Tree>().Hit(); //

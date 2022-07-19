@@ -11,6 +11,8 @@ TagManager:
   - Tree
   - Twig
   - Box
+  - BurgerTree
+  - FruitTree
   layers:
   - Default
   - TransparentFX

@@ -37,13 +37,20 @@ public class HealthManager : MonoBehaviour
     }
 
 
+IEnumerator DeadAction()
+{
+    GameManager.isPause = true;
+    animator.SetTrigger("isDead");
+    isDead = true;
+    yield return new WaitForSeconds(6f);
+    Time.timeScale = 0f;
+}
+
     public void Dead()
     {
-        if (theStatus.currentHungry <= 0)
+        if (theStatus.currentHungry <= 0 || theStatus.currentThirsty <= 0)
         {
-            isDead = true;
-            animator.SetTrigger("isDead");
-            GameManager.isPause = true;
+            StartCoroutine(DeadAction());
         }
     }
 

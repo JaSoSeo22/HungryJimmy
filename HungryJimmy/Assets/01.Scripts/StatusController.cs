@@ -79,9 +79,9 @@ public class StatusController : MonoBehaviour
                 currentHungryDecreaseTime = 0;
             }
         }
-        else        // 0보다 작아졌을때
-            theHealth.Dead();
-            // Debug.Log("배고픔 수치가 0이 되었습니다");
+        // else        // 0보다 작아졌을때
+        //     theHealth.Dead();
+        //     // Debug.Log("배고픔 수치가 0이 되었습니다");
     }
 
     private void Thirsty()      // 목마름 구현
@@ -101,9 +101,9 @@ public class StatusController : MonoBehaviour
                 isRain = false;
             }
         }
-        else
-            theHealth.Dead();
-            // Debug.Log("목마름 수치가 0이 되었습니다");
+        // else
+        //     theHealth.Dead();
+        //     // Debug.Log("목마름 수치가 0이 되었습니다");
     }
 
     private void Stamina()       // 체력 구현
