@@ -15,22 +15,11 @@ public class RhythmGameManager : MonoBehaviour
 
     public int currentScore; //현재 점수
     public int scorePerNote = 100; //(한 노트 당) 추가 될 점수
-    //public int scorePerGoodNote = 125; //(한 노트 당) 추가 될 점수(Good)
-    //public int scorePerPerfectNote = 150; //(한 노트 당) 추가 될 점수(Perfect)
-
-    //public int currentMultiplier; //현재 추가 점수
-    //public int multiplierTracker; //연속해서 (정해진 개수의) 노트를 맞췄을 경우... 다음 레벨로(더 높은 점수) 이동할 때 (그 시점을 추적할 때 사용 -> 몇 개 기준?
-    //public int[] multiplierThresholds; //다음 레벨로(더 높은 점수) 이동할 수 있게 Thresholds를 호출 -> 몇 개 기준인지
-
-
 
     public Text scoreText; //화면에 표시 될 점수 텍스트
-    //public Text multiText; //화면에 표시 될 배속 속도 텍스트
 
     public float totalNotes; //적중된 총 노트들?
     public float normalHits;
-    //public float goodHits;
-    //public float perfectHits;
     public float missedHits;
 
     public GameObject rgstButton; //리듬게임(기우제) 버튼
@@ -38,7 +27,6 @@ public class RhythmGameManager : MonoBehaviour
     public GameObject backButton; //메인 화면으로 돌아가는 버튼 (일정 점수 이상 획득 x)
     public GameObject gamePanel;
     public GameObject resultsScreen; //점수 요소 가져다쓰려고 참조 쓰기 /점수 팝업으로 점수 보여주기
-    //public Text percentHitText, normalsText, goodsText, perfectsText, missesText, rankText, finalScoreText; //점수판에 나타날 각 점수들
     public Text normalsText, missesText, rankText, finalScoreText; //점수판에 나타날 각 점수들
 
 

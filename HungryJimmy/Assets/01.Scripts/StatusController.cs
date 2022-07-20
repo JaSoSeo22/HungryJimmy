@@ -7,13 +7,13 @@ public class StatusController : MonoBehaviour
 {
     // 체력
     [SerializeField]
-    private int stamina;
-    public float currentStamina;
+    private int stamina; //체력의 총량
+    public float currentStamina; //나의 현재 체력
 
     // 체력이 줄어드는 속도
     [SerializeField]
-    private int staminaDecreaseTime;
-    private int currentStaminaDecreaseTime;
+    private int staminaDecreaseTime; //1-- 이만큼 깎인다//  2000이 채워져야
+    private int currentStaminaDecreaseTime; // 실시간으로 체력이 줄어드는 정도를 측정
 
     // 배고픔
     [SerializeField]
@@ -43,8 +43,12 @@ public class StatusController : MonoBehaviour
     private HealthManager theHealth;
 
     public GameObject rainPrefab; // 비 내리는 파티클 이펙트 오브젝트 
+    public GameObject bonFire; //장작 오브젝트
 
     public bool isRain = false; // 비가 오는지 확인
+    
+    public GameObject sun; //낮 상태인지 알려주는 이미지
+    public GameObject moon; //밤 상태인지 알려주는 이미지
 
     private const int HUNGRY = 0, THIRSTY = 1, STAMINA = 2;
 
@@ -115,7 +119,7 @@ public class StatusController : MonoBehaviour
             else
             {
                 currentStamina--;
-                currentStaminaDecreaseTime = 0;
+                currentStaminaDecreaseTime = 0; //기본값
             }
 
         }
@@ -129,6 +133,33 @@ public class StatusController : MonoBehaviour
         if (rainPrefab.activeInHierarchy) //하이어라키 창에 비 프리팹이 활성화 되었다면
         {
             currentThirsty += 3f * Time.deltaTime; //총 30의 수분 주기(비가 10초동안 옴)
+        }
+    }
+
+    private void FireOnWood() //장작 태우기
+    {
+        if(bonFire.activeInHierarchy) //장작 태우기가 활성화 되었다면
+        {
+            currentStamina += 1f * Time.deltaTime; //스태미너 회복시켜주기
+        }
+    }
+
+    public void ColdNight() //night상태에서 스태미너가 더 빠르게 닳게하기
+    {
+        if(!bonFire.activeInHierarchy && moon.activeInHierarchy)
+        {
+           staminaDecreaseTime = 50; //밤일때 체력을 더 닳게
+        }
+
+        
+    }
+
+    public void BonDay()
+    {
+        //if(bonFire.activeInHierarchy || sun.activeInHierarchy)
+        if( sun.activeInHierarchy)
+        {
+            staminaDecreaseTime = 200;
         }
     }
 
