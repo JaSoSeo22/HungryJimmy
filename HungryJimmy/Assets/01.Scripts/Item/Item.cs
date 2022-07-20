@@ -25,7 +25,6 @@ public class Item : ScriptableObject
         Equipment, // 장비류
         Used, // 소모품류
         Ingredient,  // 재료
-        ETC // 기타
     }
 
 

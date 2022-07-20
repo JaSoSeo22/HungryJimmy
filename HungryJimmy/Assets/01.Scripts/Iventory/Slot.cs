@@ -10,8 +10,8 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
     public int itemCount; // 획득한 아이템 갯수
     public Image itemImage; // 아이템의 이미지
 
-    [SerializeField] private bool isQuickSlot;      // 퀵슬롯 여부 판단
-    [SerializeField] private int quickSlotNumber;       // 퀵슬롯 번호
+    // [SerializeField] private bool isQuickSlot;      // 퀵슬롯 여부 판단
+    // [SerializeField] private int quickSlotNumber;       // 퀵슬롯 번호
 
     // 필요한 컴포넌트
     [SerializeField]
@@ -63,10 +63,10 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
         SetColor(1);        // 아이템이 들어왔으므로
     }
 
-    public int GetQuickSlotNumber()     // 퀵슬롯 넘버 받아옴
-    {
-        return quickSlotNumber;
-    }
+    // public int GetQuickSlotNumber()     // 퀵슬롯 넘버 받아옴
+    // {
+    //     return quickSlotNumber;
+    // }
 
     // 아이템 갯수 조정
     public void SetSlotCount(int _count)
