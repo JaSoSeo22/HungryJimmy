@@ -17,6 +17,13 @@ public class Warning : MonoBehaviour
     [SerializeField] 
     private string halfEmergencyWarning_Sound;
 
+    //지미의 현재 상태를 알려주는 이미지 오브젝트
+    public GameObject healthyJim;
+    public GameObject sickJim;
+    public GameObject soSickJim;
+    public GameObject deadJim;
+
+
 
     bool h_yellowUI = false;      //아이템으로 회복할때마다 이거 처리 해줘야 계속 경고창 나타남
     bool h_redUI = false;
@@ -38,6 +45,9 @@ public class Warning : MonoBehaviour
         {
             if (theStatus.currentHungry > 30 && !h_yellowUI)
             {
+                healthyJim.SetActive(false);
+                sickJim.SetActive(true); //지미의 상태 이미지를 아픈 상태로 변경
+
                 h_yellowUI = true;
                 StartCoroutine(ShowHYellowPanel());
             }
@@ -45,6 +55,9 @@ public class Warning : MonoBehaviour
             {
                 if (!h_redUI)
                 {
+                    sickJim.SetActive(false);
+                    soSickJim.SetActive(true);//지미의 상태 이미지를 매우 아픈 상태로 변경
+
                     h_redUI = true;
                     
                     StartCoroutine(ShowHRedPanel());

@@ -16,6 +16,10 @@ public class HealthManager : MonoBehaviour
     private bool isEnd = false;
     private bool isRainPose = false;
 
+    //지미의 현재 상태를 알려주는 이미지 오브젝트
+    public GameObject soSickJim;
+    public GameObject deadJim;
+
     public GameObject rainPrefab; //비 효과
 
     void Start()
@@ -39,6 +43,9 @@ public class HealthManager : MonoBehaviour
 
 IEnumerator DeadAction()
 {
+    soSickJim.SetActive(false);
+    deadJim.SetActive(true); //지미의 현재 상태 이미지를 죽음으로 변경
+
     GameManager.isPause = true;
     animator.SetTrigger("isDead");
     isDead = true;
