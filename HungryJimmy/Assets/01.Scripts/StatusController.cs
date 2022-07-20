@@ -12,7 +12,7 @@ public class StatusController : MonoBehaviour
 
     // 체력이 줄어드는 속도
     [SerializeField]
-    private int staminaDecreaseTime; //1-- 이만큼 깎인다//  2000이 채워져야
+    public int staminaDecreaseTime; //1-- 이만큼 깎인다//  2000이 채워져야
     private int currentStaminaDecreaseTime; // 실시간으로 체력이 줄어드는 정도를 측정
 
     // 배고픔
@@ -136,19 +136,11 @@ public class StatusController : MonoBehaviour
         }
     }
 
-    private void FireOnWood() //장작 태우기
-    {
-        if(bonFire.activeInHierarchy) //장작 태우기가 활성화 되었다면
-        {
-            currentStamina += 1f * Time.deltaTime; //스태미너 회복시켜주기
-        }
-    }
-
-    public void ColdNight() //night상태에서 스태미너가 더 빠르게 닳게하기
+    public void ColdNight() //night상태에서
     {
         if(!bonFire.activeInHierarchy && moon.activeInHierarchy)
         {
-           staminaDecreaseTime = 50; //밤일때 체력을 더 닳게
+           staminaDecreaseTime = 100; //밤일때 체력이 더 빨리 사라지게 (밤일때 체력이 떨어지는 속도)
         }
 
         
@@ -156,11 +148,7 @@ public class StatusController : MonoBehaviour
 
     public void BonDay()
     {
-        //if(bonFire.activeInHierarchy || sun.activeInHierarchy)
-        if( sun.activeInHierarchy)
-        {
-            staminaDecreaseTime = 200;
-        }
+        staminaDecreaseTime = 200; //낮일때 체력이 떨어지는 속도
     }
 
     private void GaugeUpdate()      // 상태 수치 변화 시각화
