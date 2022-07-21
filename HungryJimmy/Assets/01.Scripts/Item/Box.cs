@@ -4,25 +4,11 @@ using UnityEngine;
 
 public class Box : MonoBehaviour
 {
-    List<int> num = new List<int>();        // 새로운 리스트 생성
-
     public GameObject box;
     public GameObject logBox;
     public GameObject clothBox;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        num.Add(0);     // 리스트에 값 추가
-        num.Add(1);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public GetInferenceFromModel getInferenceFromModel;
 
     void OnMouseDown()      // 마우스 클릭하면
     {
@@ -46,16 +32,16 @@ public class Box : MonoBehaviour
 
     public void Find()
     {
-        int index = num.FindIndex((int p) => p == 0);       // 리스트에서 값이 0인 값의 인덱스 번호
-        int a = num[index];
-        Debug.Log(a);
-        if (num[index] == 0)        // 리스트 num의 인덱스가 0이면
+      
+        if (getInferenceFromModel.prediction.predictedValue == 1)        // 리스트 num의 인덱스가 0이면
         {
+            Debug.Log("Logbox");
             box.SetActive(true);
             StartCoroutine(LogBoxChange());     // Log박스 바꿔주는 코루틴 실행
         }
-        if (num[index] == 1)        // 리스트 num의 인덱스가 1이면
+        if (getInferenceFromModel.prediction.predictedValue == 0)        // 리스트 num의 인덱스가 1이면
         {
+            Debug.Log("Clothbox");
             box.SetActive(true);
             StartCoroutine(ClothBoxChange());       // Cloth박스 바꿔주는 코루틴 실행
         }
