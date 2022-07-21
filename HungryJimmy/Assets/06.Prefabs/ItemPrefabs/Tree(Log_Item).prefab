@@ -217,6 +217,6 @@ MonoBehaviour:
   go_hit_effect_prefab: {fileID: 3230589718720365388, guid: bfa16bf820e821e41bd97ed2a3e3a74f, type: 3}
   debrisDestroyTime: 5
   destroyTime: 2
-  chop_sound: Pickaxe_Strike
-  falldown_sound: Pickaxe_Strike
-  logChange_sound: Pickaxe_Strike
+  chop_sound: Tree_Chop
+  falldown_sound: Tree_FallDown
+  logChange_sound: Tree_Log
