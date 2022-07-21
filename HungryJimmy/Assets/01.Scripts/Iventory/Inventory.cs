@@ -15,7 +15,6 @@ public class Inventory : MonoBehaviour
 
 
     private Slot[] slots;       // 인벤토리 슬롯들
-    private Slot[] quickslots;      // 퀵슬롯들
     private bool isNotPut;      // 
     private int slotNumber;
 
@@ -62,15 +61,15 @@ public class Inventory : MonoBehaviour
     public void AcquireItem(Item _item, int _count = 1)     // 아이템 기본값이 1로 지정
     {
         PutSlot(slots, _item, _count);     // 퀵슬롯부터 채우고 싶으면 quickslots, 슬롯은 slots
-        if (isNotPut)       // 퀵슬롯 슬롯 채우기
-        {
-            PutSlot(quickslots, _item, _count);
-        }
+        // if (isNotPut)       // 퀵슬롯 슬롯 채우기
+        // {
+        //     PutSlot(quickslots, _item, _count);
+        // }
 
-        if (isNotPut)
-        {
-            Debug.Log("퀵슬롯과 인벤토리가 꽉찼습니다");
-        }
+        // if (isNotPut)
+        // {
+        //     Debug.Log("퀵슬롯과 인벤토리가 꽉찼습니다");
+        // }
     }
 
     // 슬롯에 아이템 채우기

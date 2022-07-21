@@ -21,8 +21,6 @@ public class ItemEffectDatabase : MonoBehaviour
     [SerializeField]
     private StatusController thePlayerStatus;
     [SerializeField]
-    private WeaponManager theWeaponManager;
-    [SerializeField]
     private SlotToolTip theSlotToolTip;
 
     // 변수의 상수화
@@ -45,7 +43,7 @@ public class ItemEffectDatabase : MonoBehaviour
     {
         if (_item.itemType == Item.ItemType.Equipment)      // 장비아이템일때 장비교체 시도
         {
-            StartCoroutine(theWeaponManager.ChangeWeaponCoroutine(_item.weaponType, _item.itemName));
+            
         }
         else if (_item.itemType == Item.ItemType.Used)       // ItemType이 Used일때
         {
