@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class RhythmGameManager : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class RhythmGameManager : MonoBehaviour
     public int currentScore; //현재 점수
     public int scorePerNote = 100; //(한 노트 당) 추가 될 점수
 
-    public Text scoreText; //화면에 표시 될 점수 텍스트
+    public TextMeshProUGUI scoreText; //화면에 표시 될 점수 텍스트
 
     public float totalNotes; //적중된 총 노트들?
     public float normalHits;
@@ -35,7 +36,7 @@ public class RhythmGameManager : MonoBehaviour
         //음악 재생과 바 떨어뜨리기를 시작할 때 게임매니저를 컨트롤 
         instance = this;
 
-        scoreText.text = "Score: 0"; //처음 시작할 때 점수 = 0으로 
+        scoreText.text = "0"; //처음 시작할 때 점수 = 0으로 
         //currentMultiplier = 1; //처음 시작할 때 획득 점수 = x 1
 
         totalNotes = FindObjectsOfType<NoteObject>().Length;
@@ -116,7 +117,7 @@ public class RhythmGameManager : MonoBehaviour
 
         //2:12 영상에서쯤! 주석 처리//currentScore += scorePerNote; //노트 맞추기를 성공했을 경우 점수 추가
         //currentScore += scorePerNote * currentScore; //배속으로 돌렸을 때 그 점수에 추가 점수 단위를 곱해 / 더 높은 점수를 준다
-        scoreText.text = "Score: " + currentScore; //(점수가 추가된) 현재 점수 표시
+        scoreText.text = "" + currentScore; //(점수가 추가된) 현재 점수 표시
     }
 
     public void NormalHit()
