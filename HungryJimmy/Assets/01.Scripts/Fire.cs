@@ -23,6 +23,8 @@ public class Fire : MonoBehaviour
     // 상태변수
     private bool isFire = true;
 
+    public GameObject dayIMG; //낮 상태인지 알려주는 이미지
+
     void Start()
     {
         thePlayerStatus = FindObjectOfType<StatusController>();
@@ -35,6 +37,13 @@ public class Fire : MonoBehaviour
         {
             ElapseTime();
         }
+
+        if (dayIMG.activeInHierarchy)
+        {
+            currentDurationTime = 0f;
+        }
+
+        
     }
 
     private void ElapseTime()       // 데미지 입는데 딜레이

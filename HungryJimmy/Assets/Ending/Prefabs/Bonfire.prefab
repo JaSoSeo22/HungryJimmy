@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4349553000075248}
   - component: {fileID: 33034074156844644}
   - component: {fileID: 23202646697140164}
+  - component: {fileID: -1110172534801973318}
   m_Layer: 0
   m_Name: Bonfire
   m_TagString: Untagged
@@ -82,6 +83,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-1110172534801973318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179792248266456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab12c1f1d38cbb43826bc8f46043354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireName: 
+  damage: 0
+  damageTime: 0
+  durationTime: 0
+  ps_Flame: {fileID: 0}
+  dayIMG: {fileID: 0}
 --- !u!1 &1270760519101792
 GameObject:
   m_ObjectHideFlags: 0
