@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Craft : MonoBehaviour
 {
+    [SerializeField] private GameObject craft_base;      // 크래프트창 베이스 UI
     public GameObject axPrefab;
     public GameObject woodPrefab;
     public GameObject rockstalkPrefab;
@@ -21,6 +22,15 @@ public class Craft : MonoBehaviour
 
     [SerializeField]
     private Transform targetTransform;
+
+    public void OpenCraft()
+    {
+        craft_base.SetActive(true);
+    }
+    public void CloseCraft()
+    {
+        craft_base.SetActive(false);
+    }
 
     public void Wood()
     {

@@ -98,7 +98,6 @@ public class ActionController : MonoBehaviour
                 {
                     // // 조건을 만족하면 _selectedSlot에 아이템을 생성해줌 (불보다 조금 위의 위치에)
                     Instantiate(_selectedSlot.item.itemPrefab, hitInfo.transform.position + Vector3.up, Quaternion.identity);
-                    // theQuickSlot.DecreaseSelectedItem(); // 0개가 되면 슬롯에서 파괴됨
                 }
                 break;
             case Item.ItemType.Ingredient:
@@ -113,7 +112,6 @@ public class ActionController : MonoBehaviour
         {
             if (hitInfo.transform.tag == "Item")
             {
-                Debug.Log("뿡빵");
                 ItemInfoAppear();
                 Debug.DrawRay(gameObject.transform.position, gameObject.transform.forward *hitInfo.distance , Color.red);
             }
@@ -143,7 +141,7 @@ public class ActionController : MonoBehaviour
         Reset();
         pickupActivated = true;
         actionText.gameObject.SetActive(true);
-        actionText.text = hitInfo.transform.GetComponent<ItemPickUp>().item.itemName + "획득" + "<color=yellow>" + "(E)" + "</color>";
+        actionText.text = hitInfo.transform.GetComponent<ItemPickUp>().item.itemName + "획득" + "</color>";
     }
 
     private void FireInfoAppear()

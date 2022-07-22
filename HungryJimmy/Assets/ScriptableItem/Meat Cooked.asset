@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Meat Cooked
   itemDesc: "\uAD6C\uC6B4\uACE0\uAE30"
   itemType: 1
-  itemImage: {fileID: 21300000, guid: 3c3fd14c0db45e94b938e368b617b931, type: 3}
+  itemImage: {fileID: 21300000, guid: afb475d320a0b2c41a4184a07c250a8f, type: 3}
   itemPrefab: {fileID: 7766350899011687337, guid: 14455d5592d55f44db5096d01a43c17f, type: 3}
   weaponType: 
