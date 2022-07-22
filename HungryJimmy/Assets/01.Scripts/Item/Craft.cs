@@ -14,6 +14,11 @@ public class Craft : MonoBehaviour
     public GameObject clothPrefab;
     public Inventory inventory;
 
+    //모닥불 오브젝트 관리
+    public int lifetime = 15; //모닥불 지속 시간
+    public GameObject moonImg; //밤 상태
+
+
     [SerializeField]
     private Transform targetTransform;
 
@@ -161,12 +166,18 @@ public class Craft : MonoBehaviour
         }
         if (e && f)
         {
-            var itemGo = Instantiate<GameObject>(this.bonfirePrefab);
-            itemGo.transform.position = this.targetTransform.transform.position + Vector3.forward * 2f;
-            itemGo.SetActive(true);
+                if(moonImg.activeInHierarchy)
+                {
+                    var itemGo = Instantiate<GameObject>(this.bonfirePrefab);
+                    itemGo.transform.position = this.targetTransform.transform.position + Vector3.forward * 2f;
+                    itemGo.SetActive(true);
 
-            e = false;
-            f = false;
+                    Destroy(itemGo,lifetime); //일정 시간이 지나면 모닥불 없애기
+
+                    e = false;
+                    f = false;
+                }
+            
         }
         
 
