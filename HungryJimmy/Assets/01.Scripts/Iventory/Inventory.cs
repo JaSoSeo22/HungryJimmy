@@ -14,7 +14,7 @@ public class Inventory : MonoBehaviour
     private GameObject go_SlotsParent;      // 슬롯들의 부모객체 여기서는 Grid Setting을 의미
 
 
-    private Slot[] slots;       // 인벤토리 슬롯들
+    public Slot[] slots;       // 인벤토리 슬롯들
     private bool isNotPut;      // 
     private int slotNumber;
 
