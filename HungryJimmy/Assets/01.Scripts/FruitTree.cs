@@ -36,7 +36,8 @@ public class FruitTree : MonoBehaviour
     [SerializeField]
     private string logChange_sound; //통나무로 바뀌는 소리
 
-    //
+    public bool isClear = false;
+
     public void HitFruit()
     {
         SoundManager.instance.PlaySE(chop_sound);
@@ -51,6 +52,7 @@ public class FruitTree : MonoBehaviour
 
     private void FallDownTree()
     {
+        isClear = true;
         SoundManager.instance.PlaySE(falldown_sound);
 
         //나무가 파괴 되었기에 비활성화하고 사라지게 하기 -> 잔해만 남도록

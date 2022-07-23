@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Ax Stone
   itemDesc: "\uB3CC\uB3C4\uB07C"
   itemType: 0
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 21300000, guid: d4084b3e5ad36954bbe502addc154637, type: 3}
   itemPrefab: {fileID: 1713214988236272, guid: 0169672840b1dde468fe8324a76ce492, type: 3}
   weaponType: 

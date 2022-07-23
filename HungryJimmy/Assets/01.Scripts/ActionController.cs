@@ -50,7 +50,6 @@ public class ActionController : MonoBehaviour
         {
             CheckAction();
             CanPickUp();
-            CanDropFire();
         }
     }
 
@@ -72,38 +71,38 @@ public class ActionController : MonoBehaviour
         }
     }
 
-    private void CanDropFire()
-    {
-        if (fireLookActivated)
-        {
-            if (hitInfo.transform.tag == "Fire" && hitInfo.transform.GetComponent<Fire>().GetIsFire())
-            {
-                // 손에 들고있는 아이템을 불에 넣음 == 선택된 퀵슬롯의 아이템을 넣는다 (Null).ItemName을 참조하면 오류나니까 이거부터 확인함
+    // private void CanDropFire()
+    // {
+    //     if (fireLookActivated)
+    //     {
+    //         if (hitInfo.transform.tag == "Fire" && hitInfo.transform.GetComponent<Fire>().GetIsFire())
+    //         {
+    //             // 손에 들고있는 아이템을 불에 넣음 == 선택된 퀵슬롯의 아이템을 넣는다 (Null).ItemName을 참조하면 오류나니까 이거부터 확인함
 
-                // Slot _selectedSlot = theQuickSlot.GetSelectedSlot();     // 이렇게 하면 null 일지라도 _selectedSlot에 값은 들어감
-                // if (_selectedSlot.item != null)      // 슬롯안에 아이템이 있는지 없는지 비교해야하니까 .item 넣어줌
-                // {
-                //     DropAnItem(_selectedSlot);
-                // }
-            }
-        }
-    }
+    //             // Slot _selectedSlot = theQuickSlot.GetSelectedSlot();     // 이렇게 하면 null 일지라도 _selectedSlot에 값은 들어감
+    //             // if (_selectedSlot.item != null)      // 슬롯안에 아이템이 있는지 없는지 비교해야하니까 .item 넣어줌
+    //             // {
+    //             //     DropAnItem(_selectedSlot);
+    //             // }
+    //         }
+    //     }
+    // }
 
-    private void DropAnItem(Slot _selectedSlot)
-    {
-        switch (_selectedSlot.item.itemType)
-        {
-            case Item.ItemType.Used:
-                if (_selectedSlot.item.itemName.Contains("고기"))
-                {
-                    // // 조건을 만족하면 _selectedSlot에 아이템을 생성해줌 (불보다 조금 위의 위치에)
-                    Instantiate(_selectedSlot.item.itemPrefab, hitInfo.transform.position + Vector3.up, Quaternion.identity);
-                }
-                break;
-            case Item.ItemType.Ingredient:
-                break;
-        }
-    }
+    // private void DropAnItem(Slot _selectedSlot)
+    // {
+    //     switch (_selectedSlot.item.itemType)
+    //     {
+    //         case Item.ItemType.Used:
+    //             if (_selectedSlot.item.itemName.Contains("고기"))
+    //             {
+    //                 // // 조건을 만족하면 _selectedSlot에 아이템을 생성해줌 (불보다 조금 위의 위치에)
+    //                 Instantiate(_selectedSlot.item.itemPrefab, hitInfo.transform.position + Vector3.up, Quaternion.identity);
+    //             }
+    //             break;
+    //         case Item.ItemType.Ingredient:
+    //             break;
+    //     }
+    // }
 
     private void CheckAction()
     {

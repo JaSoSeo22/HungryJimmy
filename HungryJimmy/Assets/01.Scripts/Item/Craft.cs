@@ -97,7 +97,7 @@ public class Craft : MonoBehaviour
         if (c && d)
         {
             var itemGo = Instantiate<GameObject>(this.axPrefab);
-            itemGo.transform.position = this.targetTransform.transform.position + Vector3.forward * 2f + Vector3.up * 0.9f;
+            itemGo.transform.position = this.targetTransform.transform.position + Vector3.forward * 2f + Vector3.up * 0.5f;
             itemGo.SetActive(true);
 
             c = false;
