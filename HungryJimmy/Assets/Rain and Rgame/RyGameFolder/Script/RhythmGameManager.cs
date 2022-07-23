@@ -28,7 +28,7 @@ public class RhythmGameManager : MonoBehaviour
     public GameObject backButton; //메인 화면으로 돌아가는 버튼 (일정 점수 이상 획득 x)
     public GameObject gamePanel;
     public GameObject resultsScreen; //점수 요소 가져다쓰려고 참조 쓰기 /점수 팝업으로 점수 보여주기
-    public Text normalsText, missesText, rankText, finalScoreText; //점수판에 나타날 각 점수들
+    public TextMeshProUGUI normalsText, missesText, rankText, finalScoreText; //점수판에 나타날 각 점수들
 
 
     void Start()
