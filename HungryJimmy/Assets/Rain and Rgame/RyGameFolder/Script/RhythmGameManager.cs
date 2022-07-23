@@ -37,7 +37,6 @@ public class RhythmGameManager : MonoBehaviour
         instance = this;
 
         scoreText.text = "0"; //처음 시작할 때 점수 = 0으로 
-        //currentMultiplier = 1; //처음 시작할 때 획득 점수 = x 1
 
         totalNotes = FindObjectsOfType<NoteObject>().Length;
         //Arrow컴퍼넌트에 이미 NoteObject 스크립트가 있음 -> 여기서 Length 가져오기
@@ -63,33 +62,27 @@ public class RhythmGameManager : MonoBehaviour
             {
                 if(!theMusic.isPlaying && !resultsScreen.activeInHierarchy && gamePanel.activeInHierarchy) //음악이 플레이 되지 않고, 점수판이 활성화 되지 않았다면...
                 {
-                    resultsScreen.SetActive(true); //점수판 활성화
-
-                    normalsText.text = "" + normalHits; //위 아래 같은 방식임?
-                    //goodsText.text = goodHits.ToString();
-                   // perfectsText.text = perfectHits.ToString();
-                    missesText.text = "" + missedHits;
+                    resultsScreen.SetActive(true); //점수판 활성화           
+                    normalsText.text = normalHits.ToString();
+                    missesText.text = missedHits.ToString();
 
                     float totalHit = normalHits; //총 점수 받아오기
-                    //float percentHit = (totalHit / totalNotes) * 100f; //퍼센트로 (획득한 총 점수 / 만점?) 나타내기
-                
-                    //percentHitText.text = percentHit.ToString("F1") + "%"; //한 자릿 수 소수점까지만 보여주기
 
                     string rankVal = "F"; //default rank value
 
                     if(normalHits > 4f)
                     {
-                        rankVal = "Rain!";
+                        rankVal = "Success_!";
                         rainButton.SetActive(true);
                     }
 
                     else if(normalHits < 5f)
                     {
-                        rankVal = "Thirsty";     
+                        rankVal = "Fail_!";     
                         backButton.SetActive(true);                     
                     }
 
-                    rankText.text = rankVal; //점수판에 나타날  최종 랭크
+                    rankText.text = rankVal; //점수판에 나타날 문구(성공 여부)
 
                     finalScoreText.text = currentScore.ToString(); //최종 점수
                 }
@@ -99,24 +92,7 @@ public class RhythmGameManager : MonoBehaviour
     public void NoteHit()
     {
         Debug.Log("Hit On Time");
-//multiplierThresholds element값이 4라면(인스펙터)
-//multiplier값이 1인데 0으로 만들고 싶음 -> 1을 빼주면 됨...
-        // if (currentMultiplier - 1 < multiplierThresholds.Length) //currentMultiplier 가 4라면, 아래 실행 x
-        // {
-        //     multiplierTracker++;
 
-        //     //currentMultiplier - 1 -> 배열에서 -1을 함 -> 포지션을 0으로 만들기
-        //     if(multiplierThresholds[currentMultiplier - 1] <= multiplierTracker)
-        //     {
-        //         multiplierTracker = 0;
-        //         currentMultiplier++;
-        //     }
-        // }
-
-        // 2:12 영상에서도! 주석 처리// multiText.text = "Multiplier: x" + currentMultiplier;
-
-        //2:12 영상에서쯤! 주석 처리//currentScore += scorePerNote; //노트 맞추기를 성공했을 경우 점수 추가
-        //currentScore += scorePerNote * currentScore; //배속으로 돌렸을 때 그 점수에 추가 점수 단위를 곱해 / 더 높은 점수를 준다
         scoreText.text = "" + currentScore; //(점수가 추가된) 현재 점수 표시
     }
 
@@ -131,11 +107,6 @@ public class RhythmGameManager : MonoBehaviour
     public void NoteMissed()
     {
         Debug.Log("Missed Note");
-
-        // currentMultiplier = 1; //노트를 놓쳤을 경우 점수 획득 값(단위)을 되돌리기
-        // multiplierTracker = 0;
-
-        // multiText.text = "Multiplier:x" + currentMultiplier;
 
         missedHits++; //총 스코어인 missedHits에 1 합산
     }

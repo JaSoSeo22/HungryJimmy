@@ -35,28 +35,28 @@ public class GameCountDown : MonoBehaviour
                 Time.timeScale = 0.0f;
             }
             //타이머가 150보다 작거나 같다면 타이머 계속 증가
-            if (Timer <= 150)
+            if (Timer <= 90)
             {
                 Timer++;
                 //타이머가 60보다 크다면 3 켜기
-                if(Timer > 60)
+                if(Timer > 30)
                 {
                     Num_C.SetActive(true);
                 }
                 // 3끄고 2 켜기
-                if(Timer > 90)
+                if(Timer > 50)
                 {
                     Num_C.SetActive(false);
                     Num_B.SetActive(true);
                 }
                 //2끄고 1켜기
-                if(Timer > 120)
+                if(Timer > 70)
                 {
                     Num_B.SetActive(false);
                     Num_A.SetActive(true);
                 }
                 //1끄고 GO이미지 켜기
-                if(Timer > 150)
+                if(Timer > 90)
                 {
                     Num_A.SetActive(false);
                     Num_GO.SetActive(true);
