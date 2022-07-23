@@ -29,7 +29,7 @@ public class SaveNLoad : MonoBehaviour
     // ##### 안드로이드로 빌드할 경우 dataPath말고 persistentDataPath를 쓰니까 잘 되네요. 저 같은 문제 겪은 신 분 있을까봐 남겨놉니다.
     void Start()
     {
-        SAVE_DATA_DIRECTORY = Application.dataPath + "/Saves";      // Saves 폴더안에 생성
+        SAVE_DATA_DIRECTORY = Application.persistentDataPath + "/Saves";      // Saves 폴더안에 생성
 
         if (!Directory.Exists(SAVE_DATA_DIRECTORY))     // SAVE_DATA_DIRECTORY가 없으면
         {
@@ -91,4 +91,3 @@ public class SaveNLoad : MonoBehaviour
     }
 }
 
-// ##### 파괴된 아이템은 bool 줘서 세이브데이터에 넣어주든지 하면됨

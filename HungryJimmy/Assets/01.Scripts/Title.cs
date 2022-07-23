@@ -7,17 +7,16 @@ public class Title : MonoBehaviour
 {
     public string sceneName = "GameStage";      // GameStage로 씬 이동하기
 
-    public static Title instance;       // 싱글턴화 해주기
+    public static Title instance;       // 씬이동하면 모든게 파괴되니 싱글턴화 해주기
 
     private SaveNLoad theSaveNLoad;
 
-    private void Awake()
+    private void Awake()    
     {
-        if (instance == null)
+        if (instance == null)       // 인스턴스가 null이면 
         {
             instance = this;        // 자기자신 넣어주고
-            // ### 이거 했더니 게임 시작해도 타이틀 패널이 유지되길래 일단 주석처리해둠
-            // DontDestroyOnLoad(gameObject);      // 씬이동해도 파괴되지 않게하기
+            DontDestroyOnLoad(gameObject);      // 씬이동해도 파괴되지 않게하기
         }
         else
         {
@@ -41,7 +40,7 @@ public class Title : MonoBehaviour
 
     IEnumerator LoadCoroutine()     // 씬 로드하는 코루틴
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);      // 지정해둔 씬 로딩해줌
 
         // ## 여기 while문에 로딩화면 만들어줘도 됨. operation.process 이용해서
         while (!operation.isDone)
@@ -50,7 +49,7 @@ public class Title : MonoBehaviour
         }
         
         theSaveNLoad = FindObjectOfType<SaveNLoad>();       // 다음씬으로 넘어가고 그 씬에 있는 SaveNLoad를 찾음
-        theSaveNLoad.LoadData();        // 로드해봤자 의미없음 없는 플레이어 찾는거라
+        theSaveNLoad.LoadData();        // SaveNLoad의 LoadData실행
         this.gameObject.SetActive(false);        // DontDestroyOnLoad해놨기 때문에 그냥 SetActive로 감춰줌
     }
 
