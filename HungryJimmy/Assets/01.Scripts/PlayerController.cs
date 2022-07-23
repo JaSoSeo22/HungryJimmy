@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour
             gameObject.transform.forward = moveDir; // 캐릭터가 바라보는 정면은 입력된 방향에 맞춰 바라본다. 
             transform.position += moveDir * Time.deltaTime * applySpeed;
 
-            SoundManager.instance.PlaySE(walk_Sound); //walk sound
+            //SoundManager.instance.PlaySE(walk_Sound); //walk sound
         }
     }
 
