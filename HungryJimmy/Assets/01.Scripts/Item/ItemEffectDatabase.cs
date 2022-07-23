@@ -20,24 +20,11 @@ public class ItemEffectDatabase : MonoBehaviour
     // 필요한 컴포넌트
     [SerializeField]
     private StatusController thePlayerStatus;
-    [SerializeField]
-    private SlotToolTip theSlotToolTip;
 
     // 변수의 상수화
     private const string STAMINA = "Stamina", HUNGRY = "HUNGRY", THIRSTY = "THIRSTY";
 
 
-    // SlotToolTip 징검다리
-    public void ShowToolTip(Item _item, Vector3 _pos)
-    {
-        theSlotToolTip.ShowToolTip(_item, _pos);
-    }
-
-    // SlotToolTip 징검다리
-    public void HideToolTip()
-    {
-        theSlotToolTip.HideToolTip();
-    }
 
     public void UseItem(Item _item)     // 넘어오는 파라미터로 아이템 넣어줌
     {

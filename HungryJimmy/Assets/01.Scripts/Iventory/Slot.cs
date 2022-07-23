@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
+public class Slot : MonoBehaviour, IPointerClickHandler
 {
 
     public Item item; // 획득한 아이템
@@ -16,18 +16,11 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
     [SerializeField]
     private GameObject go_CountImage; // 획득한 아이템 갯수창 이미지
 
-
-    [SerializeField]
-    private RectTransform baseRect;       // 인벤토리 사각영역
-    [SerializeField]
-    private InputNumber theInputNumber;     // InputNumber받아오기
     private ItemEffectDatabase theItemEffectDatabase;       // ItemEffectDatabase 받아오기
 
     private void Start()
     {
-        theInputNumber = FindObjectOfType<InputNumber>();
         theItemEffectDatabase = FindObjectOfType<ItemEffectDatabase>();
-        // text_Count = GetComponent<TMPro.TextMeshProUGUI>();
     }
 
     // 이미지의 투명도 조절 
@@ -87,7 +80,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
     // 아이템 사용하는 구간
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (eventData.button == PointerEventData.InputButton.Right)     // 우클릭시
+        if (eventData.button == PointerEventData.InputButton.Left)     // 좌클릭시
         {
             if (item != null)       // 아이템이 있는지 없는지 확인하고 실행
             {
@@ -98,90 +91,5 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
                 }
             }
         }
-    }
-
-    public void OnBeginDrag(PointerEventData eventData)
-    {
-        if (item != null && Inventory.inventoryActivated)       // item이 null이 아니고 Inventory.inventoryActivated가 true일때
-        {
-            Debug.Log(Inventory.inventoryActivated);
-            DragSlot.instance.dragSlot = this;      // DragSlot이 나 자신이 됨
-            DragSlot.instance.DragSetImage(itemImage);      // 드래그중인 이미지도 바뀜
-
-            DragSlot.instance.transform.position = eventData.position;        // DragSlot의 포지션을 이벤트가 위치한 위치로 바꿈
-        }
-    }
-
-    public void OnDrag(PointerEventData eventData)
-    {
-        if (item != null)       // item이 null이 아닐 때
-        {
-            DragSlot.instance.transform.position = eventData.position;
-        }
-    }
-
-    // 드래그가 끝나기만해도 호출
-    public void OnEndDrag(PointerEventData eventData)
-    {
-        // 드래그 했는데 인벤토리 창이나 퀵슬롯 영역을 벗어난 경우
-        if (!(DragSlot.instance.transform.localPosition.x > baseRect.rect.xMin     // 최소값보다 크고 최대값보다 작다
-        && DragSlot.instance.transform.localPosition.x < baseRect.rect.xMax             // 인벤토리 영역
-        && DragSlot.instance.transform.localPosition.y > baseRect.rect.yMin
-        && DragSlot.instance.transform.localPosition.y < baseRect.rect.yMax))
-        {
-            if (DragSlot.instance.dragSlot != null)     // Slot이 null이 아닐때만 실행
-            {
-                theInputNumber.Call();      // InputNumber의 Call()실행
-            }
-        }
-        else        // 인벤토리 영역에서 드래그가 끝났다면
-        {
-            DragSlot.instance.SetColor(0);      // 이미지 투명한 상태로 만들어줌
-            DragSlot.instance.dragSlot = null;
-        }
-    }
-
-    // 다른 슬롯위에서 드래그가 끝났을 때 호출
-    public void OnDrop(PointerEventData eventData)
-    {
-        if (DragSlot.instance.dragSlot != null)     // DragSlot이 null이 아닐때만 ChangeSlot()실행
-        {
-            ChangeSlot();
-        }
-    }
-
-    private void ChangeSlot()       // a슬롯에 있는걸 b슬롯으로 옮길때 이미 b정보는 파괴되므로 임시정보 저장해줌
-    {
-        Item _tempItem = item;      // 자기자신
-        int _tempItemCount = itemCount;     //자기자신의 갯수
-
-        AddItem(DragSlot.instance.dragSlot.item, DragSlot.instance.dragSlot.itemCount);     // b에 a정보 넣기
-
-        if (_tempItem != null)      // 빈슬롯이 아니면
-        {
-            DragSlot.instance.dragSlot.AddItem(_tempItem, _tempItemCount);      // null이 아니면 b정보 넣어줌
-        }
-        else    // 빈슬롯이면
-        {
-            DragSlot.instance.dragSlot.ClearSlot();     // 빈슬롯이면 슬롯 초기화
-        }
-    }
-
-    // 마우스가 슬롯에 들어갈 때 발동
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        Debug.Log("함수실행시작");
-        if (item != null)       // item이 null이 아닐때 실행하도록
-        {
-            theItemEffectDatabase.ShowToolTip(item, transform.position);    // theItemEffectDatabase에서 ShowToolTip호출
-        }
-    }
-
-    // 마우스가 슬롯에서 빠져나갈 때 발동
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        Debug.Log("함수실행끝");
-
-        theItemEffectDatabase.HideToolTip();        // theItemEffectDatabase에서 HideToolTip호출
     }
 }

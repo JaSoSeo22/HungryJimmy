@@ -15,8 +15,6 @@ public class ActionController : MonoBehaviour
     // 충돌체 정보 저장
     private RaycastHit hitInfo;     // 충돌체 정보 저장
 
-    // 불을 근접해서 바라볼 시 true
-    private bool fireLookActivated = false;
 
     // 특정 레이어를 가진 오브젝트에 대해서만 습득할 수 있게 함
     [SerializeField]
@@ -42,10 +40,10 @@ public class ActionController : MonoBehaviour
         TryAction();
     }
 
-    // 아이템 먹을 때 E 키가 눌리는지 확인할 메서드
+    // 아이템 먹을 때 확인할 메서드
     private void TryAction()
     {
-        // E키가 눌렸을 떄 아이템이 있는지 없는지 확인하는 메서드
+        // 클릭했을때 아이템이 있는지 없는지 확인하는 메서드
         if (Input.GetMouseButtonDown(0))
         {
             CheckAction();
@@ -58,51 +56,22 @@ public class ActionController : MonoBehaviour
     {
         if (pickupActivated)
         {
-            if (hitInfo.transform != null)      // transform이 null이 아닌경우에
+            if (!Inventory.inventoryActivated)
             {
-                // 어떤 아이템을 획득했는지 확인
-                Debug.Log(hitInfo.transform.GetComponent<ItemPickUp>().item.itemName + "획득했습니다.");
-                // 부딪힌 충돌체 안에 있는 ItemPickUp안의 item을 넣기
-                theInventory.AcquireItem(hitInfo.transform.GetComponent<ItemPickUp>().item);    
-                // 획득한 아이템 파괴
-                Destroy(hitInfo.transform.gameObject);
-                InfoDisappear();
+                if (hitInfo.transform != null)      // transform이 null이 아닌경우에
+                {
+                    // 어떤 아이템을 획득했는지 확인
+                    Debug.Log(hitInfo.transform.GetComponent<ItemPickUp>().item.itemName + "획득했습니다.");
+                    // 부딪힌 충돌체 안에 있는 ItemPickUp안의 item을 넣기
+                    theInventory.AcquireItem(hitInfo.transform.GetComponent<ItemPickUp>().item);
+                    // 획득한 아이템 파괴
+                    Destroy(hitInfo.transform.gameObject);
+                    InfoDisappear();
+                }
             }
+
         }
     }
-
-    // private void CanDropFire()
-    // {
-    //     if (fireLookActivated)
-    //     {
-    //         if (hitInfo.transform.tag == "Fire" && hitInfo.transform.GetComponent<Fire>().GetIsFire())
-    //         {
-    //             // 손에 들고있는 아이템을 불에 넣음 == 선택된 퀵슬롯의 아이템을 넣는다 (Null).ItemName을 참조하면 오류나니까 이거부터 확인함
-
-    //             // Slot _selectedSlot = theQuickSlot.GetSelectedSlot();     // 이렇게 하면 null 일지라도 _selectedSlot에 값은 들어감
-    //             // if (_selectedSlot.item != null)      // 슬롯안에 아이템이 있는지 없는지 비교해야하니까 .item 넣어줌
-    //             // {
-    //             //     DropAnItem(_selectedSlot);
-    //             // }
-    //         }
-    //     }
-    // }
-
-    // private void DropAnItem(Slot _selectedSlot)
-    // {
-    //     switch (_selectedSlot.item.itemType)
-    //     {
-    //         case Item.ItemType.Used:
-    //             if (_selectedSlot.item.itemName.Contains("고기"))
-    //             {
-    //                 // // 조건을 만족하면 _selectedSlot에 아이템을 생성해줌 (불보다 조금 위의 위치에)
-    //                 Instantiate(_selectedSlot.item.itemPrefab, hitInfo.transform.position + Vector3.up, Quaternion.identity);
-    //             }
-    //             break;
-    //         case Item.ItemType.Ingredient:
-    //             break;
-    //     }
-    // }
 
     private void CheckAction()
     {
@@ -112,56 +81,29 @@ public class ActionController : MonoBehaviour
             if (hitInfo.transform.tag == "Item")
             {
                 ItemInfoAppear();
-                Debug.DrawRay(gameObject.transform.position, gameObject.transform.forward *hitInfo.distance , Color.red);
+                Debug.DrawRay(gameObject.transform.position, gameObject.transform.forward * hitInfo.distance, Color.red);
             }
-            //else if (hitInfo.transform.tag == "WeakAnimal" || hitInfo.transform.tag == "StrongAnimail")
-            //    MeatInfoAppear();
-            else if (hitInfo.transform.tag == "Fire")       // 레이에 맞은 물체의 tag가 Fire면
-                FireInfoAppear();       // Fire 정보 활성화
         }
         else // 아이템 획득하게 되면 정보 비활성화
         {
-            InfoDisappear();        //### 원래 ItemInfoDisappear 였는데 나중에 바꾼거같아서 일단 바꿈###
+            InfoDisappear();        
         }
-    }
-
-    // ##### MeatInfoAppear()에도 Reset(); 해줘야함 #####
-    private void Reset()    // 불 보다가 아이템 보는걸 반복하다보면 에러뜨는데 이를 막기위해 리셋함
-    {
-        pickupActivated = false;
-        // dissolveActivated = false;       아직 작성안해서 에러뜨길래 주석처리해둠
-        fireLookActivated = false;
     }
 
 
     // 아이템 정보가 보이는 메서드
     private void ItemInfoAppear()
     {
-        Reset();
         pickupActivated = true;
         actionText.gameObject.SetActive(true);
         actionText.text = hitInfo.transform.GetComponent<ItemPickUp>().item.itemName + "획득" + "</color>";
     }
 
-    private void FireInfoAppear()
-    {
-        Reset();
-        fireLookActivated = true;       // 켜진 상태의 불을 바라보면
-
-        if (hitInfo.transform.GetComponent<Fire>().GetIsFire())
-        {
-            actionText.gameObject.SetActive(true);      // actionText도 활성화
-            actionText.text = "선택된 아이템 불에 넣기" + "<color=yellow>" + "(E)" + "</color>";
-        }
-    }
 
     // 아이템 정보를 사라지게 하는 메서드
     private void InfoDisappear()
     {
         pickupActivated = false;
-        // dissolveActivated = false;
-        fireLookActivated = false;
-        //
         actionText.gameObject.SetActive(false);
     }
 }
