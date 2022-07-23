@@ -28,9 +28,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7980051549629292552}
-  m_LocalRotation: {x: -0, y: -0.79223233, z: -0, w: 0.6102196}
+  m_LocalRotation: {x: 0, y: -0.792231, z: 0, w: 0.61022127}
   m_LocalPosition: {x: 39.7342, y: -21.768152, z: 76.19004}
-  m_LocalScale: {x: 3, y: 2.5, z: 2}
+  m_LocalScale: {x: 1, y: 0.8333334, z: 0.66666657}
   m_Children:
   - {fileID: 7980051549069311727}
   - {fileID: 7980051550207445394}
@@ -140,6 +140,7 @@ MonoBehaviour:
   chop_sound: Tree_Chop
   falldown_sound: Tree_FallDown
   logChange_sound: Tree_Log
+  isClear: 0
 --- !u!1 &7980051550207445393
 GameObject:
   m_ObjectHideFlags: 0
