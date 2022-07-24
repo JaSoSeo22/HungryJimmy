@@ -7,6 +7,7 @@ public class CheckItem : MonoBehaviour
     public Inventory inventory;
     public GameObject axePrefab;
     public GameObject treeaxePrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,4 +54,5 @@ public class CheckItem : MonoBehaviour
         axePrefab.SetActive(false);
     }
 
+   
 }

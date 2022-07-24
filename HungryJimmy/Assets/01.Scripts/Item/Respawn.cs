@@ -11,6 +11,13 @@ public class Respawn : MonoBehaviour
     [SerializeField] private float fruitTime;
     public GameObject newFruitPrefab;
     [SerializeField] Transform fruitTransform;
+
+    public GameObject waterPrefab;
+    [SerializeField] Transform waterTransform;
+
+    public GameObject rainPrefab; // 비 내리는지 확인할 오브젝트
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +47,14 @@ public class Respawn : MonoBehaviour
         itemGo.SetActive(true);
     }
 
+    IEnumerator RespawnWater()
+    {
+        yield return new WaitForSeconds(3f);
+        var itemGo = Instantiate<GameObject>(this.waterPrefab);
+        itemGo.transform.position = this.waterTransform.transform.position;
+        itemGo.SetActive(true);
+    }
+
     private void SearchLog()
     {
         if (GameObject.FindGameObjectWithTag("Tree") != null)
@@ -62,5 +77,17 @@ public class Respawn : MonoBehaviour
             }
         }
 
+    }
+
+    private void SearchRain()
+    {
+        if (rainPrefab.activeInHierarchy)
+        {
+            if (GameObject.FindGameObjectWithTag("Status").GetComponent<StatusController>().isRain == true)
+            {
+                StartCoroutine(RespawnWater());
+            }
+            
+        }
     }
 }

@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
     //플레이어의 실제 육체(몸) / 콜라이더로 충돌 영역 설정, 리지드바디로 콜라이더에 물리적 기능 추가
     private Rigidbody myRigid;
     private StatusController theStatusController;
+    public Inventory inventory;
+
 
     // 조이스틱 가져오기
     [SerializeField] private VirtualJoystick02 moveJoystick;
@@ -36,12 +38,12 @@ public class PlayerController : MonoBehaviour
 
     //필요한 사운드 이름
     [SerializeField]
-    private string walk_Sound; 
+    private string walk_Sound;
 
 
     public Animator animator; // 애니메이션
     public GameObject runningImage; //달리기 상태인지 알려주는 이미지
-    
+
 
 
     void Start()
@@ -73,8 +75,6 @@ public class PlayerController : MonoBehaviour
 
     }
 
-
-
     private void IsGround() //지면 체크
     {//고정된 좌표를 향해 y 반절의 거리만큼 (아래방향으로) 레이저 쏘기
      //-> 지면과 닿게 됨...isGround는 true를 반환해 점프할 수 있는 상태가 됨...
@@ -98,19 +98,19 @@ public class PlayerController : MonoBehaviour
     private void Running() //달리기 실행
     {
         theStatusController.DecreaseStamina(1f * Time.deltaTime);    // 달리는 중일때 (1초에 1씩) 스태미너 값 깎음
-       
+
         Vector2 moveInput = new Vector2(moveJoystick.horizontal, moveJoystick.vertical);
         bool isRun = moveInput.magnitude != 0;
         applySpeed = runSpeed; //스피드가 RunSpeed로 바뀜
 
-        animator.SetBool("isRun", isRun);       
+        animator.SetBool("isRun", isRun);
     }
 
     private void RunningCancel() //달리기 취소
     {
         isRun = false;
         applySpeed = walkSpeed; //걷는 속도
-        animator.SetBool("isRun", isRun); 
+        animator.SetBool("isRun", isRun);
     }
 
     private void Move() //움직임 실행
@@ -140,9 +140,22 @@ public class PlayerController : MonoBehaviour
         }
         if (other.tag == "EndingSpot")
         {
-            new WaitForSeconds(3f);
-            SceneManager.LoadScene("endding");
+            CheckBoat();
         }
+    }
+    public void CheckBoat()
+    {
+        for (int i = 0; i < inventory.slots.Length; i++)
+            {
+                if (inventory.slots[i].item != null)
+                {
+                    if (inventory.slots[i].item.itemName == "Boat")
+                    {
+                        new WaitForSeconds(3f);
+                        SceneManager.LoadScene("endding");
+                    }
+                }
+            }
     }
 
     IEnumerator Joy()       // 기뻐하는 애니메이션 
@@ -153,22 +166,4 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isJoy", false);       // isJoy애니메이션 끄기
         isJoy = false;      // isJoy false로 변경
     }
-
-    // private void CameraRotation()
-    // {  
-    //     Vector2 mouseDelta = new Vector2(cameraJoystick.horizontal*0.5f , cameraJoystick.vertical*0.5f);
-    //     Vector3 camAngle = theCamera.transform.rotation.eulerAngles;
-    //     float x = camAngle.x - mouseDelta.y;
-
-    //     if (x < 180) // 위아래 영역
-    //     {
-    //         x = Mathf.Clamp(x, -1f, 50f);
-    //     }
-    //     else // 좌우 영역
-    //     {
-    //         x = Mathf.Clamp(x, 335f, 361f);
-    //     }
-
-    //     theCamera.transform.rotation = Quaternion.Euler(x, camAngle.y + mouseDelta.x, camAngle.z);
-    // }
 }

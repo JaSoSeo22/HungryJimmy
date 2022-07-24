@@ -83,8 +83,8 @@ public class StatusController : MonoBehaviour
                 currentHungryDecreaseTime = 0;
             }
         }
-        // else        // 0보다 작아졌을때
-        //     theHealth.Dead();
+        else        // 0보다 작아졌을때
+            theHealth.Dead();
         //     // Debug.Log("배고픔 수치가 0이 되었습니다");
     }
 
@@ -105,9 +105,6 @@ public class StatusController : MonoBehaviour
                 isRain = false;
             }
         }
-        // else
-        //     theHealth.Dead();
-        //     // Debug.Log("목마름 수치가 0이 되었습니다");
     }
 
     private void Stamina()       // 체력 구현
@@ -123,15 +120,13 @@ public class StatusController : MonoBehaviour
             }
 
         }
-        else        // 0보다 작아졌을때
-            theHealth.Dead();
-            // Debug.Log("체력 수치가 0이 되었습니다");
     }
 
     private void Raining() //비 내리기
     {
         if (rainPrefab.activeInHierarchy) //하이어라키 창에 비 프리팹이 활성화 되었다면
         {
+            isRain = true;
             currentThirsty += 3f * Time.deltaTime; //총 30의 수분 주기(비가 10초동안 옴)
         }
     }

@@ -15,6 +15,7 @@ TagManager:
   - FruitTree
   - BlockedZone
   - EndingSpot
+  - Status
   layers:
   - Default
   - TransparentFX

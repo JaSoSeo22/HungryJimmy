@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 614236194006092160}
   - component: {fileID: 647776965974456192}
   - component: {fileID: 638001266004664224}
-  - component: {fileID: 607329970607352796}
   - component: {fileID: 615019340188408646}
+  - component: {fileID: 2496238125960488284}
   m_Layer: 6
   m_Name: Boat
   m_TagString: Item
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616300022797257930}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12.278486, y: 2.88, z: -33.81513}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -83,20 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &607329970607352796
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 616300022797257930}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 27df262d658c86747b7508c9a3298508, type: 3}
 --- !u!114 &615019340188408646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,3 +96,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 0bb9f5fc2b8abac49a7470ad8392f988, type: 2}
+--- !u!65 &2496238125960488284
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616300022797257930}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4321631, y: 0.7808765, z: 3.867744}
+  m_Center: {x: 0.00015211105, y: 0.22220391, z: -0.10845715}
