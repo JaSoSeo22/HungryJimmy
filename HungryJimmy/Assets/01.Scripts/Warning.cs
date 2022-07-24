@@ -65,6 +65,14 @@ public class Warning : MonoBehaviour
                 }
 
             }
+            else
+            {
+                h_redUI = false;
+            }
+        }
+        else
+        {
+            h_yellowUI = false;
         }
 
         if (theStatus.currentThirsty < 50)
@@ -87,47 +95,48 @@ public class Warning : MonoBehaviour
                     }
                 }
             }
+            t_redUI = false;
+        }
+        else
+        {
+            t_yellowUI = false;
         }
     }
 
     IEnumerator ShowHYellowPanel()
     {
         hungry_yellow_Panel.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.5f);
         hungry_yellow_Panel.SetActive(false);
 
         SoundManager.instance.PlaySE(weakWarning_Sound); //warning sound play
-        //yellowUI = false;
     }
 
     IEnumerator ShowHRedPanel()
     {
         hungry_red_Panel.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.5f);
         hungry_red_Panel.SetActive(false);
 
         SoundManager.instance.PlaySE(halfEmergencyWarning_Sound); //warning sound play
-        //yellowUI = false;
     }
 
     IEnumerator ShowTYellowPanel()
     {
         thirsty_yellow_Panel.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.5f);
         thirsty_yellow_Panel.SetActive(false);
 
         SoundManager.instance.PlaySE(weakWarning_Sound); //warning sound play
-        //redUI = false;
     }
 
     IEnumerator ShowTRedPanel()
     {
         thirsty_red_Panel.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.5f);
         thirsty_red_Panel.SetActive(false);
 
         SoundManager.instance.PlaySE(halfEmergencyWarning_Sound); //warning sound play
-        //redUI = false;
     }
 
 

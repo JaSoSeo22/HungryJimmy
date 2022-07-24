@@ -81,7 +81,7 @@ public class Craft : MonoBehaviour
                     Debug.Log("나무");
                     if (inventory.slots[j].item != null)
                     {
-                        if (inventory.slots[j].item.itemName == "RockItem" && inventory.slots[j].itemCount >= 1)
+                        if (inventory.slots[j].item.itemName == "Rock" && inventory.slots[j].itemCount >= 1)
                         {
                             Debug.Log("돌 확인");
                             d = true;
@@ -123,7 +123,7 @@ public class Craft : MonoBehaviour
                     }
                     if (inventory.slots[j].item != null)
                     {
-                        if (inventory.slots[j].item.itemName == "RockItem" && inventory.slots[j].itemCount >= 2)
+                        if (inventory.slots[j].item.itemName == "Rock" && inventory.slots[j].itemCount >= 2)
                         {
                             b = true;
                             inventory.slots[j].SetSlotCount(-2);
@@ -163,7 +163,7 @@ public class Craft : MonoBehaviour
                     }
                     if (inventory.slots[j].item != null)
                     {
-                        if (inventory.slots[j].item.itemName == "RockItem" && inventory.slots[j].itemCount >= 2)
+                        if (inventory.slots[j].item.itemName == "Rock" && inventory.slots[j].itemCount >= 2)
                         {
                             f = true;
                             inventory.slots[j].SetSlotCount(-2);
