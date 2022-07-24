@@ -15,8 +15,8 @@ public class Inventory : MonoBehaviour
 
 
     public Slot[] slots;       // 인벤토리 슬롯들
-    private bool isNotPut;      // 
-    private int slotNumber;
+    private bool isNotPut;      // 슬롯이 찼는지
+    private int slotNumber;     // 슬롯넘버
 
     public Slot[] GetSlots() { return slots; }        // 슬롯에 있는 값 전부 반환
 
@@ -44,23 +44,23 @@ public class Inventory : MonoBehaviour
 
     }
 
-    public void OpenInventory()
+    public void OpenInventory()     // 인벤토리창 열기
     {
-        inventoryActivated = true;
-        GameManager.isOpenInventory = true;
-        go_InventoryBase.SetActive(true);
+        inventoryActivated = true;      // 인벤토리창이 활성화됐고
+        GameManager.isOpenInventory = true;     // isOpenInventory가 true
+        go_InventoryBase.SetActive(true);       // 인벤토리창 UI 활성화
     }
 
-    public void CloseInventory()
+    public void CloseInventory()        // 인벤토리창 닫기
     {
-        inventoryActivated = false;
-        GameManager.isOpenInventory = false;
-        go_InventoryBase.SetActive(false);
+        inventoryActivated = false;     // 인벤토리창 비활성화
+        GameManager.isOpenInventory = false;        // isOpenInventory가 false
+        go_InventoryBase.SetActive(false);      // 인벤토리창 UI ql활성화
     }
 
     public void AcquireItem(Item _item, int _count = 1)     // 아이템 기본값이 1로 지정
     {
-        PutSlot(slots, _item, _count);    
+        PutSlot(slots, _item, _count);      // PutSlot실행
 
     }
 
@@ -85,11 +85,11 @@ public class Inventory : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < slots.Length; i++)
+        for (int i = 0; i < slots.Length; i++)      // 반복문 돌리기
         {
-            if (slots[i].item == null)
+            if (slots[i].item == null)      // 아이템이 null이면
             {
-                slots[i].AddItem(_item, _count);
+                slots[i].AddItem(_item, _count);        // Slot의 AddItem실행
                 isNotPut = false;
                 return;
             }

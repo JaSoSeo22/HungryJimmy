@@ -15,11 +15,11 @@ public class ItemEffect
 public class ItemEffectDatabase : MonoBehaviour
 {
     [SerializeField]
-    private ItemEffect[] itemEffects;
+    private ItemEffect[] itemEffects;       // 아이템효과 배열
 
     // 필요한 컴포넌트
     [SerializeField]
-    private StatusController thePlayerStatus;
+    private StatusController thePlayerStatus;       // StatusController 받아오기
 
     // 변수의 상수화
     private const string STAMINA = "Stamina", HUNGRY = "HUNGRY", THIRSTY = "THIRSTY";
@@ -46,10 +46,10 @@ public class ItemEffectDatabase : MonoBehaviour
                                 thePlayerStatus.IncreaseStamina(itemEffects[x].num[y]);     //IncreaseStamina의 itemEffects[x]번째의 num[y]만큼 회복
                                 break;
                             case HUNGRY:
-                                thePlayerStatus.IncreaseHungry(itemEffects[x].num[y]);
+                                thePlayerStatus.IncreaseHungry(itemEffects[x].num[y]);      //IncreaseHungry의 itemEffects[x]번째의 num[y]만큼 회복
                                 break;
                             case THIRSTY:
-                                thePlayerStatus.IncreaseThirsty(itemEffects[x].num[y]);
+                                thePlayerStatus.IncreaseThirsty(itemEffects[x].num[y]);     //IncreaseThirsty의 itemEffects[x]번째의 num[y]만큼 회복
                                 break;
                             default:
                                 Debug.Log("잘못된 Status 부위 HUNGRY, THIRSTY, STAMINA만 가능합니다");      // 모든 조건에 걸리지 않으면 띄워줌

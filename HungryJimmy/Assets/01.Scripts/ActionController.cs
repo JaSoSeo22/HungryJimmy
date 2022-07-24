@@ -34,7 +34,6 @@ public class ActionController : MonoBehaviour
 
     }
 
-    // 매 프레임마다 키가 눌리고 있는지 확인
     private void Update()
     {
         // 매프레임마다 아이템이 있는지 확인
@@ -68,10 +67,10 @@ public class ActionController : MonoBehaviour
                     theInventory.AcquireItem(hitInfo.transform.GetComponent<ItemPickUp>().item);
                     // 획득한 아이템 파괴
                     Destroy(hitInfo.transform.gameObject);
-                    InfoDisappear();
-                    if (hitInfo.transform.GetComponent<ItemPickUp>().item.itemName == "Boat")
+                    InfoDisappear();        // 아이템 정보 보여주기
+                    if (hitInfo.transform.GetComponent<ItemPickUp>().item.itemName == "Boat")       // itemName이 Boat인 충돌체 일때
                     {
-                        endImage.SetActive(true);
+                        endImage.SetActive(true);       // 엔딩 장소로 안내하는 이미지 보여주기
                     }
                 }
             }
@@ -102,16 +101,16 @@ public class ActionController : MonoBehaviour
     // 아이템 정보가 보이는 메서드
     private void ItemInfoAppear()
     {
-        pickupActivated = true;
-        actionText.gameObject.SetActive(true);
-        actionText.text = hitInfo.transform.GetComponent<ItemPickUp>().item.itemName + "획득" + "</color>";
+        pickupActivated = true;     // pickupActivated 활성화
+        actionText.gameObject.SetActive(true);      // actionText 활성화
+        actionText.text = hitInfo.transform.GetComponent<ItemPickUp>().item.itemName + "획득" + "</color>";     // 어떤 아이템과 부딪혔는지 정보 알려줌
     }
 
 
     // 아이템 정보를 사라지게 하는 메서드
     private void InfoDisappear()
     {
-        pickupActivated = false;
-        actionText.gameObject.SetActive(false);
+        pickupActivated = false;        // pickupActivated 비활성화
+        actionText.gameObject.SetActive(false);     // actionText 비활성화
     }
 }

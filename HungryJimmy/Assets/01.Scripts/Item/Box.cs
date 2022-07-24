@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Box : MonoBehaviour
 {
-    public GameObject box;
-    public GameObject logBox;
-    public GameObject clothBox;
+    public GameObject box;      // 처음 정보를 받아오기전에 보여줄 빈박스
+    public GameObject logBox;       // 분류결과가 나무로 나오면 보여줄 나무박스
+    public GameObject clothBox;     // 분류결과가 옷으로 나오면 보여줄 옷박스
 
-    public GetInferenceFromModel getInferenceFromModel;
+    public GetInferenceFromModel getInferenceFromModel;     // AI모델과 연결
 
     void OnMouseDown()      // 마우스 클릭하면
     {
@@ -33,16 +33,16 @@ public class Box : MonoBehaviour
     public void Find()
     {
       
-        if (getInferenceFromModel.prediction.predictedValue == 1)        // 리스트 num의 인덱스가 0이면
+        if (getInferenceFromModel.prediction.predictedValue == 1)        // 모델의 분류값이 1이면
         {
             Debug.Log("Logbox");
-            box.SetActive(true);
+            box.SetActive(true);        // 빈박스 활성화
             StartCoroutine(LogBoxChange());     // Log박스 바꿔주는 코루틴 실행
         }
-        if (getInferenceFromModel.prediction.predictedValue == 0)        // 리스트 num의 인덱스가 1이면
+        if (getInferenceFromModel.prediction.predictedValue == 0)        // 모델의 분류값이 0이면
         {
             Debug.Log("Clothbox");
-            box.SetActive(true);
+            box.SetActive(true);        // 빈박스 활성화
             StartCoroutine(ClothBoxChange());       // Cloth박스 바꿔주는 코루틴 실행
         }
     }

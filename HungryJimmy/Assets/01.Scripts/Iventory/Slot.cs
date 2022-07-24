@@ -20,15 +20,15 @@ public class Slot : MonoBehaviour, IPointerClickHandler
 
     private void Start()
     {
-        theItemEffectDatabase = FindObjectOfType<ItemEffectDatabase>();
+        theItemEffectDatabase = FindObjectOfType<ItemEffectDatabase>();     // ItemEffectDatabase 할당
     }
 
     // 이미지의 투명도 조절 
     private void SetColor(float _alpha)
     {
-        Color color = itemImage.color;
+        Color color = itemImage.color;      // color 선언
         color.a = _alpha;       // 이미지의 알파값 조절
-        itemImage.color = color;
+        itemImage.color = color;    // itemImage의 알파값 바꿔줌
     }
 
     // 아이템 획득
@@ -67,9 +67,9 @@ public class Slot : MonoBehaviour, IPointerClickHandler
     // 슬롯 초기화
     private void ClearSlot()
     {
-        item = null;
-        itemCount = 0;
-        itemImage.sprite = null;
+        item = null;        // 아이템 null
+        itemCount = 0;      // itemCount = 0
+        itemImage.sprite = null;    // itemImage null로 변환
         SetColor(0);        // 슬롯 투명
 
         text_Count.text = "0";
@@ -84,7 +84,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler
         {
             if (item != null)       // 아이템이 있는지 없는지 확인하고 실행
             {
-                theItemEffectDatabase.UseItem(item);
+                theItemEffectDatabase.UseItem(item);        //theItemEffectDatabase에 UseItem 실행
                 if (item.itemType == Item.ItemType.Used)        // 소모품일 경우
                 {
                     SetSlotCount(-1);       // 아이템 -1씩 소비

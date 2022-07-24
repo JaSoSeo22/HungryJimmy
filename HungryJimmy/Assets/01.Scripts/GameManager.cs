@@ -6,7 +6,7 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
+    public static GameManager instance;     // 싱글턴화
     
     public static bool canPlayerMove = true;        // 플레이어의 움직임 제어
 
@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isOpenInventory || isPause)     //##### 선언한 변수들 조건으로 넣어주면 됨
+        if (isOpenInventory || isPause)     
         {
             // Cursor.lockState = CursorLockMode.None;       // 커서 잠금 해제
             // Cursor.visible = true; ;     // 인벤토리 열리면 커서 보익에
@@ -36,9 +36,9 @@ public class GameManager : MonoBehaviour
     }
     
     private void Awake() {
-    if( instance == null)
+    if( instance == null)       // instance null 이면
     {
-        instance = this;
+        instance = this;        // instance 자기자신
     }
     else{
         Destroy(gameObject);
