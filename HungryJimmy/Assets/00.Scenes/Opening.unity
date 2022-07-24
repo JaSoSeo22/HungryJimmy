@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4451217, g: 0.4947248, b: 0.5738001, a: 1}
+  m_IndirectSpecularColor: {r: 0.45081198, g: 0.4990186, b: 0.56548303, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 8cf6569c99d07394e9bb61f755e62617, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 0d94c9dfa7873da479a63a3abe2df1a5, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -161,7 +161,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.7
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -209,13 +209,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.43927202, y: -0.23050682, z: 0.11770256, w: 0.8602633}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: -0.35489386, y: 0.7908862, z: -0.027807, w: -0.4977711}
+  m_LocalPosition: {x: 10.6, y: 12.2, z: -40.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 54.1, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 23.409, y: 236.76999, z: -35.559}
 --- !u!20 &844545540 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 7726412892728571813, guid: bc6861559f52d9041b5be84b467c966d, type: 3}
@@ -625,7 +625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5650557035154928533, guid: babf898baef416943b99970a558edd9c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.46
+      value: 3.71
       objectReference: {fileID: 0}
     - target: {fileID: 5650557035154928533, guid: babf898baef416943b99970a558edd9c, type: 3}
       propertyPath: m_LocalPosition.z
