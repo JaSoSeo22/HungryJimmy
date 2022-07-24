@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-// 아이템 강의 26분에 Rock 스크립트에 내용 추가 필요 + 프리팹 할당 필요
 public class ActionController : MonoBehaviour
 {
 
@@ -26,6 +25,9 @@ public class ActionController : MonoBehaviour
 
     [SerializeField]
     private Inventory theInventory;
+
+    public GameObject endImage;     // 보트 아이템을 얻고나면 보여줄 이미지
+
 
     private void Start()
     {
@@ -67,11 +69,17 @@ public class ActionController : MonoBehaviour
                     // 획득한 아이템 파괴
                     Destroy(hitInfo.transform.gameObject);
                     InfoDisappear();
+                    if (hitInfo.transform.GetComponent<ItemPickUp>().item.itemName == "Boat")
+                    {
+                        endImage.SetActive(true);
+                    }
                 }
             }
 
         }
     }
+
+
 
     private void CheckAction()
     {
@@ -86,7 +94,7 @@ public class ActionController : MonoBehaviour
         }
         else // 아이템 획득하게 되면 정보 비활성화
         {
-            InfoDisappear();        
+            InfoDisappear();
         }
     }
 
