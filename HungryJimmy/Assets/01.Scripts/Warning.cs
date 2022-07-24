@@ -81,6 +81,7 @@ public class Warning : MonoBehaviour
             {
                 if(!rgstButton.activeInHierarchy)
                 {
+                    rgstButton.SetActive(true); //리듬게임 버튼 활성화
                     t_yellowUI = true;
                     StartCoroutine(ShowTYellowPanel());
                 }
