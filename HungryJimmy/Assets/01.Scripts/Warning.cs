@@ -13,9 +13,9 @@ public class Warning : MonoBehaviour
 
     //필요한 사운드 이름
     [SerializeField] 
-    private string weakWarning_Sound;
+    private string weakWarning_Sound; //1번째 경고음
     [SerializeField] 
-    private string halfEmergencyWarning_Sound;
+    private string halfEmergencyWarning_Sound; //2번째 경고음
 
     //지미의 현재 상태를 알려주는 이미지 오브젝트
     public GameObject healthyJim;
@@ -79,20 +79,19 @@ public class Warning : MonoBehaviour
         {
             if (theStatus.currentThirsty > 30 && !t_yellowUI)
             {
-                t_yellowUI = true;
-                StartCoroutine(ShowTYellowPanel());
-            }
-            if (theStatus.currentThirsty < 15) //목마름 지수가 15보다 낮을 때
-            {
                 if(!rgstButton.activeInHierarchy)
                 {
-                    rgstButton.SetActive(true); //리듬게임 버튼 활성화
+                    t_yellowUI = true;
+                    StartCoroutine(ShowTYellowPanel());
+                }
+            }
 
-                    if (!t_redUI)
-                    {
-                        t_redUI = true;
-                        StartCoroutine(ShowTRedPanel());
-                    }
+            if (theStatus.currentThirsty < 15) //목마름 지수가 15보다 낮을 때
+            {
+                if (!t_redUI)
+                {
+                    t_redUI = true;
+                    StartCoroutine(ShowTRedPanel());
                 }
             }
             t_redUI = false;

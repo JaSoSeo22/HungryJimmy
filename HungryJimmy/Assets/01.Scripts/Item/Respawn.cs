@@ -12,10 +12,9 @@ public class Respawn : MonoBehaviour
     public GameObject newFruitPrefab;
     [SerializeField] Transform fruitTransform;
 
+    [SerializeField] private float  waterTime;
     public GameObject waterPrefab;
     [SerializeField] Transform waterTransform;
-
-    public GameObject rainPrefab; // 비 내리는지 확인할 오브젝트
 
 
     // Start is called before the first frame update
@@ -29,6 +28,7 @@ public class Respawn : MonoBehaviour
     {
         SearchLog();
         SearchFruit();
+        SearchWater();
     }
 
     IEnumerator RespawnLogTree()
@@ -49,7 +49,7 @@ public class Respawn : MonoBehaviour
 
     IEnumerator RespawnWater()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(waterTime);
         var itemGo = Instantiate<GameObject>(this.waterPrefab);
         itemGo.transform.position = this.waterTransform.transform.position;
         itemGo.SetActive(true);
@@ -78,16 +78,14 @@ public class Respawn : MonoBehaviour
         }
 
     }
-
-    private void SearchRain()
+    public int waterCnt = 0;
+    private void SearchWater()
     {
-        if (rainPrefab.activeInHierarchy)
+        if (GameObject.FindGameObjectWithTag("Bottle") != null && waterCnt < 2)
         {
-            if (GameObject.FindGameObjectWithTag("Status").GetComponent<StatusController>().isRain == true)
-            {
                 StartCoroutine(RespawnWater());
-            }
-            
+                waterCnt++;
         }
     }
+
 }

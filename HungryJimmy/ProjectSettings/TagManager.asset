@@ -16,6 +16,7 @@ TagManager:
   - BlockedZone
   - EndingSpot
   - Status
+  - Bottle
   layers:
   - Default
   - TransparentFX

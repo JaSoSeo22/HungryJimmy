@@ -99,7 +99,7 @@ public class StatusController : MonoBehaviour
                 currentThirsty--;
                 currentThirstyDecreaseTime = 0;
             }
-             if(!isRain)
+            if(!isRain)
             {
                 Raining();
                 isRain = false;
@@ -135,7 +135,7 @@ public class StatusController : MonoBehaviour
     {
         if(!bonFire.activeInHierarchy && moon.activeInHierarchy) //밤인데 모닥불이 활성화되어 있지 않다면
         {
-           staminaDecreaseTime = 100; //밤일때 체력이 더 빨리 사라지게 (밤일때 체력이 떨어지는 속도)
+           staminaDecreaseTime = 1000; //밤일때 체력이 더 빨리 사라지게 (밤일때 체력이 떨어지는 속도)
         }
 
         
@@ -143,7 +143,7 @@ public class StatusController : MonoBehaviour
 
     public void BonDay() //day 상태에서
     {
-        staminaDecreaseTime = 200; //낮일때 체력이 떨어지는 속도
+        staminaDecreaseTime = 2000; //낮일때 체력이 떨어지는 속도
     }
 
     private void GaugeUpdate()      // 상태 수치 변화 시각화
