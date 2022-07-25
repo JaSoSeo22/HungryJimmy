@@ -6,15 +6,16 @@ using UnityEngine.UI;
 public class Warning : MonoBehaviour
 {
     //경고 패널
-    [SerializeField] private GameObject hungry_yellow_Panel;
-    [SerializeField] private GameObject hungry_red_Panel;
-    [SerializeField] private GameObject thirsty_yellow_Panel;
-    [SerializeField] private GameObject thirsty_red_Panel;
+    [SerializeField] private GameObject hungry_yellow_Panel;        // 배고픔 경고패널
+    [SerializeField] private GameObject hungry_red_Panel;       //  배고픔 위험패널
+    [SerializeField] private GameObject thirsty_yellow_Panel;        // 목마름 경고패널
+    [SerializeField] private GameObject thirsty_red_Panel;      // 목마름 위험패널
+
 
     //필요한 사운드 이름
-    [SerializeField] 
+    [SerializeField]
     private string weakWarning_Sound; //1번째 경고음
-    [SerializeField] 
+    [SerializeField]
     private string halfEmergencyWarning_Sound; //2번째 경고음
 
     //지미의 현재 상태를 알려주는 이미지 오브젝트
@@ -41,31 +42,31 @@ public class Warning : MonoBehaviour
 
     void Update()
     {
-        if (theStatus.currentHungry < 50)
+        if (theStatus.currentHungry < 50)       // theStatus의 currentHungry가 50 미만이며
         {
-            if (theStatus.currentHungry > 30 && !h_yellowUI)
+            if (theStatus.currentHungry > 30 && !h_yellowUI)        // theStatus의 currentHungry가 30 초과이며 h_yellowUI가 false일때
             {
                 healthyJim.SetActive(false);
                 sickJim.SetActive(true); //지미의 상태 이미지를 아픈 상태로 변경
 
-                h_yellowUI = true;
-                StartCoroutine(ShowHYellowPanel());
+                h_yellowUI = true;      // 경고창 상태 true
+                StartCoroutine(ShowHYellowPanel());     // ShowHYellowPanel 코루틴 실행
             }
-            if (theStatus.currentHungry < 15)
+            if (theStatus.currentHungry < 15)       // theStatus의 currentHungry가 15 미만이고
             {
-                if (!h_redUI)
+                if (!h_redUI)       // h_redUI가 false일때
                 {
                     sickJim.SetActive(false);
                     soSickJim.SetActive(true);//지미의 상태 이미지를 매우 아픈 상태로 변경
 
-                    h_redUI = true;
-                    
-                    StartCoroutine(ShowHRedPanel());
+                    h_redUI = true;     // 위험창 상태 true
+
+                    StartCoroutine(ShowHRedPanel());        // ShowHRedPanel 코루틴 실행
 
                 }
 
             }
-            else
+            else        // theStatus의 currentHungry가 15 초과
             {
                 h_redUI = false;
             }
@@ -75,15 +76,15 @@ public class Warning : MonoBehaviour
             h_yellowUI = false;
         }
 
-        if (theStatus.currentThirsty < 50)
+        if (theStatus.currentThirsty < 50)      // theStatus의 currentThirsty 50 미만이며
         {
-            if (theStatus.currentThirsty > 30 && !t_yellowUI)
+            if (theStatus.currentThirsty > 30 && !t_yellowUI)       // theStatus의 currentThirsty 30 초과이며 t_yellowUI가 false일때
             {
-                if(!rgstButton.activeInHierarchy)
+                if (!rgstButton.activeInHierarchy)      // rgstButton이 Hierarchy창에서 비활성화 됐다면
                 {
-                    rgstButton.SetActive(true); //리듬게임 버튼 활성화
-                    t_yellowUI = true;
-                    StartCoroutine(ShowTYellowPanel());
+                    rgstButton.SetActive(true);         // 리듬게임 버튼 활성화
+                    t_yellowUI = true;          // 경고창 상태 true
+                    StartCoroutine(ShowTYellowPanel());     // ShowTYellowPanel코루틴 실행
                 }
             }
 
@@ -95,7 +96,11 @@ public class Warning : MonoBehaviour
                     StartCoroutine(ShowTRedPanel());
                 }
             }
-            t_redUI = false;
+            else
+            {
+                t_redUI = false;
+
+            }
         }
         else
         {
@@ -103,11 +108,11 @@ public class Warning : MonoBehaviour
         }
     }
 
-    IEnumerator ShowHYellowPanel()
+    IEnumerator ShowHYellowPanel()      // ShowHYellowPanel 코루틴
     {
-        hungry_yellow_Panel.SetActive(true);
-        yield return new WaitForSeconds(1.5f);
-        hungry_yellow_Panel.SetActive(false);
+        hungry_yellow_Panel.SetActive(true);        // hungry_yellow_Panel활성화
+        yield return new WaitForSeconds(1.5f);      // 지연시간
+        hungry_yellow_Panel.SetActive(false);       // hungry_yellow_Panel비활성화
 
         SoundManager.instance.PlaySE(weakWarning_Sound); //warning sound play
     }

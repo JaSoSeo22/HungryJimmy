@@ -10,17 +10,7 @@ public class SettingMenu : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        // if (Input.GetKeyDown(KeyCode.P))
-        // {
-        //     if (!GameManager.isPause)       
-        //     {
-        //         CallMenu();     // 메뉴호출
-        //     }
-        //     else
-        //     {
-        //         CloseMenu();
-        //     }
-        // }
+
     }
 
     public void CallMenu()     // 메뉴 호출
@@ -42,22 +32,6 @@ public class SettingMenu : MonoBehaviour
         Debug.Log("세이브 버튼 클릭");
         theSaveNLoad.SaveData();
     }
-
-    public void SoundOff()
-    {
-        Debug.Log("사운드를 껐습니다");
-    }
-
-    public void SoundOn()
-    {
-        Debug.Log("사운드를 켰습니다");
-    }
-
-    // public void ClickLoad()
-    // {
-    //     Debug.Log("로드");
-    //     theSaveNLoad.LoadData();
-    // }
 
     public void ClickExit()
     {

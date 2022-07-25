@@ -17,18 +17,18 @@ public class StatusController : MonoBehaviour
 
     // 배고픔
     [SerializeField]
-    private int hungry;
-    public int currentHungry;
+    private int hungry;     // 배고픔
+    public int currentHungry;       // 현재 배고픔
 
     // 배고픔이 줄어드는 속도
     [SerializeField]
-    private int hungryDecreaseTime;
-    private int currentHungryDecreaseTime;
+    private int hungryDecreaseTime;     // 지정해둔 시간
+    private int currentHungryDecreaseTime;      // 실시간으로 줄어들 시간
 
     // 목마름
     [SerializeField]
-    private float thirsty;
-    public float currentThirsty;
+    private float thirsty;      // 수분
+    public float currentThirsty;        // 현재 수분
 
     // 목마름이 줄어드는 속도
     [SerializeField]
@@ -75,17 +75,16 @@ public class StatusController : MonoBehaviour
     {
         if (currentHungry > 0)      // 현재 배고픔이 0보다 클 경우에만 깎음
         {
-            if (currentHungryDecreaseTime <= hungryDecreaseTime)
-                currentHungryDecreaseTime++;
-            else
+            if (currentHungryDecreaseTime <= hungryDecreaseTime)    // currentHungryDecreaseTime가 hungryDecreaseTime도달하지못하면 
+                currentHungryDecreaseTime++;        // currentHungryDecreaseTime 증가
+            else        // currentHungryDecreaseTime가 hungryDecreaseTime도달하면 
             {
-                currentHungry--;
-                currentHungryDecreaseTime = 0;
+                currentHungry--;        // currentHungry -1
+                currentHungryDecreaseTime = 0;      // currentHungryDecreaseTime리셋
             }
         }
         else        // 0보다 작아졌을때
-            theHealth.Dead();
-        //     // Debug.Log("배고픔 수치가 0이 되었습니다");
+            theHealth.Dead();       // HealthManager의 Dead함수 실행
     }
 
     private void Thirsty()      // 목마름 구현
@@ -165,39 +164,39 @@ public class StatusController : MonoBehaviour
     }
 
     // Stamina 감소
-    public void DecreaseStamina(float _count)
+    public void DecreaseStamina(float _count)       // 감소시킬 값
     {
-        currentStamina -= _count;
+        currentStamina -= _count;       
 
         if (currentStamina <= 0)     // currentStamina 0 이하가 되면 움직임이 매우 느려짐
             Debug.Log("캐릭터의 stamina가 0이 되었습니다!!");
     }
 
-    public void IncreaseThirsty(int _count)
+    public void IncreaseThirsty(int _count)     // 수분 감소 처리를 하고 싶을때
     {
-        if (currentThirsty + _count < thirsty)
+        if (currentThirsty + _count < thirsty)      // currentThirsty에 입력값을 더했을때 thirsty보다 작으면
         {
-            currentThirsty += _count;
+            currentThirsty += _count;       // currentThirsty에 입력값 더해줌
         }
-        else
-            currentThirsty = thirsty;
+        else        // currentThirsty에 입력값을 더했을때 thirsty보다 크면 
+            currentThirsty = thirsty;       // 현재값을 기존thirsty값으로 바꿔줌
     }
 
     // Hungry 증가
-    public void IncreaseHungry(int _count)
+    public void IncreaseHungry(int _count)      // 배고픔 감소 처리를 하고 싶을때
     {
-        if (currentHungry + _count < hungry)
+        if (currentHungry + _count < hungry)        // currentHungry에 입력값을 더했을때 hungry보다 작으면
         {
-            currentHungry += _count;
+            currentHungry += _count;        // currentHungry에 입력값 더해줌
         }
-        else
-            currentHungry = hungry;
+        else        // currentHungry에 입력값을 더했을때 hungry보다 크면 
+            currentHungry = hungry;     // 현재값을 기존hungry값으로 바꿔줌
     }
 
     // Hungry 감소
-    public void DecreaseHungry(int _count)
+    public void DecreaseHungry(int _count)      // 감소시킬 값
     {
-        currentHungry -= _count;
+        currentHungry -= _count;        // 현재 배고픔에서 받아온 값만큼 감소
     }
 
 

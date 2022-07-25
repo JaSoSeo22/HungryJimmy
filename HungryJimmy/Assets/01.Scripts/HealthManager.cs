@@ -11,17 +11,17 @@ public class HealthManager : MonoBehaviour
 
     //애니메이션
     public Animator animator;
-    private bool isDead = false;
-    private bool isDancing = false; 
-    private bool isEnd = false;
-    private bool isRainPose = false;
+    private bool isDead = false;        // isDead 상태확인
+    private bool isDancing = false;         // isDancing 상태확인
+    private bool isEnd = false;     // isEnd 상태확인
+    private bool isRainPose = false;        // isRainPose 상태확인
 
     public GameObject rainPrefab; //비 효과
     public GameObject deadPanel;
 
     void Start()
     {
-        animator = thePlayer.GetComponent<Animator>();
+        animator = thePlayer.GetComponent<Animator>();      // 플레이어의 Animator가져옴
     }
 
     void Update()
@@ -38,21 +38,21 @@ public class HealthManager : MonoBehaviour
     }
 
 
-IEnumerator DeadAction()
+IEnumerator DeadAction()        // 죽었을때 코루틴
 {
     GameManager.isPause = true;
-    animator.SetTrigger("isDead");
+    animator.SetTrigger("isDead");      // isDead애니메이션 실행
     isDead = true;
-    deadPanel.SetActive(true);
-    yield return new WaitForSeconds(6f);
-    Time.timeScale = 0f;
-    SceneManager.LoadScene("Select");
+    deadPanel.SetActive(true);      // deadPanel 활성화
+    yield return new WaitForSeconds(6f);        // 지연시간
+    Time.timeScale = 0f;        // 시간흐름 0
+    SceneManager.LoadScene("Select");       // Select씬 로드
 
 }
 
-    public void Dead()
+    public void Dead()      // 사망조건
     {
-        if (theStatus.currentHungry <= 0 || theStatus.currentThirsty <= 0)
+        if (theStatus.currentHungry <= 0 || theStatus.currentThirsty <= 0)      // currentHungry나 currentThirsty 0이하일때
         {
             StartCoroutine(DeadAction());
         }

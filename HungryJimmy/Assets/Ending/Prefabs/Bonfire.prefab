@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 4349553000075248}
   - component: {fileID: 33034074156844644}
   - component: {fileID: 23202646697140164}
+  - component: {fileID: 3701828582017586691}
   m_Layer: 0
   m_Name: Bonfire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4349553000075248
 Transform:
   m_ObjectHideFlags: 0
@@ -82,6 +83,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3701828582017586691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179792248266456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d9639116c083f4bbfc88720d95d5bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theStatus: {fileID: 0}
+  moonImg: {fileID: 0}
 --- !u!1 &1270760519101792
 GameObject:
   m_ObjectHideFlags: 0

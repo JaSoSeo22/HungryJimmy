@@ -61,9 +61,9 @@ public class Rock : MonoBehaviour
 
     public void RockDropItem()
     {
-        var itemGo = Instantiate<GameObject>(this.rockItemPrefab);
-        itemGo.transform.position = this.gameObject.transform.position + Vector3.up * 0.1f;
-        itemGo.SetActive(true);
+        var itemGo = Instantiate<GameObject>(this.rockItemPrefab);      // rockItemPrefab 생성
+        itemGo.transform.position = this.gameObject.transform.position + Vector3.up * 0.1f;     // 지정된 위치
+        itemGo.SetActive(true);     // 생성된 아이템 활성화
     }
 
 }

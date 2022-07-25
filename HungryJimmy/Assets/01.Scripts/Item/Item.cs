@@ -7,8 +7,8 @@ public class Item : ScriptableObject
     
     public string itemName; // 아이템 이름
 
-    [TextArea]      // 설명을 여러줄 쓸 수 있음
-    public string itemDesc;     // 아이템의 설명
+    // [TextArea]      // 설명을 여러줄 쓸 수 있음
+    // public string itemDesc;     // 아이템의 설명
     
     public ItemType itemType; //아이템 유형
     
@@ -17,7 +17,7 @@ public class Item : ScriptableObject
     public GameObject itemPrefab; // 아이템의 프리팹
 
    
-    public string weaponType;  // 무기유형
+    // public string weaponType;  // 무기유형
 
     
     public enum ItemType // 아이템 상태 변화 

@@ -9,6 +9,7 @@ public class BonFire : MonoBehaviour
 
 
 
+
     public void StaminaBonFire() //모닥불을 켰을 경우에
     {
         if(moonImg.activeInHierarchy) //밤에만 모닥불을 켜서 스태미너를 회복할 수 있음

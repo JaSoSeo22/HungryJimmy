@@ -33,8 +33,8 @@ public class PlayerController : MonoBehaviour
 
 
     // 조이스틱 가져오기
-    [SerializeField] private VirtualJoystick02 moveJoystick;
-    [SerializeField] private VirtualJoystick02 cameraJoystick;
+    [SerializeField] private Joystick moveJoystick;
+    [SerializeField] private Joystick cameraJoystick;
 
     //필요한 사운드 이름
     [SerializeField]
@@ -126,33 +126,33 @@ public class PlayerController : MonoBehaviour
             Vector3 moveDir = lookForward * moveInput.y + lookRight * moveInput.x;
 
             gameObject.transform.forward = moveDir; // 캐릭터가 바라보는 정면은 입력된 방향에 맞춰 바라본다. 
-            transform.position += moveDir * Time.deltaTime * applySpeed;
+            transform.position += moveDir * Time.deltaTime * applySpeed;    // 입력된 방향에 속도를 곱해줌
 
             //SoundManager.instance.PlaySE(walk_Sound); //walk sound
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)     // 콜라이더와 충돌하면
     {
-        if (other.tag == "Box")
+        if (other.tag == "Box")     // 충돌체의 태그가 Box일때
         {
-            StartCoroutine(Joy());
+            StartCoroutine(Joy());      // Joy코루틴 실행
         }
-        if (other.tag == "EndingSpot")
+        if (other.tag == "EndingSpot")      // 충돌체의 태그가 EndingSpot일때
         {
-            CheckBoat();
+            CheckBoat();        // CheckBoat 실행
         }
     }
-    public void CheckBoat()
+    public void CheckBoat()     // 인벤토리에 보트확인
     {
-        for (int i = 0; i < inventory.slots.Length; i++)
+        for (int i = 0; i < inventory.slots.Length; i++)        // 인벤토리의 슬롯의 길이만큼 for문 실행
             {
-                if (inventory.slots[i].item != null)
+                if (inventory.slots[i].item != null)        // 슬롯에 아이템이 있고
                 {
-                    if (inventory.slots[i].item.itemName == "Boat")
+                    if (inventory.slots[i].item.itemName == "Boat")      // 그 아이템의 이름이 Boat일때
                     {
-                        new WaitForSeconds(3f);
-                        SceneManager.LoadScene("endding");
+                        new WaitForSeconds(3f);     // 3초후
+                        SceneManager.LoadScene("endding");      // endding씬 이동
                     }
                 }
             }

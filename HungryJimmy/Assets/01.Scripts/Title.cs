@@ -34,7 +34,7 @@ public class Title : MonoBehaviour
     {
         Debug.Log("로드");
 
-        StartCoroutine(LoadCoroutine());
+        StartCoroutine(LoadCoroutine());         // LoadCoroutine코루틴 실행
 
     }
 

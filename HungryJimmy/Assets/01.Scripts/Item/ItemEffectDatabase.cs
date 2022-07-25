@@ -28,11 +28,7 @@ public class ItemEffectDatabase : MonoBehaviour
 
     public void UseItem(Item _item)     // 넘어오는 파라미터로 아이템 넣어줌
     {
-        if (_item.itemType == Item.ItemType.Equipment)      // 장비아이템일때 장비교체 시도
-        {
-            
-        }
-        else if (_item.itemType == Item.ItemType.Used)       // ItemType이 Used일때
+        if (_item.itemType == Item.ItemType.Used)       // ItemType이 Used일때
         {
             for (int x = 0; x < itemEffects.Length; x++)        // 배열 itemEffects의 길이만큼
             {

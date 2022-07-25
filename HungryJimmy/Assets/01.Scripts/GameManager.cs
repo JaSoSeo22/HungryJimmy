@@ -23,15 +23,11 @@ public class GameManager : MonoBehaviour
     {
         if (isOpenInventory || isPause)     
         {
-            // Cursor.lockState = CursorLockMode.None;       // 커서 잠금 해제
-            // Cursor.visible = true; ;     // 인벤토리 열리면 커서 보익에
-            canPlayerMove = false;
+            canPlayerMove = false;      // 플레이어 움직임 제어
         }
         else
         {
-            // Cursor.lockState = CursorLockMode.Locked;       // 커서 잠금
-            // Cursor.visible = false;
-            canPlayerMove = true;
+            canPlayerMove = true;       
         }
     }
     
@@ -47,8 +43,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-    //     Cursor.lockState = CursorLockMode.Locked;       // 커서 잠금
-    //     Cursor.visible = false;     // 커서 안보이게
+
     }
 
     //생존 일수를 증가시키는 메서드

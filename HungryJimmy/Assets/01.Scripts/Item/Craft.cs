@@ -147,27 +147,27 @@ public class Craft : MonoBehaviour
             }
         }
 
-        public void BonFire()
+        public void BonFire()       // 모닥불 만들기 위한 함수
         {
-            bool e = false;
+            bool e = false;     // 조건식
             bool f = false;
-            for (int i = 0; i < inventory.slots.Length; i++)
+            for (int i = 0; i < inventory.slots.Length; i++)        // 인벤토리의 슬롯의 길이만큼 for문 실행
             {
-                for (int j = 0; j < inventory.slots.Length; j++)
+                for (int j = 0; j < inventory.slots.Length; j++)        // 인벤토리의 슬롯의 길이만큼 for문 실행 (두번째 아이템)
                 {
-                    if (inventory.slots[i].item != null)
+                    if (inventory.slots[i].item != null)        // 슬롯에 아이템이 있고
                     {
-                        if (inventory.slots[i].item.itemName == "Log" && inventory.slots[i].itemCount >= 3)
+                        if (inventory.slots[i].item.itemName == "Log" && inventory.slots[i].itemCount >= 3)     // 그 아이템의 이름이 Log면서 아이템의 갯수가 필요한 갯수 이상일 때
                         {
-                            e = true;
-                            inventory.slots[i].SetSlotCount(-3);
+                            e = true;       // 조건식 true
+                            inventory.slots[i].SetSlotCount(-3);    // 인벤토리창에서 아이템 차감
                         }
-                        if (inventory.slots[j].item != null)
+                        if (inventory.slots[j].item != null)        // 슬롯에 아이템이 있고
                         {
-                            if (inventory.slots[j].item.itemName == "Rock" && inventory.slots[j].itemCount >= 2)
+                            if (inventory.slots[j].item.itemName == "Rock" && inventory.slots[j].itemCount >= 2)        // 그 아이템의 이름이 Rock이면서 아이템의 갯수가 필요한 갯수 이상일 때
                             {
-                                f = true;
-                                inventory.slots[j].SetSlotCount(-2);
+                                f = true;       // 조건식 true
+                                inventory.slots[j].SetSlotCount(-2);      // 인벤토리창에서 아이템 차감  
                             }
                         }
 
@@ -175,17 +175,17 @@ public class Craft : MonoBehaviour
                 }
 
             }
-            if (e && f)
+            if (e && f)     // 두 조건 모두 참이면
             {
-                if (moonImg.activeInHierarchy)
+                if (moonImg.activeInHierarchy)      // moonImg가 Hierarchy창에서 활성화 됐을때
                 {
-                    var itemGo = Instantiate<GameObject>(this.bonfirePrefab);
-                    itemGo.transform.position = this.targetTransform.transform.position + Vector3.forward * 2f;
-                    itemGo.SetActive(true);
+                    var itemGo = Instantiate<GameObject>(this.bonfirePrefab);        // bonfirePrefab 생성
+                    itemGo.transform.position = this.targetTransform.transform.position + Vector3.forward * 2f;     // 지정된 위치
+                    itemGo.SetActive(true);     // 생성된 아이템 활성화
 
                     Destroy(itemGo, lifetime); //일정 시간이 지나면 모닥불 없애기
 
-                    e = false;
+                    e = false;      // 다시 false로 돌려주기
                     f = false;
                 }
 
