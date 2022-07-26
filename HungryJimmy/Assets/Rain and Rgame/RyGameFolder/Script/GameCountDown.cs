@@ -5,12 +5,12 @@ using UnityEngine;
 public class GameCountDown : MonoBehaviour
 {
     private int Timer = 0;
-    public GameObject Num_A; //no 1
+    public GameObject Num_A; //no 1 
     public GameObject Num_B; //no 2
     public GameObject Num_C; //no 3
     public GameObject Num_GO; //Go image
 
-    public GameObject gamePanel;
+    public GameObject gamePanel; //게임 패널
 
 
 
@@ -18,13 +18,12 @@ public class GameCountDown : MonoBehaviour
     {//시작할 때 카운트다운 초기화, 게임 시작 false 설정
         Timer = 0;
 
-        Num_A.SetActive(false);
+        Num_A.SetActive(false); //오브젝트 비활성화
         Num_B.SetActive(false);
         Num_C.SetActive(false);
         Num_GO.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {//리듬 게임이 활성화 되어있다면...
         if (gamePanel.activeInHierarchy)
@@ -69,8 +68,8 @@ public class GameCountDown : MonoBehaviour
 
     IEnumerator LoadingEnd()
     {
-        yield return new WaitForSeconds(1.0f);
-        Num_GO.SetActive(false);
+        yield return new WaitForSeconds(1.0f); //지연시간을 가진 후에
+        Num_GO.SetActive(false); //오브젝트 비활성화
     }
 }
 

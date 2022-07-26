@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SettingMenu : MonoBehaviour
 {
-    [SerializeField] private GameObject go_BaseUI;      
+    [SerializeField] private GameObject go_BaseUI;      // 메뉴 UI
     [SerializeField] private SaveNLoad theSaveNLoad;
 
     // Start is called before the first frame update
@@ -15,8 +15,8 @@ public class SettingMenu : MonoBehaviour
 
     public void CallMenu()     // 메뉴 호출
     {
-        GameManager.isPause = true;
-        go_BaseUI.SetActive(true);
+        GameManager.isPause = true;     // GameManager의 isPause가 true면
+        go_BaseUI.SetActive(true);      // 메뉴 UI활성화
         Time.timeScale = 0f;        // 시간흐름이 0이 되게 = 정지시킴
     }
 
@@ -36,6 +36,6 @@ public class SettingMenu : MonoBehaviour
     public void ClickExit()
     {
         Debug.Log("게임종료");
-        Application.Quit();
+        Application.Quit();     // 어플리케이션 종료
     }
 }

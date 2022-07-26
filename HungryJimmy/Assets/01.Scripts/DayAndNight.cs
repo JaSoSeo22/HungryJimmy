@@ -28,7 +28,8 @@ public class DayAndNight : MonoBehaviour
     {//태양의 엑스축을 증가시켜 낮,밤 바꾸기 / 태양이 특정 각도로 기울어지면 낮,밤이 되도록 조정
         transform.Rotate(Vector3.right, 0.1f * secondPerRealTimeSecond * Time.deltaTime);
         
-        if (transform.eulerAngles.x >= 170 && !isNight) // 태양이 특정 각도로 기울어지면 낮이 된다
+        if (transform.eulerAngles.x >= 170 && !isNight) 
+        // 태양이 특정 각도로 기울어지면 낮이 된다
         //밤이 되면 장작불을 지펴서 체온과 스태미너를 유지할 수 있습니다.
             {
                 isNight = true; //밤

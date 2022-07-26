@@ -38,64 +38,30 @@ public class Tree : MonoBehaviour
     [SerializeField]
     private string logChange_sound; //통나무로 바뀌는 소리
 
-    public bool isClear = false;
+    public bool isClear = false;        // 오브젝트 사라졌는지 확인할 조건
 
-    // // 리스폰 시킬 몬스터를 담을 변수
-    // GameObject myRespawnTree;
-    // // 리스폰 오브젝트에서 생성된 몇번째 몬스터에 대한 정보
-    // public int spawnID { get; set; }
-    // // 나무가 처음 생성될때의 위치 저장
-    // Vector3 originPos;
-
-    // // 나무가 어느 리스폰 오브젝트로부터 만들어졌는가 정보를 전달 받을 함수
-    // public void SetRespawnTree(GameObject respawnTree, int spawnID, Vector3 originPos)
-    // {
-    //     myRespawnTree = respawnTree;
-    //     this.spawnID = spawnID;
-    //     this.originPos = originPos;
-    // }
-
-    // IEnumerator RemoveTreeWorld()
-    // {
-    //     yield return new WaitForSeconds(1f);
-    //     myRespawnTree.GetComponent<RespawnTree>().RemoveTree(spawnID);
-    // }
-
-    // // 나무가 리스폰 될때 초기화 상태로 함
-    // public void AddToWorldAgain()
-    // {
-    //     // 리스폰 오브젝트에서 처음 생성될때의 위치와 같게 함
-    //     transform.position = originPos;
-
-    //     GetComponent<CapsuleCollider>().enabled = true;
-    // }
-
-    private void Update() 
-    {
-
-    }
     public void Hit()
     {
-        SoundManager.instance.PlaySE(chop_sound);
+        SoundManager.instance.PlaySE(chop_sound); //효과음 재생
 
-        var clone = Instantiate(go_hit_effect_prefab, capCol.bounds.center, Quaternion.identity);
+        var clone = Instantiate(go_hit_effect_prefab, capCol.bounds.center, Quaternion.identity); //콜라이더 가운데에 go_hit_effect_prefab 생성
         Destroy(clone, debrisDestroyTime); //일정 시간(destroyTime) 후 파편 클론 파괴
 
         hp--; //hp를 1씩 깎아서...
         if (hp <= 0) //hp가 0이하면 파괴
-            FallDownTree(); //나무 쓰러뜨리기 - 체력주기~!
+            FallDownTree(); //나무 쓰러뜨리기
     }
 
-    private void FallDownTree()
+    private void FallDownTree() //나무 쓰러뜨리기
     {
-        isClear = true;
-        SoundManager.instance.PlaySE(falldown_sound);
+        isClear = true; 
+        SoundManager.instance.PlaySE(falldown_sound); //효과음
 
         //나무가 파괴 되었기에 비활성화하고 사라지게 하기 -> 잔해만 남도록
         capCol.enabled = false;
         Destroy(go_tree);
         GetComponent<CapsuleCollider>().enabled = false;
-        TreeDropItem();
+        TreeDropItem(); //아이템 생성
     }
 
 

@@ -36,11 +36,11 @@ public class FruitTree : MonoBehaviour
     [SerializeField]
     private string logChange_sound; //통나무로 바뀌는 소리
 
-    public bool isClear = false;
+    public bool isClear = false;        // 오브젝트 사라졌는지 확인할 조건
 
     public void HitFruit()
     {
-        SoundManager.instance.PlaySE(chop_sound);
+        SoundManager.instance.PlaySE(chop_sound); //효과음 재생
 
         var clone = Instantiate(go_hit_effect_prefab, capCol.bounds.center, Quaternion.identity);
         Destroy(clone, debrisDestroyTime); //일정 시간(destroyTime) 후 파편 클론 파괴

@@ -98,10 +98,10 @@ public class StatusController : MonoBehaviour
                 currentThirsty--;
                 currentThirstyDecreaseTime = 0;
             }
-            if(!isRain)
+            if(!isRain) //비오는 상태가 아니라면
             {
-                Raining();
-                isRain = false;
+                Raining(); //Raining 실행
+                isRain = false; 
             }
         }
     }
@@ -125,7 +125,7 @@ public class StatusController : MonoBehaviour
     {
         if (rainPrefab.activeInHierarchy) //하이어라키 창에 비 프리팹이 활성화 되었다면
         {
-            isRain = true;
+            isRain = true; //isRain 활성화
             currentThirsty += 3f * Time.deltaTime; //총 30의 수분 주기(비가 10초동안 옴)
         }
     }

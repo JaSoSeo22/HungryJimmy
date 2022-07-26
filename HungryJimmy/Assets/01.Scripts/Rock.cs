@@ -33,7 +33,7 @@ public class Rock : MonoBehaviour
     //채굴
     public void Mining()
     {
-        SoundManager.instance.PlaySE(strike_Sound);
+        SoundManager.instance.PlaySE(strike_Sound); //효과음 재생
 
 
         //바위 콜라이더의 가운데에 파편 클론 생성
@@ -45,21 +45,21 @@ public class Rock : MonoBehaviour
             Destruction();
     }
 
-    private void Destruction()
+    private void Destruction() //파괴
     {
         SoundManager.instance.PlaySE(destroy_Sound);
 
         //바위가 파괴 되었기에 비활성화하고 사라지게 하기 -> 잔해만 남도록
         col.enabled = false;
-        Destroy(go_rock);
+        Destroy(go_rock); //rock오브젝트 파괴
 
         go_debris.SetActive(true); //바위 잔해 활성화시켜 나타나게 하기...
         Destroy(go_debris, destroyTime); //일정 시간(destroyTime) 후 debris도 삭제
 
-        RockDropItem();
+        RockDropItem(); //아이템 생성
     }
 
-    public void RockDropItem()
+    public void RockDropItem() //아이템 생성
     {
         var itemGo = Instantiate<GameObject>(this.rockItemPrefab);      // rockItemPrefab 생성
         itemGo.transform.position = this.gameObject.transform.position + Vector3.up * 0.1f;     // 지정된 위치

@@ -19,10 +19,10 @@ public class Warning : MonoBehaviour
     private string halfEmergencyWarning_Sound; //2번째 경고음
 
     //지미의 현재 상태를 알려주는 이미지 오브젝트
-    public GameObject healthyJim;
-    public GameObject sickJim;
-    public GameObject soSickJim;
-    public GameObject deadJim;
+    public GameObject healthyJim; //건강한 지미 상태 이미지
+    public GameObject sickJim; //아픈 지미 상태 이미지
+    public GameObject soSickJim; //매우 아픈 지미 상태 이미지
+    public GameObject deadJim; //죽은 지미 이미지
 
 
 
@@ -35,18 +35,13 @@ public class Warning : MonoBehaviour
     public StatusController theStatus;
     public GameObject rgstButton; //리듬게임(기우제) 버튼
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         if (theStatus.currentHungry < 50)       // theStatus의 currentHungry가 50 미만이며
         {
             if (theStatus.currentHungry > 30 && !h_yellowUI)        // theStatus의 currentHungry가 30 초과이며 h_yellowUI가 false일때
             {
-                healthyJim.SetActive(false);
+                healthyJim.SetActive(false); //건강한 지미 이미지 비활성화
                 sickJim.SetActive(true); //지미의 상태 이미지를 아픈 상태로 변경
 
                 h_yellowUI = true;      // 경고창 상태 true
