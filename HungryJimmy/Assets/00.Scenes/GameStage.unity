@@ -21213,7 +21213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3023778475372484840, guid: 9a77068d9674d4d4ab8cca3666f62038, type: 3}
       propertyPath: m_TagString
-      value: Bottle
+      value: Item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a77068d9674d4d4ab8cca3666f62038, type: 3}

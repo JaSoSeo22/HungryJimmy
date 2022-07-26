@@ -22,11 +22,10 @@ ScriptsOnlyBuild:
     - Item
     - ItemEffectDatabase
     - ItemPickUp
+    - Joystick
     - LowPolyWater.LowPolyWater
     - NoteObject
-    - PauseMenu
     - PlayerController
-    - Rabbit
     - RainController
     - Respawn
     - RhythmGameManager
@@ -34,13 +33,13 @@ ScriptsOnlyBuild:
     - RunButton
     - SaveNLoad
     - Screenshot
+    - SettingMenu
     - Slot
     - SoundManager
     - StatusController
     - SwingAxe
     - Title
     - Tree
-    - VirtualJoystick02
     - Warning
     Unity.Barracuda.dll:
     - Unity.Barracuda.NNModel
@@ -83,10 +82,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -161,73 +158,73 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1638}
-    - Class: 114
-      Script: {instanceID: 1640}
-    - Class: 114
       Script: {instanceID: 1642}
     - Class: 114
-      Script: {instanceID: 1794}
+      Script: {instanceID: 1644}
     - Class: 114
-      Script: {instanceID: 1986}
+      Script: {instanceID: 1646}
     - Class: 114
-      Script: {instanceID: 2016}
+      Script: {instanceID: 1798}
     - Class: 114
-      Script: {instanceID: 2092}
+      Script: {instanceID: 1990}
     - Class: 114
-      Script: {instanceID: 2210}
+      Script: {instanceID: 2020}
     - Class: 114
-      Script: {instanceID: 2246}
+      Script: {instanceID: 2096}
     - Class: 114
-      Script: {instanceID: 2310}
+      Script: {instanceID: 2214}
     - Class: 114
-      Script: {instanceID: 2500}
+      Script: {instanceID: 2250}
     - Class: 114
-      Script: {instanceID: 2542}
+      Script: {instanceID: 2314}
     - Class: 114
-      Script: {instanceID: 2552}
+      Script: {instanceID: 2504}
     - Class: 114
-      Script: {instanceID: 2562}
+      Script: {instanceID: 2546}
     - Class: 114
-      Script: {instanceID: 2598}
+      Script: {instanceID: 2556}
     - Class: 114
-      Script: {instanceID: 2660}
+      Script: {instanceID: 2566}
+    - Class: 114
+      Script: {instanceID: 2602}
     - Class: 114
       Script: {instanceID: 2664}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2668}
     - Class: 114
-      Script: {instanceID: 2858}
+      Script: {instanceID: 2812}
     - Class: 114
-      Script: {instanceID: 2946}
+      Script: {instanceID: 2862}
     - Class: 114
-      Script: {instanceID: 2954}
+      Script: {instanceID: 2950}
     - Class: 114
-      Script: {instanceID: 2964}
+      Script: {instanceID: 2958}
     - Class: 114
-      Script: {instanceID: 3020}
+      Script: {instanceID: 2968}
     - Class: 114
-      Script: {instanceID: 3046}
+      Script: {instanceID: 3024}
     - Class: 114
-      Script: {instanceID: 3114}
+      Script: {instanceID: 3050}
     - Class: 114
-      Script: {instanceID: 3122}
+      Script: {instanceID: 3118}
     - Class: 114
-      Script: {instanceID: 3216}
+      Script: {instanceID: 3126}
     - Class: 114
-      Script: {instanceID: 3436}
+      Script: {instanceID: 3220}
     - Class: 114
-      Script: {instanceID: 3568}
+      Script: {instanceID: 3440}
     - Class: 114
-      Script: {instanceID: 3594}
+      Script: {instanceID: 3572}
     - Class: 114
-      Script: {instanceID: 3660}
+      Script: {instanceID: 3598}
     - Class: 114
-      Script: {instanceID: 3744}
+      Script: {instanceID: 3664}
     - Class: 114
-      Script: {instanceID: 3780}
+      Script: {instanceID: 3782}
     - Class: 114
-      Script: {instanceID: 3784}
+      Script: {instanceID: 3786}
+    - Class: 114
+      Script: {instanceID: 3790}
     - Class: 114
       Script: {instanceID: 3834}
     - Class: 114
@@ -260,8 +257,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4878}
     - Class: 114
       Script: {instanceID: 4956}
-    - Class: 114
-      Script: {instanceID: 5108}
     - Class: 114
       Script: {instanceID: 5134}
     - Class: 114
@@ -366,35 +361,35 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1638}
+      Script: {instanceID: 1642}
     - Class: 114
-      Script: {instanceID: 1640}
+      Script: {instanceID: 1644}
     - Class: 114
-      Script: {instanceID: 1692}
+      Script: {instanceID: 1696}
     - Class: 114
-      Script: {instanceID: 2016}
+      Script: {instanceID: 2020}
     - Class: 114
-      Script: {instanceID: 2206}
+      Script: {instanceID: 2210}
     - Class: 114
-      Script: {instanceID: 2386}
+      Script: {instanceID: 2390}
     - Class: 114
-      Script: {instanceID: 2598}
+      Script: {instanceID: 2602}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2812}
     - Class: 114
-      Script: {instanceID: 2964}
+      Script: {instanceID: 2968}
     - Class: 114
-      Script: {instanceID: 2990}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 3020}
+      Script: {instanceID: 3024}
     - Class: 114
-      Script: {instanceID: 3436}
+      Script: {instanceID: 3440}
     - Class: 114
-      Script: {instanceID: 3472}
+      Script: {instanceID: 3476}
     - Class: 114
-      Script: {instanceID: 3568}
+      Script: {instanceID: 3572}
     - Class: 114
-      Script: {instanceID: 3784}
+      Script: {instanceID: 3786}
     - Class: 114
       Script: {instanceID: 4138}
     - Class: 114
@@ -469,27 +464,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1638}
+      Script: {instanceID: 1642}
     - Class: 114
-      Script: {instanceID: 1640}
+      Script: {instanceID: 1644}
     - Class: 114
-      Script: {instanceID: 2016}
+      Script: {instanceID: 2020}
     - Class: 114
-      Script: {instanceID: 2206}
+      Script: {instanceID: 2210}
     - Class: 114
-      Script: {instanceID: 2598}
+      Script: {instanceID: 2602}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2812}
     - Class: 114
-      Script: {instanceID: 2964}
+      Script: {instanceID: 2968}
     - Class: 114
-      Script: {instanceID: 3020}
+      Script: {instanceID: 3024}
     - Class: 114
-      Script: {instanceID: 3436}
+      Script: {instanceID: 3440}
     - Class: 114
-      Script: {instanceID: 3568}
+      Script: {instanceID: 3572}
     - Class: 114
-      Script: {instanceID: 3784}
+      Script: {instanceID: 3786}
     - Class: 114
       Script: {instanceID: 4298}
     - Class: 115
@@ -556,35 +551,35 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1638}
+      Script: {instanceID: 1642}
     - Class: 114
-      Script: {instanceID: 1640}
+      Script: {instanceID: 1644}
     - Class: 114
-      Script: {instanceID: 2016}
+      Script: {instanceID: 2020}
     - Class: 114
-      Script: {instanceID: 2092}
+      Script: {instanceID: 2096}
     - Class: 114
-      Script: {instanceID: 2206}
+      Script: {instanceID: 2210}
     - Class: 114
-      Script: {instanceID: 2598}
+      Script: {instanceID: 2602}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2812}
     - Class: 114
-      Script: {instanceID: 2964}
+      Script: {instanceID: 2968}
     - Class: 114
-      Script: {instanceID: 2990}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 3020}
+      Script: {instanceID: 3024}
     - Class: 114
-      Script: {instanceID: 3436}
+      Script: {instanceID: 3440}
     - Class: 114
-      Script: {instanceID: 3472}
+      Script: {instanceID: 3476}
     - Class: 114
-      Script: {instanceID: 3568}
+      Script: {instanceID: 3572}
     - Class: 114
-      Script: {instanceID: 3594}
+      Script: {instanceID: 3598}
     - Class: 114
-      Script: {instanceID: 3784}
+      Script: {instanceID: 3786}
     - Class: 114
       Script: {instanceID: 4138}
     - Class: 114
@@ -753,7 +748,7 @@ ScriptsOnlyBuild:
       Hash: 2be4ed96c1a04b699fb32a6b3ae0a992
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: VirtualJoystick02
+    className: Joystick
   - hash:
       serializedVersion: 2
       Hash: a58c01d3b090fe1426bed2350158fdc8
@@ -798,7 +793,7 @@ ScriptsOnlyBuild:
     className: BeatScroller
   - hash:
       serializedVersion: 2
-      Hash: ca899dba060d72a0c2f2b45281a7778f
+      Hash: ae6237d18e2373f7557ae4e819e5d419
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -1032,12 +1027,6 @@ ScriptsOnlyBuild:
     className: AutoExposure
   - hash:
       serializedVersion: 2
-      Hash: fa587f4759678e4c707ed21089d1795c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PauseMenu
-  - hash:
-      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1152,7 +1141,7 @@ ScriptsOnlyBuild:
     className: ButtonController
   - hash:
       serializedVersion: 2
-      Hash: d9dcafe350de100f237db88c7aaa9d95
+      Hash: 8691c17c1c0ac969672a8eb20031ec0b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Item
@@ -1272,7 +1261,7 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: 90d6057bca2fbf5a23102d7b9da36062
+      Hash: 6faf42b66b40c9238870aa0b9847d127
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ActionController
@@ -1456,4 +1445,4 @@ ScriptsOnlyBuild:
   - Assets/00.Scenes/Select.unity
   - Assets/00.Scenes/GameStage.unity
   - Assets/00.Scenes/endding.unity
-  playerPath: C:/Users/sara1/Desktop/Build/HungryJimmy/HungryJimmy_ver2.apk
+  playerPath: "C:/Users/user/Desktop/\uD558\uD56B/Build/HungryJimmy.apk"
