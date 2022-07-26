@@ -75,7 +75,6 @@ ScriptsOnlyBuild:
     Unity.Timeline.dll:
     - UnityEngine.Timeline.ActivationPlayableAsset
     - UnityEngine.Timeline.ActivationTrack
-    - UnityEngine.Timeline.AnimationPlayableAsset
     - UnityEngine.Timeline.AnimationTrack
     - UnityEngine.Timeline.MarkerTrack
     - UnityEngine.Timeline.TimelineAsset
@@ -125,6 +124,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 64
@@ -159,6 +160,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1642}
+<<<<<<< Updated upstream
     - Class: 114
       Script: {instanceID: 1644}
     - Class: 114
@@ -187,9 +189,42 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2566}
     - Class: 114
       Script: {instanceID: 2602}
+=======
     - Class: 114
-      Script: {instanceID: 2664}
+      Script: {instanceID: 1644}
     - Class: 114
+      Script: {instanceID: 1646}
+    - Class: 114
+      Script: {instanceID: 1806}
+    - Class: 114
+      Script: {instanceID: 1998}
+    - Class: 114
+      Script: {instanceID: 2028}
+    - Class: 114
+      Script: {instanceID: 2104}
+    - Class: 114
+      Script: {instanceID: 2222}
+    - Class: 114
+      Script: {instanceID: 2258}
+    - Class: 114
+      Script: {instanceID: 2322}
+    - Class: 114
+      Script: {instanceID: 2398}
+    - Class: 114
+      Script: {instanceID: 2512}
+    - Class: 114
+      Script: {instanceID: 2554}
+    - Class: 114
+      Script: {instanceID: 2564}
+    - Class: 114
+      Script: {instanceID: 2574}
+    - Class: 114
+      Script: {instanceID: 2610}
+>>>>>>> Stashed changes
+    - Class: 114
+      Script: {instanceID: 2672}
+    - Class: 114
+<<<<<<< Updated upstream
       Script: {instanceID: 2668}
     - Class: 114
       Script: {instanceID: 2812}
@@ -225,60 +260,105 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3786}
     - Class: 114
       Script: {instanceID: 3790}
+=======
+      Script: {instanceID: 2676}
     - Class: 114
-      Script: {instanceID: 3834}
+      Script: {instanceID: 2820}
     - Class: 114
-      Script: {instanceID: 3864}
+      Script: {instanceID: 2870}
     - Class: 114
-      Script: {instanceID: 3882}
+      Script: {instanceID: 2958}
     - Class: 114
-      Script: {instanceID: 3972}
+      Script: {instanceID: 2966}
     - Class: 114
-      Script: {instanceID: 4112}
+      Script: {instanceID: 2976}
     - Class: 114
-      Script: {instanceID: 4192}
+      Script: {instanceID: 3032}
     - Class: 114
-      Script: {instanceID: 4260}
+      Script: {instanceID: 3058}
     - Class: 114
-      Script: {instanceID: 4298}
+      Script: {instanceID: 3126}
     - Class: 114
-      Script: {instanceID: 4370}
+      Script: {instanceID: 3134}
     - Class: 114
-      Script: {instanceID: 4566}
+      Script: {instanceID: 3228}
     - Class: 114
-      Script: {instanceID: 4570}
+      Script: {instanceID: 3448}
     - Class: 114
-      Script: {instanceID: 4710}
+      Script: {instanceID: 3580}
     - Class: 114
-      Script: {instanceID: 4728}
+      Script: {instanceID: 3606}
     - Class: 114
-      Script: {instanceID: 4752}
+      Script: {instanceID: 3672}
     - Class: 114
-      Script: {instanceID: 4878}
+      Script: {instanceID: 3790}
     - Class: 114
-      Script: {instanceID: 4956}
+      Script: {instanceID: 3794}
+>>>>>>> Stashed changes
     - Class: 114
+      Script: {instanceID: 3798}
+    - Class: 114
+      Script: {instanceID: 3842}
+    - Class: 114
+      Script: {instanceID: 3872}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 3980}
+    - Class: 114
+      Script: {instanceID: 4120}
+    - Class: 114
+      Script: {instanceID: 4200}
+    - Class: 114
+      Script: {instanceID: 4268}
+    - Class: 114
+      Script: {instanceID: 4306}
+    - Class: 114
+      Script: {instanceID: 4378}
+    - Class: 114
+      Script: {instanceID: 4574}
+    - Class: 114
+      Script: {instanceID: 4578}
+    - Class: 114
+      Script: {instanceID: 4718}
+    - Class: 114
+      Script: {instanceID: 4736}
+    - Class: 114
+      Script: {instanceID: 4760}
+    - Class: 114
+      Script: {instanceID: 4886}
+    - Class: 114
+<<<<<<< Updated upstream
       Script: {instanceID: 5134}
+=======
+      Script: {instanceID: 4898}
     - Class: 114
-      Script: {instanceID: 5216}
+      Script: {instanceID: 4964}
+>>>>>>> Stashed changes
     - Class: 114
-      Script: {instanceID: 5306}
+      Script: {instanceID: 5142}
     - Class: 114
-      Script: {instanceID: 5510}
+      Script: {instanceID: 5224}
     - Class: 114
-      Script: {instanceID: 5606}
+      Script: {instanceID: 5266}
     - Class: 114
-      Script: {instanceID: 5608}
+      Script: {instanceID: 5314}
     - Class: 114
-      Script: {instanceID: 5668}
+      Script: {instanceID: 5518}
     - Class: 114
-      Script: {instanceID: 5680}
+      Script: {instanceID: 5614}
     - Class: 114
-      Script: {instanceID: 5728}
+      Script: {instanceID: 5616}
     - Class: 114
-      Script: {instanceID: 5732}
+      Script: {instanceID: 5676}
     - Class: 114
-      Script: {instanceID: 5790}
+      Script: {instanceID: 5688}
+    - Class: 114
+      Script: {instanceID: 5736}
+    - Class: 114
+      Script: {instanceID: 5740}
+    - Class: 114
+      Script: {instanceID: 5798}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -315,6 +395,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 329
       Script: {instanceID: 0}
+<<<<<<< Updated upstream
     Assets/00.Scenes/Opening.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -424,6 +505,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 320
       Script: {instanceID: 0}
+=======
+>>>>>>> Stashed changes
     Assets/00.Scenes/Select.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -468,6 +551,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1644}
     - Class: 114
+<<<<<<< Updated upstream
       Script: {instanceID: 2020}
     - Class: 114
       Script: {instanceID: 2210}
@@ -485,8 +569,27 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3572}
     - Class: 114
       Script: {instanceID: 3786}
+=======
+      Script: {instanceID: 2028}
     - Class: 114
-      Script: {instanceID: 4298}
+      Script: {instanceID: 2218}
+    - Class: 114
+      Script: {instanceID: 2610}
+    - Class: 114
+      Script: {instanceID: 2820}
+    - Class: 114
+      Script: {instanceID: 2976}
+    - Class: 114
+      Script: {instanceID: 3032}
+    - Class: 114
+      Script: {instanceID: 3448}
+    - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
+      Script: {instanceID: 3794}
+>>>>>>> Stashed changes
+    - Class: 114
+      Script: {instanceID: 4306}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -555,6 +658,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1644}
     - Class: 114
+<<<<<<< Updated upstream
       Script: {instanceID: 2020}
     - Class: 114
       Script: {instanceID: 2096}
@@ -580,14 +684,41 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3598}
     - Class: 114
       Script: {instanceID: 3786}
+=======
+      Script: {instanceID: 2028}
     - Class: 114
-      Script: {instanceID: 4138}
+      Script: {instanceID: 2104}
     - Class: 114
-      Script: {instanceID: 4192}
+      Script: {instanceID: 2218}
     - Class: 114
-      Script: {instanceID: 4386}
+      Script: {instanceID: 2610}
     - Class: 114
-      Script: {instanceID: 5690}
+      Script: {instanceID: 2820}
+    - Class: 114
+      Script: {instanceID: 2976}
+    - Class: 114
+      Script: {instanceID: 3002}
+    - Class: 114
+      Script: {instanceID: 3032}
+    - Class: 114
+      Script: {instanceID: 3448}
+    - Class: 114
+      Script: {instanceID: 3484}
+    - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
+      Script: {instanceID: 3606}
+    - Class: 114
+      Script: {instanceID: 3794}
+>>>>>>> Stashed changes
+    - Class: 114
+      Script: {instanceID: 4146}
+    - Class: 114
+      Script: {instanceID: 4200}
+    - Class: 114
+      Script: {instanceID: 4394}
+    - Class: 114
+      Script: {instanceID: 5698}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -1441,8 +1572,11 @@ ScriptsOnlyBuild:
     className: AmbientOcclusion
   platform: 13
   scenePathNames:
-  - Assets/00.Scenes/Opening.unity
-  - Assets/00.Scenes/Select.unity
   - Assets/00.Scenes/GameStage.unity
   - Assets/00.Scenes/endding.unity
+<<<<<<< Updated upstream
   playerPath: "C:/Users/user/Desktop/\uD558\uD56B/Build/HungryJimmy.apk"
+=======
+  - Assets/00.Scenes/Select.unity
+  playerPath: C:/Users/sara1/Desktop/Build/HungryJimmy/HungryJimmy_ver7-1.apk
+>>>>>>> Stashed changes
