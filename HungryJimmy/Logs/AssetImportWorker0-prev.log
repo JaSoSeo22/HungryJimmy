@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.28f1 (f5400f52e03f) revision 16072719'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ko' Physical Memory: 16318 MB
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'ko' Physical Memory: 32479 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -11,118 +11,178 @@ C:\Program Files\Unity\Hub\Editor\2020.3.28f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/Unity/GitHub/HungryJimmy/HungryJimmy
+E:/Unity/GItHub/hungry jimmy/HungryJimmy/HungryJimmy
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60957
-Successfully changed project path to: D:/Unity/GitHub/HungryJimmy/HungryJimmy
-D:/Unity/GitHub/HungryJimmy/HungryJimmy
+50445
+Successfully changed project path to: E:/Unity/GItHub/hungry jimmy/HungryJimmy/HungryJimmy
+E:/Unity/GItHub/hungry jimmy/HungryJimmy/HungryJimmy
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 53.06 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 53.24 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.28f1 (f5400f52e03f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Unity/GitHub/HungryJimmy/HungryJimmy/Assets
+[Subsystems] Discovering subsystems at path E:/Unity/GItHub/hungry jimmy/HungryJimmy/HungryJimmy/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
     Vendor:   
-    VRAM:     6052 MB
-    Driver:   27.21.14.5751
+    VRAM:     3964 MB
+    Driver:   30.0.15.1272
 Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56528
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002649 seconds.
+Registered in 0.001200 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 53.35 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 50.12 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.548 seconds
+- Completed reload, in  0.579 seconds
 Domain Reload Profiling:
-	ReloadAssembly (548ms)
-		BeginReloadAssembly (63ms)
+	ReloadAssembly (580ms)
+		BeginReloadAssembly (64ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (422ms)
-			LoadAssemblies (61ms)
+		EndReloadAssembly (444ms)
+			LoadAssemblies (64ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (129ms)
+			SetupTypeCache (154ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (165ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (167ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (53ms)
-				BeforeProcessingInitializeOnLoad (11ms)
-				ProcessInitializeOnLoadAttributes (73ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				RefreshPlugins (50ms)
+				BeforeProcessingInitializeOnLoad (12ms)
+				ProcessInitializeOnLoadAttributes (75ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005325 seconds.
+Registered in 0.003151 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000027BC69A6020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC79FBE20 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BF7BFAD80 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7624820 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6D40010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6D079E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC66D1020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6DCB220 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6D6FE30 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6866020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6D079E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6D6FE30 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6D6FE30 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC672FC30 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC66B7E40 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6D079E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6579060 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6D079E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC76EC420 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2D01010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6D079E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC658AC70 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC65AFA80 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC78D2A70 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC26D2BE0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC65AFA80 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2B74430 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC239B460 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2F92C00 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC79FBE20 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 48.44 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 50.90 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.508 seconds
+- Completed reload, in  1.417 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1509ms)
-		BeginReloadAssembly (136ms)
+	ReloadAssembly (1418ms)
+		BeginReloadAssembly (133ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (1321ms)
-			LoadAssemblies (98ms)
+		EndReloadAssembly (1236ms)
+			LoadAssemblies (84ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (322ms)
+			SetupTypeCache (288ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (768ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (710ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (49ms)
-				BeforeProcessingInitializeOnLoad (65ms)
-				ProcessInitializeOnLoadAttributes (635ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				RefreshPlugins (51ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (586ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2183 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 127.8 MB.
-System memory in use after: 127.9 MB.
+Unloading 2191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.7 MB.
+System memory in use after: 125.8 MB.
 
-Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2632.
-Total: 2.817300 ms (FindLiveObjects: 0.181800 ms CreateObjectMapping: 0.094100 ms MarkObjects: 2.465200 ms  DeleteObjects: 0.075500 ms)
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2641.
+Total: 2.660000 ms (FindLiveObjects: 0.158700 ms CreateObjectMapping: 0.097200 ms MarkObjects: 2.346100 ms  DeleteObjects: 0.057200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,414 +191,698 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/01.Scripts/ActionController.cs
-  artifactKey: Guid(7eed406d69af11740bbe4bbd430e3878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01.Scripts/ActionController.cs using Guid(7eed406d69af11740bbe4bbd430e3878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97214543c537e5fd90016e2415f1776c') in 0.047654 seconds 
-  Import took 0.052142 seconds .
+  path: Assets/Icons/Banana bundle.prefab
+  artifactKey: Guid(763dc7f453e658146ab94ee02ee3bcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons/Banana bundle.prefab using Guid(763dc7f453e658146ab94ee02ee3bcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca822c92fc3e7a8a6cedff0e27069d2') in 0.091029 seconds 
+  Import took 0.094135 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6254.793925 seconds.
-  path: Assets/Rain and Rgame/RyGameFolder
-  artifactKey: Guid(164cdf6d786d5534494fd5dd2281a037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rain and Rgame/RyGameFolder using Guid(164cdf6d786d5534494fd5dd2281a037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f7f10d1548e6b51b4a24472e854e604') in 0.007407 seconds 
-  Import took 0.011465 seconds .
+  Time since last request: 196.450852 seconds.
+  path: Assets/Fireworks/Scenes
+  artifactKey: Guid(eb354408bef0d0d4194f4754878a7cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Scenes using Guid(eb354408bef0d0d4194f4754878a7cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c245215e8abe6a01829c1f6c641509b') in 0.000871 seconds 
+  Import took 0.004156 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.086514 seconds.
-  path: Assets/Rain and Rgame/RyGameFolder/JimmySixteenDance.mp4
-  artifactKey: Guid(a3c5aa7e6fd8f1247a5e1664fdbfe9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rain and Rgame/RyGameFolder/JimmySixteenDance.mp4 using Guid(a3c5aa7e6fd8f1247a5e1664fdbfe9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd7bf296f21959c76a7f3998c8922706') in 0.069196 seconds 
-  Import took 0.072122 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/Rain and Rgame/RyGameFolder/RhythmGameCanvas.prefab
-  artifactKey: Guid(51d7b555b22719943a1753a322ab553d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rain and Rgame/RyGameFolder/RhythmGameCanvas.prefab using Guid(51d7b555b22719943a1753a322ab553d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdcaea381a96605bd074646429396f8a') in 0.206061 seconds 
-  Import took 0.209658 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/Rain and Rgame/RyGameFolder/RyhthmManager.prefab
-  artifactKey: Guid(0ea413ca8d5245947b68103519980c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rain and Rgame/RyGameFolder/RyhthmManager.prefab using Guid(0ea413ca8d5245947b68103519980c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82a79417e09aa97fc794883c52348a60') in 0.008057 seconds 
-  Import took 0.011535 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.050948 seconds.
-  path: Assets/Rain and Rgame/RyGameFolder/Script
-  artifactKey: Guid(7bf87912b2fa61e4784e00067d96b611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rain and Rgame/RyGameFolder/Script using Guid(7bf87912b2fa61e4784e00067d96b611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cb3a76ac988ce56c1b85fbdb648a0bd') in 0.018029 seconds 
-  Import took 0.021007 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.363423 seconds.
-  path: Assets/Rain and Rgame/RyGameFolder/Script/BeatScroller.cs
-  artifactKey: Guid(12a672062177bac4095d56e8d0bdb221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rain and Rgame/RyGameFolder/Script/BeatScroller.cs using Guid(12a672062177bac4095d56e8d0bdb221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48df44fc2ce5699dd33acce6645e19d9') in 0.005319 seconds 
-  Import took 0.009163 seconds .
+  Time since last request: 1.301442 seconds.
+  path: Assets/Fireworks/Scenes/Demo Scene.unity
+  artifactKey: Guid(b4c5322c89961eb4885fbb70b7dde94e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Scenes/Demo Scene.unity using Guid(b4c5322c89961eb4885fbb70b7dde94e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2559890bb60699f9f922ddfebdef9b4') in 0.001516 seconds 
+  Import took 0.006469 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005254 seconds.
+Registered in 0.002957 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000027BC8316010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3DB2E50 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD4363810 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC83A7850 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC8316010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2EE8620 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC66D1020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC64E7010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC8316010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6D40010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7659820 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC99EB010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC8316010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80C89050 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2EE8620 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2EE8620 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6579060 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7659820 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCA1A3410 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6330730 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7659820 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCA1A3410 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC76E0020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41CD2D0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2E190F0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC76E0020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCA97B030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6731C40 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7034020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3DB2A90 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.954 seconds
+- Completed reload, in  0.914 seconds
 Domain Reload Profiling:
-	ReloadAssembly (955ms)
-		BeginReloadAssembly (112ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (791ms)
-			LoadAssemblies (94ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (269ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (322ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (227ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2092 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.5 MB.
-System memory in use after: 117.6 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2636.
-Total: 3.199100 ms (FindLiveObjects: 0.154400 ms CreateObjectMapping: 0.077000 ms MarkObjects: 2.918300 ms  DeleteObjects: 0.048700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 275.726955 seconds.
-  path: Assets/Rain and Rgame/RyGameFolder/Script/BeatScroller.cs
-  artifactKey: Guid(12a672062177bac4095d56e8d0bdb221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rain and Rgame/RyGameFolder/Script/BeatScroller.cs using Guid(12a672062177bac4095d56e8d0bdb221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d1a4fa8bebabf95ffdac2849da7a9cd') in 0.003707 seconds 
-  Import took 0.006524 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.463578 seconds.
-  path: Assets/00.Scenes/GameStage.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/00.Scenes/GameStage.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55d97de3e033cd7eedc0c37b7676f1e1') in 0.015137 seconds 
-  Import took 0.018234 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005088 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.943 seconds
-Domain Reload Profiling:
-	ReloadAssembly (943ms)
-		BeginReloadAssembly (106ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (788ms)
-			LoadAssemblies (91ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (268ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (319ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (226ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2092 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.5 MB.
-System memory in use after: 117.7 MB.
-
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2638.
-Total: 2.784900 ms (FindLiveObjects: 0.136600 ms CreateObjectMapping: 0.068000 ms MarkObjects: 2.561900 ms  DeleteObjects: 0.017400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005107 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.950 seconds
-Domain Reload Profiling:
-	ReloadAssembly (950ms)
+	ReloadAssembly (914ms)
 		BeginReloadAssembly (105ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (796ms)
-			LoadAssemblies (90ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (761ms)
+			LoadAssemblies (77ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (269ms)
+			SetupTypeCache (263ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (307ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2099 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.1 MB.
+System memory in use after: 118.2 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2650.
+Total: 3.329000 ms (FindLiveObjects: 0.154300 ms CreateObjectMapping: 0.066400 ms MarkObjects: 3.058800 ms  DeleteObjects: 0.048700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 158.833866 seconds.
+  path: Assets/Fireworks/Rocket 1/Materials/Fireworksbouquet.mat
+  artifactKey: Guid(fdd55a228c6eee84b939e5e1c1790f39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 1/Materials/Fireworksbouquet.mat using Guid(fdd55a228c6eee84b939e5e1c1790f39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b83ed7c5e3aab093c685d4acfc9de8e7') in 0.092692 seconds 
+  Import took 0.096411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Fireworks/Rocket 1/Materials/Fireworksbouquet.png
+  artifactKey: Guid(fc1818401ea089c42a8153cee6c8bd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 1/Materials/Fireworksbouquet.png using Guid(fc1818401ea089c42a8153cee6c8bd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '555a19a223a7a78231913ffd6b5812ff') in 0.018778 seconds 
+  Import took 0.021716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Fireworks/Rocket 1/Materials/Fuse.mat
+  artifactKey: Guid(682029ccf4af3b74ebe8a826b4656306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 1/Materials/Fuse.mat using Guid(682029ccf4af3b74ebe8a826b4656306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74664dfdda2474da41c4fb5fd0b7fdbc') in 0.019508 seconds 
+  Import took 0.022581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Fireworks/Rocket 1/Materials/Texture.mat
+  artifactKey: Guid(e39f0d3eaae47ad448c2b8c8265a8def) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 1/Materials/Texture.mat using Guid(e39f0d3eaae47ad448c2b8c8265a8def) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31bd664387815efde846f34c7cf711ae') in 0.051733 seconds 
+  Import took 0.054596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Fireworks/Rocket 1/Materials/rocket 1 texture.png
+  artifactKey: Guid(e690a46d4cd10a94092f3cdea27ae9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 1/Materials/rocket 1 texture.png using Guid(e690a46d4cd10a94092f3cdea27ae9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76417cb1ce7a823d264a35466aab3d19') in 0.038083 seconds 
+  Import took 0.040980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Fireworks/Rocket 1/Materials/Fuse.png
+  artifactKey: Guid(effca78134669c24ca577b2d77917d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 1/Materials/Fuse.png using Guid(effca78134669c24ca577b2d77917d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aea0b7af097fb76f20e5d6f808a93e3') in 0.015220 seconds 
+  Import took 0.018280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.216847 seconds.
+  path: Assets/Fireworks/Rocket 1/Prefab
+  artifactKey: Guid(e0dd5adb519e23e4895967c6acf49939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 1/Prefab using Guid(e0dd5adb519e23e4895967c6acf49939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8011fb5a008a3b5038a15508fb22c0a3') in 0.000933 seconds 
+  Import took 0.004379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063576 seconds.
+  path: Assets/Fireworks/Rocket 1/Prefab/Rocket 1.prefab
+  artifactKey: Guid(98a1fd3bb8bec6f4ba9f2157d347fca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 1/Prefab/Rocket 1.prefab using Guid(98a1fd3bb8bec6f4ba9f2157d347fca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '679b2e95e7fdc3f4e0d1edfeaec84676') in 0.072355 seconds 
+  Import took 0.076127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 70.950641 seconds.
+  path: Assets/00.Scenes/Opening CameraTimeline.playable
+  artifactKey: Guid(bcd434e91e6e57945b7b0e54378f8255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00.Scenes/Opening CameraTimeline.playable using Guid(bcd434e91e6e57945b7b0e54378f8255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bf37d9ef3168d978958573493fe7600') in 0.015978 seconds 
+  Import took 0.019514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.824446 seconds.
+  path: Assets/00.Scenes/Opening.unity
+  artifactKey: Guid(b57101fe582fdf44382dbeb7507d2baf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00.Scenes/Opening.unity using Guid(b57101fe582fdf44382dbeb7507d2baf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2864131b532f162c7b6fbe2c9282cda1') in 0.001149 seconds 
+  Import took 0.004554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.701241 seconds.
+  path: Assets/00.Scenes/endding.unity
+  artifactKey: Guid(2de2f966034c2e0458b65b68e631d7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00.Scenes/endding.unity using Guid(2de2f966034c2e0458b65b68e631d7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2484742ac029b2c2fbe96583db45e172') in 0.001603 seconds 
+  Import took 0.005331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.950135 seconds.
+  path: Assets/Fireworks/Rocket 2
+  artifactKey: Guid(bdad1e60b9053834e83fc2c357d2ee2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 2 using Guid(bdad1e60b9053834e83fc2c357d2ee2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '428dcd57a5b3212a338c6060dd2b6cd3') in 0.000927 seconds 
+  Import took 0.004277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.099118 seconds.
+  path: Assets/Fireworks/Rocket 2/Prefab
+  artifactKey: Guid(60a97ec33b39fc14aa72b2b8448c5bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 2/Prefab using Guid(60a97ec33b39fc14aa72b2b8448c5bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c9fd4add88a7ea03ff82b0231d277ff') in 0.000862 seconds 
+  Import took 0.004195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049126 seconds.
+  path: Assets/Fireworks/Rocket 2/Prefab/Rocket 2.prefab
+  artifactKey: Guid(0bd126c7d2039774592af6a94a2d7410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 2/Prefab/Rocket 2.prefab using Guid(0bd126c7d2039774592af6a94a2d7410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e9ab623d43a0cd1f6cd58d93a0faf4b') in 0.054252 seconds 
+  Import took 0.058317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.077948 seconds.
+  path: Assets/Fireworks/Rocket 5
+  artifactKey: Guid(d8a7dae635e8b7745821e6738de16d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 5 using Guid(d8a7dae635e8b7745821e6738de16d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d8f12863607aa07f59123eec01690d8') in 0.000944 seconds 
+  Import took 0.004312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.389602 seconds.
+  path: Assets/Fireworks/Rocket 5/Prefab
+  artifactKey: Guid(ddfd0bc431d8f3746a1f200c745e83be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 5/Prefab using Guid(ddfd0bc431d8f3746a1f200c745e83be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b1a353862496f0098cf12ff99f31149') in 0.000878 seconds 
+  Import took 0.004223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063533 seconds.
+  path: Assets/Fireworks/Rocket 5/Prefab/Rocket 5.prefab
+  artifactKey: Guid(941f65fa207e4b642bcba603ef8b91aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 5/Prefab/Rocket 5.prefab using Guid(941f65fa207e4b642bcba603ef8b91aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25829856f55e9c86d453bde96c38a048') in 0.074172 seconds 
+  Import took 0.077571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.966741 seconds.
+  path: Assets/Fireworks/Rocket 4
+  artifactKey: Guid(5bb055d83747736448d1e2a2cbb2e132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 4 using Guid(5bb055d83747736448d1e2a2cbb2e132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961999db66a1fd90224eef81b1da26d2') in 0.001152 seconds 
+  Import took 0.004473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.727183 seconds.
+  path: Assets/Fireworks/Rocket 4/Prefab
+  artifactKey: Guid(bf210f7ec2a968c4289bd76efe29fd3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 4/Prefab using Guid(bf210f7ec2a968c4289bd76efe29fd3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8f0133f2ff3f2d4f7fed716d71a240f') in 0.000800 seconds 
+  Import took 0.004179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.085377 seconds.
+  path: Assets/Fireworks/Rocket 4/Prefab/Rocket 4.prefab
+  artifactKey: Guid(028420c6b5f056e42a7d76e5d27e1a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 4/Prefab/Rocket 4.prefab using Guid(028420c6b5f056e42a7d76e5d27e1a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a245e4143322bdc178ec96cbfe19b7a7') in 0.050074 seconds 
+  Import took 0.056705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.862779 seconds.
+  path: Assets/Fireworks/Rocket 2/Materials/Fireworks tail 2.mat
+  artifactKey: Guid(1723c950f7b2ae348bad6cd4a052767b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 2/Materials/Fireworks tail 2.mat using Guid(1723c950f7b2ae348bad6cd4a052767b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d820a5cc2d006d43d13cf770d5a6fed') in 0.008629 seconds 
+  Import took 0.012065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.335787 seconds.
+  path: Assets/Fireworks/Rocket 2/Materials/Fireworks tail.mat
+  artifactKey: Guid(3ff4577d2bcc63244a3920a312698b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 2/Materials/Fireworks tail.mat using Guid(3ff4577d2bcc63244a3920a312698b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59f605adc15df692beceaf67a61250c0') in 0.008661 seconds 
+  Import took 0.012030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.017328 seconds.
+  path: Assets/Fireworks/Rocket 4/Materials/Fireworks tail 2.mat
+  artifactKey: Guid(68596fa748345654fb0a5f7396d36abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 4/Materials/Fireworks tail 2.mat using Guid(68596fa748345654fb0a5f7396d36abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fb41dc0c095eb0b65eb1b6a7200c2b3') in 0.008590 seconds 
+  Import took 0.012243 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003222 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000027BC979A010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3DB1B90 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BF7BFAA20 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D804C8770 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC979A010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2B8B010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC66D1020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3FB9600 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3846390 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC67BE410 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D805BE620 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3EB2420 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2A454E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2AEF010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC8DBFE0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D804C0E60 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3EC28C0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC773740 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD35EDFC0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCADBF010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41CB250 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCA1A3410 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCADBF010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD450CFF0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3C21820 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3811030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3DB3030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.897 seconds
+Domain Reload Profiling:
+	ReloadAssembly (898ms)
+		BeginReloadAssembly (94ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (757ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (267ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (299ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (216ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2099 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.6 MB.
+System memory in use after: 118.7 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2690.
+Total: 3.389400 ms (FindLiveObjects: 0.143100 ms CreateObjectMapping: 0.072300 ms MarkObjects: 3.141000 ms  DeleteObjects: 0.032200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 67.426711 seconds.
+  path: Assets/Fireworks/Rocket 3/Prefab
+  artifactKey: Guid(fc8482344517b1c4e8b1a922f4947f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 3/Prefab using Guid(fc8482344517b1c4e8b1a922f4947f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9daf7201a0b24b3f40047e70fdf8a47c') in 0.003717 seconds 
+  Import took 0.011975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.053557 seconds.
+  path: Assets/Fireworks/Rocket 3/Prefab/Rocket 3.prefab
+  artifactKey: Guid(653d6288c2fb78044b75ee8069650868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 3/Prefab/Rocket 3.prefab using Guid(653d6288c2fb78044b75ee8069650868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbfe02ea6c024d46a65eed5006f464ed') in 0.082151 seconds 
+  Import took 0.085966 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003134 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000027BC74500A0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCBA2ADD0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80941DE0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3829B00 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC979A010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC253040 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC66D1020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3FB9600 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCADBF010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3BFB010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC93ACC0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3EB2420 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC853020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC253040 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC253040 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6B67020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6DC6010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC986D020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC6DC120 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD40D6040 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD4407030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41CA210 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC8336030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD4407030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D8062C7D0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80C0B680 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D8043A7C0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCBA2A650 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.919 seconds
+Domain Reload Profiling:
+	ReloadAssembly (920ms)
+		BeginReloadAssembly (97ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (776ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (263ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (309ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (224ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2099 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.7 MB.
+System memory in use after: 118.8 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2693.
+Total: 3.263000 ms (FindLiveObjects: 0.153300 ms CreateObjectMapping: 0.069600 ms MarkObjects: 3.000700 ms  DeleteObjects: 0.038500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 920.345387 seconds.
+  path: Assets/Fireworks/Rocket 3/Materials/Fireworks tail 3.mat
+  artifactKey: Guid(0343045727573b14985380e0c0941bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fireworks/Rocket 3/Materials/Fireworks tail 3.mat using Guid(0343045727573b14985380e0c0941bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c984418ebd6e0aa107fc7fd3f468c0') in 0.050475 seconds 
+  Import took 0.054403 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003290 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000027BC6DE8010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3DB2E50 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD4363B70 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3829B00 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2714010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD43B5010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3FB9600 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC82FB60 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41F9300 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7030010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3853D20 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3EB2420 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCA707020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC6A3010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC7C1930 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD360AEC0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3EC28C0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC773740 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7030010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD40D6040 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7088EE0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41CCC50 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6C42020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7088EE0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC346660 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80C17230 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D805B8EA0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3DB19B0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.931 seconds
+Domain Reload Profiling:
+	ReloadAssembly (931ms)
+		BeginReloadAssembly (88ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (796ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (276ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
 			SetupLoadedEditorAssemblies (315ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (221ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.6 MB.
-System memory in use after: 117.7 MB.
-
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2639.
-Total: 2.873200 ms (FindLiveObjects: 0.150900 ms CreateObjectMapping: 0.069500 ms MarkObjects: 2.633400 ms  DeleteObjects: 0.018900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004782 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.950 seconds
-Domain Reload Profiling:
-	ReloadAssembly (950ms)
-		BeginReloadAssembly (108ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (793ms)
-			LoadAssemblies (95ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (262ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (316ms)
-				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (223ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.6 MB.
-System memory in use after: 117.7 MB.
-
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2641.
-Total: 2.764300 ms (FindLiveObjects: 0.145300 ms CreateObjectMapping: 0.071000 ms MarkObjects: 2.529500 ms  DeleteObjects: 0.017900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004645 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.939 seconds
-Domain Reload Profiling:
-	ReloadAssembly (939ms)
-		BeginReloadAssembly (101ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (789ms)
-			LoadAssemblies (92ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (259ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (313ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (223ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.6 MB.
-System memory in use after: 117.7 MB.
-
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2643.
-Total: 2.663400 ms (FindLiveObjects: 0.129500 ms CreateObjectMapping: 0.065700 ms MarkObjects: 2.450900 ms  DeleteObjects: 0.016700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004720 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.948 seconds
-Domain Reload Profiling:
-	ReloadAssembly (948ms)
-		BeginReloadAssembly (102ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (799ms)
-			LoadAssemblies (91ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (244ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (329ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (232ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
@@ -547,72 +891,12 @@ Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform
 Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
 Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.6 MB.
-System memory in use after: 117.7 MB.
+Unloading 2099 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.7 MB.
+System memory in use after: 118.8 MB.
 
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2645.
-Total: 2.715700 ms (FindLiveObjects: 0.138100 ms CreateObjectMapping: 0.069000 ms MarkObjects: 2.490500 ms  DeleteObjects: 0.017400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005065 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.006 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1006ms)
-		BeginReloadAssembly (104ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (852ms)
-			LoadAssemblies (93ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (257ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (353ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (260ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.6 MB.
-System memory in use after: 117.7 MB.
-
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2647.
-Total: 2.723500 ms (FindLiveObjects: 0.142400 ms CreateObjectMapping: 0.070900 ms MarkObjects: 2.491000 ms  DeleteObjects: 0.018300 ms)
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2696.
+Total: 2.921100 ms (FindLiveObjects: 0.142000 ms CreateObjectMapping: 0.069600 ms MarkObjects: 2.677200 ms  DeleteObjects: 0.031600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -621,6 +905,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
@@ -628,171 +913,111 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005035 seconds.
+Registered in 0.002912 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000027BC6DE8010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3DB19B0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BF7BF9940 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3829B00 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2714010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC66D1020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3FB9600 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCADBF010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41F9300 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3812C10 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3880460 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD418A010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7F3F030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7E6F010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3812C10 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6D0DE00 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC773740 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3812C10 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD40D6040 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7088EE0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41CD2D0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807888E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7088EE0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D8062AAB0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80C19450 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC76E9020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3DB19B0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.975 seconds
+- Completed reload, in  0.896 seconds
 Domain Reload Profiling:
-	ReloadAssembly (975ms)
-		BeginReloadAssembly (103ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (823ms)
-			LoadAssemblies (94ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (262ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (316ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (223ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.6 MB.
-System memory in use after: 117.7 MB.
-
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2649.
-Total: 3.281600 ms (FindLiveObjects: 0.171300 ms CreateObjectMapping: 0.075200 ms MarkObjects: 3.014200 ms  DeleteObjects: 0.020100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004747 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.998 seconds
-Domain Reload Profiling:
-	ReloadAssembly (998ms)
-		BeginReloadAssembly (105ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (844ms)
-			LoadAssemblies (90ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (260ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (333ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (237ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.6 MB.
-System memory in use after: 117.7 MB.
-
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2651.
-Total: 3.198100 ms (FindLiveObjects: 0.135400 ms CreateObjectMapping: 0.065300 ms MarkObjects: 2.978000 ms  DeleteObjects: 0.018800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005027 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.069 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1069ms)
-		BeginReloadAssembly (107ms)
+	ReloadAssembly (896ms)
+		BeginReloadAssembly (98ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (883ms)
-			LoadAssemblies (108ms)
+		EndReloadAssembly (753ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (273ms)
+			SetupTypeCache (248ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (335ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (310ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (80ms)
-				ProcessInitializeOnLoadAttributes (237ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (223ms)
 				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
 Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.6 MB.
-System memory in use after: 117.7 MB.
+Unloading 2099 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.7 MB.
+System memory in use after: 118.8 MB.
 
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2653.
-Total: 2.690100 ms (FindLiveObjects: 0.141600 ms CreateObjectMapping: 0.071900 ms MarkObjects: 2.454400 ms  DeleteObjects: 0.021600 ms)
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2698.
+Total: 3.365900 ms (FindLiveObjects: 0.155600 ms CreateObjectMapping: 0.064200 ms MarkObjects: 3.096000 ms  DeleteObjects: 0.049300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -801,6 +1026,1103 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002945 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000027DA4E72020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3DB1F50 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCA2BE800 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC937FE0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027DA4E72020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC66D1020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC885ED0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3846390 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41F9300 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6D0DE00 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3C2A5D0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3F887B0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7E6F010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC9921020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC773740 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD40D6040 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC9748020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41CD950 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80683030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC9748020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80635970 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80C1B670 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC821880 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3DB1F50 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.976 seconds
+Domain Reload Profiling:
+	ReloadAssembly (977ms)
+		BeginReloadAssembly (90ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (836ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (288ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (327ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (239ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.5 MB.
+System memory in use after: 118.6 MB.
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2692.
+Total: 3.529900 ms (FindLiveObjects: 0.193700 ms CreateObjectMapping: 0.118200 ms MarkObjects: 3.168100 ms  DeleteObjects: 0.048600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 593.731194 seconds.
+  path: Assets/Customizable Skybox
+  artifactKey: Guid(2b0f4fe7261622845b2a93feccd01677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Customizable Skybox using Guid(2b0f4fe7261622845b2a93feccd01677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cbe66b4b6d51185fdd07f0bef9e7e7a') in 0.004564 seconds 
+  Import took 0.009098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.392246 seconds.
+  path: Assets/Customizable Skybox/Materials
+  artifactKey: Guid(ea580a49e393d474a8246aed4e6421fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Customizable Skybox/Materials using Guid(ea580a49e393d474a8246aed4e6421fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bc62f775be63ac4a068c57ddeefc25a') in 0.000886 seconds 
+  Import took 0.004236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.233312 seconds.
+  path: Assets/Rain and Rgame
+  artifactKey: Guid(7e6f64044e6c5e647abf9c4c8e7928c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rain and Rgame using Guid(7e6f64044e6c5e647abf9c4c8e7928c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284246affd7efa797a96776d264420a1') in 0.000950 seconds 
+  Import took 0.004201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.375195 seconds.
+  path: Assets/Nicrom
+  artifactKey: Guid(75b39b3d36d479c4089dbb3706d90b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nicrom using Guid(75b39b3d36d479c4089dbb3706d90b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9208201fa398a52fbb99bed9d7c27057') in 0.000851 seconds 
+  Import took 0.004071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.781822 seconds.
+  path: Assets/MeleeAxe
+  artifactKey: Guid(2cbdd4c6f023e244f85d4aae484f1e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MeleeAxe using Guid(2cbdd4c6f023e244f85d4aae484f1e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd36759e49313cad6f56bc7203a960c32') in 0.001000 seconds 
+  Import took 0.004520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.320301 seconds.
+  path: Assets/MeleeAxe/Materials
+  artifactKey: Guid(e92a5520e5a14024896787e61cfbde6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MeleeAxe/Materials using Guid(e92a5520e5a14024896787e61cfbde6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8351bee1921fa22d7b8587cbc15b62f') in 0.000979 seconds 
+  Import took 0.004618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.212714 seconds.
+  path: Assets/Cam
+  artifactKey: Guid(b8f0226ee33904d4ebd6d7392242835f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cam using Guid(b8f0226ee33904d4ebd6d7392242835f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e591aef0c65acc3453395a09a201f389') in 0.001176 seconds 
+  Import took 0.004863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.675262 seconds.
+  path: Assets/_Creepy_Cat
+  artifactKey: Guid(5b935a244bafec942919c86505a662e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Creepy_Cat using Guid(5b935a244bafec942919c86505a662e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '503749fc7e4334f00b48e6ac74c37b8f') in 0.001035 seconds 
+  Import took 0.004412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.031691 seconds.
+  path: Assets/_Creepy_Cat/3D Games Effects Pack Free
+  artifactKey: Guid(7292dec1ffce6498b9c0b57fedbcc2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Creepy_Cat/3D Games Effects Pack Free using Guid(7292dec1ffce6498b9c0b57fedbcc2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88d7d3f084523e3260abb65b5c8c899b') in 0.001161 seconds 
+  Import took 0.005080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.693209 seconds.
+  path: Assets/_Creepy_Cat/3D Games Effects Pack Free/_Materials
+  artifactKey: Guid(d087af424f52948adbb83d5c7f4e4d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Creepy_Cat/3D Games Effects Pack Free/_Materials using Guid(d087af424f52948adbb83d5c7f4e4d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e8c321042d038f3c770ddf3a1eeb240') in 0.000943 seconds 
+  Import took 0.004720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.979010 seconds.
+  path: Assets/_Creepy_Cat/3D Games Effects Pack Free/_Prefabs
+  artifactKey: Guid(2c5f6f8982c69457ab378b9fecfdf55a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Creepy_Cat/3D Games Effects Pack Free/_Prefabs using Guid(2c5f6f8982c69457ab378b9fecfdf55a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbd81ab36982db4800a4181543cbfcba') in 0.001018 seconds 
+  Import took 0.004488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.897694 seconds.
+  path: Assets/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_04.mat
+  artifactKey: Guid(9d7b7705dd2cc450c991a93f6474f081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_04.mat using Guid(9d7b7705dd2cc450c991a93f6474f081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34ce2e79b5c1cb71d394a7ad9509f4b') in 0.228105 seconds 
+  Import took 0.231241 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002934 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000027BD3674020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC97F6460 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BF7BFAA20 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D804C8770 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3674020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2EEC850 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC66D1020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC64E7010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6DA6020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC72B580 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD4361FF0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3674020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCA707020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCB3A3DB0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD35DDEB0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6DC6010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3EC28C0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80850E40 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41F9300 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3846390 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41CD2D0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D804CAFA0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3846390 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D8062D660 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80C19450 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D8043A7C0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC97F6640 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.953 seconds
+Domain Reload Profiling:
+	ReloadAssembly (953ms)
+		BeginReloadAssembly (90ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (815ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (278ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (317ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (234ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.5 MB.
+System memory in use after: 118.7 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2695.
+Total: 2.914500 ms (FindLiveObjects: 0.183600 ms CreateObjectMapping: 0.092800 ms MarkObjects: 2.617200 ms  DeleteObjects: 0.020200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003091 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000027BC82A0030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC97F7720 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCA2BD3C0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD40BB020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC82A0030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2EEC850 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC66D1020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC8CFED0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6DA6020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC72B580 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC99EB010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC82A0030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCA707020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCB3A3DB0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7E6F010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41A8460 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC6DC120 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41F9300 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3846390 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41CABD0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D804CAFA0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3846390 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80631F30 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80C15010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC83E6F20 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC97F6460 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.018 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1018ms)
+		BeginReloadAssembly (96ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (870ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (290ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (345ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (255ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.6 MB.
+System memory in use after: 118.7 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2697.
+Total: 3.073600 ms (FindLiveObjects: 0.184200 ms CreateObjectMapping: 0.089800 ms MarkObjects: 2.774100 ms  DeleteObjects: 0.024400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003207 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000027DA50B0030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3DB2310 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD418B800 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3829B00 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027DA50B0030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC66D1020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC8CFED0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7084010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC72B580 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC99EB010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6372010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC29CA240 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCB3A3DB0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7E6F010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41A8460 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2D01010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41F9300 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3846390 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41CBF50 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCA4EC020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3846390 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6175AA0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80C1D890 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC70426C0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3DB28B0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.039 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1040ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (889ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (293ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (356ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (251ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.6 MB.
+System memory in use after: 118.7 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2699.
+Total: 3.740900 ms (FindLiveObjects: 0.173000 ms CreateObjectMapping: 0.082700 ms MarkObjects: 3.461900 ms  DeleteObjects: 0.022300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002759 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000027DA50B0030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3DB2C70 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D805B7AE0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD40BB020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027DA50B0030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC66D1020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD381CAB0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7084010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC72B580 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC99EB010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6372010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2AFD230 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCB3A3DB0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7E6F010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC9921020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC8132020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41F9300 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6DA6020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41CCF90 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D8080C020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6DA6020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC617EC40 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80C20BC0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCA4A8050 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3DB28B0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.893 seconds
+Domain Reload Profiling:
+	ReloadAssembly (894ms)
+		BeginReloadAssembly (85ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (764ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (252ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (299ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (216ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.6 MB.
+System memory in use after: 118.7 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2701.
+Total: 3.287300 ms (FindLiveObjects: 0.151600 ms CreateObjectMapping: 0.063400 ms MarkObjects: 3.024400 ms  DeleteObjects: 0.047200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003451 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000027BCA2AD030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCBA2A290 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC81F5820 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3829B00 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCA2AD030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027DAE4B6010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD381CAB0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC9BD9010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC72B580 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC99EB010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC75A1010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2DBA020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCB3A3DB0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7E6F010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC9921020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC8132020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41F9300 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3846390 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41CB590 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80850E40 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD3846390 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D803A6DB0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027DAE0126D0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC821F060 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCBA2A830 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.922 seconds
+Domain Reload Profiling:
+	ReloadAssembly (922ms)
+		BeginReloadAssembly (86ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (790ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (256ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (309ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (223ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.7 MB.
+System memory in use after: 118.8 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2703.
+Total: 3.219900 ms (FindLiveObjects: 0.190800 ms CreateObjectMapping: 0.094400 ms MarkObjects: 2.910200 ms  DeleteObjects: 0.023700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1299.836832 seconds.
+  path: Assets/00.Scenes/GameStage.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00.Scenes/GameStage.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55d97de3e033cd7eedc0c37b7676f1e1') in 0.018115 seconds 
+  Import took 0.022325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.060782 seconds.
+  path: Assets/AIInference/Scenes/AIInference.unity
+  artifactKey: Guid(61ee9766c23667446b16b43833fc965f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AIInference/Scenes/AIInference.unity using Guid(61ee9766c23667446b16b43833fc965f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6e268b08d5e76c57e4f3c8729c49ebd') in 0.001550 seconds 
+  Import took 0.005436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.890865 seconds.
+  path: Assets/AIInference/Model
+  artifactKey: Guid(5b53e77f5fb66754a82f70b37f4f7412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AIInference/Model using Guid(5b53e77f5fb66754a82f70b37f4f7412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8375672aada5fb0414aa0066e9c1b23') in 0.001192 seconds 
+  Import took 0.005174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 187.218872 seconds.
+  path: Assets/AIInference/Model/sequential_3.onnx
+  artifactKey: Guid(dd6c5ba3a8734b44b8f4bf6f501fa032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AIInference/Model/sequential_3.onnx using Guid(dd6c5ba3a8734b44b8f4bf6f501fa032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '875a40d06ca56bce9578bcc1be806584') in 0.075432 seconds 
+  Import took 0.078763 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003470 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000027D807BA010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC97F6280 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCA2BEB60 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2DBA020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807BA010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41F2200 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027DAEC28040 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC64E7010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80695010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC67BE410 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC9D43080 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6DE8010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD39A8030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC6026C0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7E6F010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD44E2470 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027DA50A0020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC6DC120 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027DA501E010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC5D90E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41CCC50 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D804CAFA0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC5D90E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027DAEA18E90 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027DAE00F3A0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D8043A7C0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC97F6640 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.115 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1115ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (954ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (322ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (360ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (258ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 119.0 MB.
+System memory in use after: 119.2 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 3.652100 ms (FindLiveObjects: 0.192800 ms CreateObjectMapping: 0.093800 ms MarkObjects: 3.337600 ms  DeleteObjects: 0.026800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002946 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000027D807BA010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC97F6460 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC81F4080 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC2DBA020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807BA010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41F2200 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027DAEC28040 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD381CAB0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D80695010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC67BE410 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC9D43080 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC6DE8010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD39A8030 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D807684E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC6026C0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC7E6F010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD44E2470 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027DA50A0020 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC6DC120 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD38A3500 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027DA501E010 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC5D90E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BD41CBC10 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027D804CAFA0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BCC5D90E0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027DAEA211A0 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027DAE01E280 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\NativeGallery.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC83E6F20 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000027BC97F7180 doesn't match image E:\Unity\GItHub\hungry jimmy\HungryJimmy\HungryJimmy\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.974 seconds
+Domain Reload Profiling:
+	ReloadAssembly (974ms)
+		BeginReloadAssembly (93ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (835ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (269ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (327ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (238ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 119.0 MB.
+System memory in use after: 119.2 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2707.
+Total: 3.290300 ms (FindLiveObjects: 0.214700 ms CreateObjectMapping: 0.139100 ms MarkObjects: 2.913300 ms  DeleteObjects: 0.022300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
