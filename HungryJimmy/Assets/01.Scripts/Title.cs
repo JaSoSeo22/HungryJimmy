@@ -16,7 +16,10 @@ public class Title : MonoBehaviour
         if (instance == null)       // 인스턴스가 null이면 
         {
             instance = this;        // 자기자신 넣어주고
-            DontDestroyOnLoad(gameObject);      // 씬이동해도 파괴되지 않게하기
+            if(SceneManager.sceneCount == 2)
+            {
+                DontDestroyOnLoad(gameObject);      // 씬이동해도 파괴되지 않게하기
+            }
         }
         else
         {
@@ -26,13 +29,19 @@ public class Title : MonoBehaviour
 
     public void ClickStart()
     {
-        Debug.Log("로딩");
-        SceneManager.LoadScene(sceneName);
+        Debug.Log("게임이 곧 시작됩니다.");
+        SceneManager.LoadScene("GameStage");
+    }
+
+    public void ClickSelect()
+    {
+        Debug.Log("게임이 곧 시작됩니다.");
+        SceneManager.LoadScene("Select");
     }
 
     public void ClickLoad()
     {
-        Debug.Log("로드");
+        Debug.Log("데이터를 불러오고 있습니다.");
 
         StartCoroutine(LoadCoroutine());         // LoadCoroutine코루틴 실행
 
